@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { studentList } from "./SampleStudent";
+import { studentList } from "../SampleStudent";
 
 class Gradebook extends Component {
   constructor() {
