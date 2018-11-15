@@ -19,11 +19,15 @@ class SignupForm extends Component {
 
     onChange(e){
         this.setState({ [e.target.name]: e.target.value });
+        console.log(e.target.name)
+        console.log(e.target.value)
+
     }
 
     onSubmit(e){
         e.preventDefault();
-        this.props.postUser(this.state);
+        const users = this.props.postUser(this.state.value);
+        console.log(users)
     }
 
     render () {
@@ -33,21 +37,21 @@ class SignupForm extends Component {
                 <TextFieldGroup
                 label="First Name"
                 onChange={this.onChange}
-                value={this.state.username}
-                field="first name"
+                value={this.state.firstName}
+                field="firstName"
                 />
 
                 <TextFieldGroup
                 label="Last Name"
                 onChange={this.onChange}
-                value={this.state.email}
-                field="last name"
+                value={this.state.lastName}
+                field="lastName"
                 />
 
                 <TextFieldGroup
                 label="telephoe"
                 onChange = {this.onChange}
-                value={this.state.password}
+                value={this.state.telephone}
                 field="telephone"
                 type="tel"
                 />

@@ -31,6 +31,10 @@ module.exports = app => {
             else
                 res.send(`Thanks for reaching out ${req.body.firstName}!`);
         });
+
+        console.log(req.body.firstName)
+        console.log(process.env.lastName)
+        console.log(req.body.telephone)
         
 
     });
