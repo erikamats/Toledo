@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const data = require('../models/student');
+require('../models/student');
 const { check,validationResult } = require('express-validator/check');
 // const { sanitizeBody } = require('express-validator/filter');
 
@@ -20,10 +20,10 @@ module.exports = app => {
             return res.status(422).json({ errors: errors.array() });
         }
         
-        const newStudent = new Student({
-            firstName:String,
-            lastName:String,
-            telephone:Number
+        var newStudent = new Student({
+            firstName:req.body.firstName,
+            lastName:req.body.lastName,
+            telephone:req.body.telephone
         })
 
         newStudent.save(function (err, doc) {
