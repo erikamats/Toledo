@@ -26,7 +26,7 @@ class SignupForm extends Component {
 
     onSubmit(e){
         e.preventDefault();
-        const users = this.props.postUser(this.state.value);
+        const users = this.props.postUser(this.state);
         console.log(users)
     }
 

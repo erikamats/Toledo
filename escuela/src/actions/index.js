@@ -12,11 +12,17 @@ export const fetchUsers = () => async dispatch => {
     })
 }
 
-export const postUser = () => async dispatch => {
-    const res = await axios.post('/register-student');
+export const postUser = (userData) => async dispatch => {
+    const res = await axios.post('/register-student', userData);
     
     dispatch({
         type: POST_USER,
         payload: res
     })
 }
+
+// export function userSignupRequest(userData) {
+//     return dispatch => {
+//       return axios.post('/api/users', userData);
+//     }
+//   }

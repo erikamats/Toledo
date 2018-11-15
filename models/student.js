@@ -7,18 +7,18 @@ const studentSchema = new Schema({
     telephone:Number
 });
 
-mongoose.model("Student", studentSchema);
+const Student = mongoose.model("Student", studentSchema);
 
-// var StudentEntry = new Student({
-//     firstName: "Luis",
-//     lastName:"Medina",
-//     telephone:5555555
-// })
+var StudentEntry = new Student({
+    firstName: "Luis",
+    lastName:"Medina",
+    telephone:5555555
+})
 
-// StudentEntry.save((error)=>{
-//  console.log(`${StudentEntry.firstName} was saved to the data base`);
+StudentEntry.save((error)=>{
+ console.log(`${StudentEntry.firstName} was saved to the data base`);
 
-//  if(error){
-//      console.log(error)
-//  }
-// })
+ if(error){
+     console.log(error)
+ }
+})
