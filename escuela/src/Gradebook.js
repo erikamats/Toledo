@@ -5,11 +5,12 @@ class Gradebook extends Component {
   constructor() {
     super();
     this.state = {
-      on: false,
       studentList
     };
     console.log(studentList);
   }
+
+  avgGrade() {}
 
   render() {
     return (
@@ -17,14 +18,14 @@ class Gradebook extends Component {
         This will be the Gradebook.
         <h1> Fernando's Class</h1>
         <hr />
-       
-          {this.state.studentList.map(kids => (
-            <ul>
-            <li> {kids.name}</li>
-            <li> {kids.hmwk}</li>
+        {this.state.studentList.map(kids => (
+          <ul style={{ listStyleType: "none" }}>
+            <li> {kids.studentName}</li>
+            <li> {kids.hmwk1}</li>
+            <li> {kids.hmwk2}</li>
+            <hr />
             </ul>
-          ))}
-       
+        ))}
       </div>
     );
   }

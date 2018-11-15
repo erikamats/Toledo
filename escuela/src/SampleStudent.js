@@ -1,15 +1,20 @@
 export const studentList = [
   {
-    name: "Billy",
-    hmwk: 98
-  },
-  {
-    name: "Tom",
-    hmwk: 90
+    studentName: "Billy",
+ 
+       hmwk1: 98,
+        hmwk2: 50 
 
   },
   {
-    name: "John",
-    hmwk: 75
+    studentName: "Tom",
+    hmwk1: 90,
+    hmwk2: 70
+
+  },
+  {
+    namstudentNamee: "John",
+    hmwk1: 75,
+    hmwk2: 100
   }
 ];
