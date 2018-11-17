@@ -20,9 +20,3 @@ export const postUser = (userData) => async dispatch => {
         payload: res
     })
 }
-
-// export function userSignupRequest(userData) {
-//     return dispatch => {
-//       return axios.post('/api/users', userData);
-//     }
-//   }

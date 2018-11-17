@@ -1,23 +1,38 @@
 const mongoose = require('mongoose');
 require('../models/student');
-const { check,validationResult } = require('express-validator/check');
-// const { sanitizeBody } = require('express-validator/filter');
+const Validator = require('validator');
+const isEmpty = require('lodash/isEmpty')
 
 const Student = mongoose.model('Student');
 
 
 module.exports = app => {
-    app.post('/register-student', [
-        check('firstName').isLength({ min: 1 }).trim().withMessage('First Name empty.'),
-        check('lastName').isLength({ min: 1 }).trim().withMessage('Last name is empty.'),
-        check('telephone').isLength({min: 1}).trim().toInt('Provide a phone number'),
+    app.post('/register-student',(req, res) => {
 
+        function validateInput(data){
+
+            let errors = {}
         
-    ] ,(req, res) => {
-        const errors = validationResult(req);
-       
-        if(!errors.isEmpty()) {
-            return res.status(422).json({ errors: errors.array() });
+            if(Validator.isEmpty(data.firstName)){
+                errors.firstName = 'You must provide your first name'
+            }
+            if(Validator.isEmpty(data.lastName)){
+                errors.lastName = 'You must provide your last name'
+            }
+            if(Validator.isEmpty(data.telephone)){
+                errors.telephone = 'You must provide your telephone'
+            }
+            
+            return {
+                errors, 
+                isValid: isEmpty(errors)
+            }
+        }
+
+        const { errors, isValid } = validateInput(req.body);
+
+        if(!isValid){
+            res.status(400).json(errors)
         }
         
         var newStudent = new Student({
@@ -41,6 +56,13 @@ module.exports = app => {
         
 
     });
+
+    const student = {
+        name:"",
+        fullName: ()=>{
+            this.name + lastName
+        }
+    }
 
     app.get('/students', (req, res) =>{ 
         Student.find({}, function(err, data){
