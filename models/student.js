@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const studentSchema = new Schema({
-    firstName:String,
-    lastName:String,
-    telephone:Number
+    fullName:String,
+    email:String,
+    username:String,
+    password:String,
+    passwordConfirmation: String
+
 });
 
 const Student = mongoose.model("Student", studentSchema);

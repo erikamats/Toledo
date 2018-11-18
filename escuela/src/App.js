@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk'
 import ScrollToTop from './ScrollToTop';
 import NavigationBar from './components/NavigationBar';
@@ -12,10 +12,14 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import reducers from './reducers';
 import UsersList from './components/UsersList';
 
-
 import './App.css';
 
-const store = createStore(reducers, {}, applyMiddleware(thunk))
+const store = createStore(
+  reducers, 
+  {}, 
+  compose(applyMiddleware(thunk),
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+))
 
 class App extends Component {
 

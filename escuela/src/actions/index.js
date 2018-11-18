@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 export const FETCH_USERS = 'fetch_users';
 export const POST_USER = 'post_user';
 
@@ -20,3 +19,5 @@ export const postUser = (userData) => async dispatch => {
         payload: res
     })
 }
+
+  
