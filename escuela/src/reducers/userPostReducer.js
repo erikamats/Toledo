@@ -1,4 +1,4 @@
-import { POST_USER } from '../actions';
+import { POST_USER } from '../actions/types';
 
 export default ( state = [], action ) => {
     switch(action.type) {

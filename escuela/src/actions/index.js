@@ -1,6 +1,5 @@
 import axios from 'axios';
-export const FETCH_USERS = 'fetch_users';
-export const POST_USER = 'post_user';
+import { FETCH_USERS, POST_USER, ADD_FLASH_MESSAGE } from './types';
 
 export const fetchUsers = () => async dispatch => {
     const res = await axios.get('/students');
@@ -19,5 +18,15 @@ export const postUser = (userData) => async dispatch => {
         payload: res
     })
 }
+
+
+
+export const addFlashMessage = (message) => {
+    return {
+        type: ADD_FLASH_MESSAGE,
+        message
+    }
+}
+
 
   

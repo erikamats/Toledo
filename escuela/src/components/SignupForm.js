@@ -78,29 +78,16 @@ class SignupForm extends Component {
             this.setState({ errors: {}, isLoading: true })
             this.props.postUser(this.state)
             .then(() => {
+                this.props.addFlashMessage({
+                    type: 'success',
+                    text: 'Your registration was successful. Welcome to Toledo!'
+                });
                 this.props.history.push('/');
             },
             ({ data }) => this.setState({ errors: data.errors, isLoading: false})
             )
         }
     }
-    // onSubmit(e) {
-    //     e.preventDefault();
-    
-    //     if (this.isValid()) {
-    //       this.setState({ errors: {}, isLoading: true });
-    //       this.props.userSignupRequest(this.state).then(
-    //         () => {
-    //           this.props.addFlashMessage({
-    //             type: 'success',
-    //             text: 'You signed up successfully. Welcome!'
-    //           });
-    //           this.context.router.push('/');
-    //         },
-    //         (err) => this.setState({ errors: err.response.data, isLoading: false })
-    //       );
-    //     }
-    //   }
 
     render () {
         const { errors } = this.state;
