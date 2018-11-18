@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 require('../models/student');
 const Validator = require('validator');
-const isEmpty = require('lodash/isEmpty')
+const isEmpty = require('lodash/isEmpty');
+
 
 const Student = mongoose.model('Student');
 
@@ -12,26 +13,6 @@ module.exports = app => {
         function validateInput(data){
 
             let errors = {}
-        
-            if(Validator.isEmpty(data.fullName)){
-                errors.fullName = 'You must provide your name'
-            }
-            if(Validator.isEmpty(data.email)){
-                errors.email = 'You must provide your email'
-            }
-            if(!Validator.isEmail(data.email)){
-                errors.email = 'You should provide a valid email'
-            }
-            if(Validator.isEmpty(data.username)){
-                errors.username = 'You must provide your telephone'
-            }
-            if(Validator.isEmpty(data.passwordConfirmation)){
-                errors.passwordConfirmation = 'You must provide a password'
-            }
-            
-            if(!Validator.equals(data.password, data.passwordConfirmation)){
-                errors.passwordConfirmation = 'Passwords did not match'
-            }
 
             return {
                 errors, 

@@ -11,6 +11,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import reducers from './reducers';
 import UsersList from './components/UsersList';
+import MessagesList from './components/MessagesList';
 
 import './App.css';
 
@@ -34,6 +35,7 @@ class App extends Component {
         <Route render={({ location }) => (
           <div>
             <NavigationBar/>
+            <MessagesList/>
             <TransitionGroup>
               <CSSTransition 
                 key={location.key}
