@@ -37,7 +37,7 @@ module.exports = app => {
 
             newStudent.save(function (err, doc) {
                 if (err)
-                res.json('Whoops! I\'m sorry, an error happened while sending your message. Please send a message directly to <a href="mailto:medina.techie@gmail.com">medina.techie@gmail.com');
+                res.json(`Data was not persisted in the database. Check your models validations`);
                 else
                     res.send(`Thanks for reaching out ${req.body.fullName}!`);
                     console.log(`${newStudent.fullName} was saved to the data base`);
