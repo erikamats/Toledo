@@ -21,11 +21,10 @@ function validateInput(data){
     if(Validator.isEmpty(data.username)){
         errors.username = 'We need a username for your account'
     }
-    if(Validator.isEmpty(data.passwordConfirmation)){
+    if(Validator.isEmpty(data.password)){
         errors.passwordConfirmation = 'You must provide a password'
     }
-    
-    if(!Validator.equals(data.password, data.passwordConfirmation)){
+    if(!Validator.equals(data.password, data.passwordConfirmation) && Validator.isEmpty(data.passwordConfirmation)){
         errors.passwordConfirmation = 'Passwords did not match'
     }
 
@@ -60,6 +59,7 @@ class SignupForm extends Component {
 
     if (!isValid) {
       this.setState({ errors });
+      console.log("the form has errors")
     }
 
     return isValid;
