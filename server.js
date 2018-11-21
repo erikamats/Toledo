@@ -19,7 +19,7 @@ require('./routes/student')(app);
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Student');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student');
 
 db.once('open', () => console.log('Connection was successful'));
 
