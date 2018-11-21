@@ -20,6 +20,10 @@ const Course = new Schema(
 			type: Date,
 			required: [true, 'A start date is required'],
 		},
+		endDate: {
+			type: Date,
+			required: [true, 'A start date is required'],
+		},
 		capacity: {
 			type: Number,
 			required: false,
