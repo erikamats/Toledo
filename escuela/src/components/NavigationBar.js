@@ -19,6 +19,9 @@ export default () => {
                     <li className="nav-item active">
                         <NavLink to="/users" className="nav-link">DB Users</NavLink>
                     </li>
+                    <li className="nav-item active">
+                        <NavLink to="/addclass" className="nav-link">AddClass</NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>

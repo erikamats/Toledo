@@ -11,7 +11,9 @@ export const fetchUsers = () => async dispatch => {
 }
 
 export const postUser = (userData) => async dispatch => {
-    const res = await axios.post('/register-student', userData);
+    const res = await axios.post('/register-student', userData)
+    .then()
+    .catch()
     
     dispatch({
         type: POST_USER,

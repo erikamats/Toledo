@@ -7,10 +7,12 @@ import NavigationBar from './components/NavigationBar';
 import ErrorPage from './components/Pages/ErrorPage';
 import Gradebook from './components/Pages/Gradebook';
 import SignupPage from './components/Pages/SignupPage';
+import AddClassPage from './components/Pages/AddClassPage';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import reducers from './reducers';
 import UsersList from './components/UsersList';
+
 import MessagesList from './components/MessagesList';
 
 import './App.css';
@@ -23,8 +25,6 @@ const store = createStore(
 ))
 
 class App extends Component {
-
-  
   
   render() {
     return (
@@ -46,6 +46,7 @@ class App extends Component {
                   <Route exact path="/" component={Gradebook} />
                   <Route exact path="/users" component={UsersList} />
                   <Route exact path="/signup" component={SignupPage} />
+                  <Route exact path="/addclass" component={AddClassPage} />
                   <Route component={ErrorPage} />
                 </Switch>
                   </CSSTransition>
