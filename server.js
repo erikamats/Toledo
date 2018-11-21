@@ -14,6 +14,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 require('./routes/student')(app);
+require('./routes/course')(app);
 
 // import environmental variables from our variables.env file
 require('dotenv').config({ path: 'variables.env' });
