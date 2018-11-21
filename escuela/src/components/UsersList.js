@@ -13,14 +13,17 @@ class UsersList extends Component {
         })
     }
 
-    render(){
-        return (
-            <div>
-                Here's a big list of users in the Database.
-                <ul>{this.renderUsers()}</ul>
-            </div>
-        )
-    }
+    // render(){
+    //     return (
+    //         const UsersList = () => {
+    //             return (
+    //                 <Users
+
+    //                 />
+    //             )
+    //         }
+    //     )
+    // }
 }
 
 function mapStateToProps(state) {
