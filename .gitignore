@@ -2,3 +2,4 @@
 .DS_Store
 *.sql
 *.env
+*.code-workspace
