@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { FETCH_USERS, POST_FAILED, POST_SUCCESS, ADD_FLASH_MESSAGE, DELETE_MESSAGE } from './types';
-import { fail } from 'assert';
+import { FETCH_USERS, POST_SUCCESS, POST_FAILED, ADD_FLASH_MESSAGE, DELETE_MESSAGE } from './types';
 
 export const fetchUsers = () => async dispatch => {
     const res = await axios.get('/students');
@@ -34,47 +33,6 @@ export const postUser = (userData) => async dispatch => {
    })
 
 }
-
-// export const postUser = (userData) => async dispatch => {
-//     const res = await axios.post('/register-student', userData)
-//                     .catch(error => {
-//                         throw(error)
-//                     })
-                   
-//     dispatch({
-//         type: {POST_SUCCESS, POST_FAILED},
-//         payload: res
-//     })
-
-// }
-
-// function createPostSuccess(response){
-//     return{
-//         type:POST_SUCCESS,
-//         payload:response
-//     }
-// }
-
-// function postFailed(err){
-//     return{
-//         type:POST_FAILED,
-//         payload:err
-//     }
-// }
-
-
-// export function postUser (userData){
-//     return function(dispatch){
-//         axios.post('/register-student', userData)
-//             .then((response) =>{
-//                 dispatch(createPostSuccess(response))
-//             })
-//             .catch((err) => {
-//                 dispatch(postFailed(err))
-//             })
-//     }
-// }
-
 
 
 

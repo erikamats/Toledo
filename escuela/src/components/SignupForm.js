@@ -82,7 +82,7 @@ class SignupForm extends Component {
                     type: 'success',
                     text: 'Your registration was successful. Welcome to Toledo!'
                 });
-                this.props.history.push('/');
+                // this.props.history.push('/');
             },
             ({ data }) => this.setState({ errors: data.errors, isLoading: false})
             )
