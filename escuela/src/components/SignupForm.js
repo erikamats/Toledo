@@ -77,6 +77,7 @@ class SignupForm extends Component {
         if(this.isValid()) {
             this.setState({ errors: {}, isLoading: true })
             this.props.postUser(this.state)
+            
             .then(() => {
                 this.props.addFlashMessage({
                     type: 'success',
@@ -86,6 +87,9 @@ class SignupForm extends Component {
             },
             ({ data }) => this.setState({ errors: data.errors, isLoading: false})
             )
+            .catch((err) => {
+                this.setState({ errors:err})
+            })
         }
     }
 

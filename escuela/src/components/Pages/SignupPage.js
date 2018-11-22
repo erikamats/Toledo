@@ -18,7 +18,9 @@ class SignupPage extends Component {
 }
 
 function mapStateToProps(state) {
-    return { users: state.users}
+    return { postUser: state.posts,
+             addFlashMessage: state.flashMessage
+            }
 }
 
 export default connect(mapStateToProps, { postUser, addFlashMessage })(SignupPage)
