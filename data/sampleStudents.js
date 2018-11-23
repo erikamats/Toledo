@@ -40,7 +40,7 @@ exports.sampleStudents = [
     currentGradeLevel: 12,
   },
   {
-    _id: '58c03a958060197ca0b52d50',
+    _id: '58c057838060197ca0b52d54',
     firstName: 'Arrow',
     lastName: 'Root',
     gender: 'female',
@@ -48,10 +48,3 @@ exports.sampleStudents = [
     currentGradeLevel: 12,
   },
 ];
-
-// unused ID's
-// 58c05aef8060197ca0b52d55
-// 58c05b558060197ca0b52d56
-// 58c05bcd8060197ca0b52d57
-// 58c05c208060197ca0b52d58
-// 58c05f928060197ca0b52d59
