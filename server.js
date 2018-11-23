@@ -9,6 +9,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student')
 mongoose.connection.once('open', () => console.log('Connection was successful'));
 
 // import all of our models
+require('./models/Student');
 
 // Start our app!
 app.set('port', process.env.EXPRESS_LOCALPORT || 5000);
