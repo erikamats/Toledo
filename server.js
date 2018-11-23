@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
+  app.use(express.static('escuela/build'));
 }
 
 require('./routes/student')(app);
@@ -24,6 +24,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student')
 db.once('open', () => console.log('Connection was successful'));
 
 // Start the API server
-app.listen(PORT, function() {
-	console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+app.listen(PORT, function () {
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
