@@ -1,29 +1,18 @@
-const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const app = express();
-const PORT = process.env.PORT || 5000;
-const db = mongoose.connection;
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
-
-require('./routes/student')(app);
+const app = require('./app');
 
 // import environmental variables from our variables.env file
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student', { useNewUrlParser: true });
+mongoose.connection.once('open', () => console.log('Connection was successful'));
 
-db.once('open', () => console.log('Connection was successful'));
+// import all of our models
+require('./models/Student');
 
-// Start the API server
-app.listen(PORT, function() {
-	console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+// Start our app!
+app.set('port', process.env.EXPRESS_LOCALPORT || 5000);
+const server = app.listen(app.get('port'), () => {
+  console.log(`Express running → PORT ${server.address().port}`);
 });
