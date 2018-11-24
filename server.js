@@ -5,7 +5,7 @@ const app = require('./app');
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student', { useNewUrlParser: true });
 mongoose.connection.once('open', () => console.log('Connection was successful'));
 
 // import all of our models
