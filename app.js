@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'production') {
 
 // Takes all requests renders their data into usable properties on req.body
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 // Exposes a bunch of methods for validating data
 app.use(expressValidator());
