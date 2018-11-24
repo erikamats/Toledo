@@ -7,20 +7,23 @@ class UsersList extends Component {
 		this.props.fetchUsers();
 	}
 
-	renderUsers() {
-		return this.props.users.map(user => {
-			return <li key={user.id}>{user.fullName}</li>;
-		});
-	}
+    render(){
+        return this.props.users.map(user=>{
+            return <li key={user.id}>{user.fullName}</li>
+        })
+    }
 
-	render() {
-		return (
-			<div>
-				Here's a big list of users in the Database.
-				<ul>{this.renderUsers()}</ul>
-			</div>
-		);
-	}
+    // render(){
+    //     return (
+    //         const UsersList = () => {
+    //             return (
+    //                 <Users
+
+    //                 />
+    //             )
+    //         }
+    //     )
+    // }
 }
 
 function mapStateToProps(state) {

@@ -6,10 +6,12 @@ import NavigationBar from './components/NavigationBar';
 import ErrorPage from './components/Pages/ErrorPage';
 import Gradebook from './components/Pages/Gradebook';
 import SignupPage from './components/Pages/SignupPage';
+import AddClassPage from './components/Pages/AddClassPage';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import reducers from './reducers';
 import UsersList from './components/UsersList';
+
 import MessagesList from './components/MessagesList';
 
 const store = createStore(
@@ -41,6 +43,7 @@ class App extends Component {
                         <Route component={ErrorPage} />
                       </Switch>
                     </CSSTransition>
+                  <Route exact path="/addclass" component={AddClassPage} />
                   </TransitionGroup>
                 </>
               )}
