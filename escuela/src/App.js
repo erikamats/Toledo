@@ -29,25 +29,21 @@ class App extends Component {
       <div className="App">
         <Provider store={store}>
           <Router>
-            <Route
-              render={({ location }) => (
-                <>
-                  <NavigationBar />
-                  <MessagesList />
-                  <TransitionGroup>
-                    <CSSTransition key={location.key} timeout={100} classNames="fade">
-                      <Switch location={location}>
-                        <Route exact path="/" component={Gradebook} />
-                        <Route exact path="/users" component={UsersList} />
-                        <Route exact path="/signup" component={SignupPage} />
-                        <Route component={ErrorPage} />
-                      </Switch>
-                    </CSSTransition>
+          <>
+            <NavigationBar />
+            <MessagesList />
+            <TransitionGroup>
+              <CSSTransition key={location.key} timeout={100} classNames="fade">
+                <Switch location={location}>
+                  <Route exact path="/" component={Gradebook} />
+                  <Route exact path="/users" component={UsersList} />
+                  <Route exact path="/signup" component={SignupPage} />
+                  <Route component={ErrorPage} />
                   <Route exact path="/addclass" component={AddClassPage} />
-                  </TransitionGroup>
-                </>
-              )}
-            />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          </>
           </Router>
         </Provider>
       </div>
