@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export default () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a className="navbar-brand" href="">
+			<a className="navbar-brand" href="#">
 				Logo
 			</a>
 			<button
