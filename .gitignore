@@ -3,3 +3,5 @@
 *.sql
 *.env
 *.code-workspace
+
+escuela/package-lock\.json
