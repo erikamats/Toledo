@@ -1,5 +1,9 @@
+const sampleStudents = require('../data/sampleStudents');
+const sampleCourses = require('../data/sampleCourses');
+
 exports.getStudents = (req, res) => {
-  res.send('List of Students');
+  console.log('Sending sampleStudents.js !')
+  res.json(sampleStudents);
 };
 
 exports.getStudentsAsynchronously = async (req, res) => {
@@ -13,7 +17,8 @@ exports.addStudent = async (req, res) => {
 };
 
 exports.getCourses = (req, res) => {
-  res.send('List of Courses');
+  console.log('Sending sampleCourses.js !')
+  res.send(sampleCourses);
 };
 
 exports.getCoursesAsynchronously = async (req, res) => {
@@ -23,5 +28,5 @@ exports.getCoursesAsynchronously = async (req, res) => {
 };
 
 exports.addCourse = async (req, res) => {
-  res.send('List of Courses');
+  res.send('Course Added!');
 };
