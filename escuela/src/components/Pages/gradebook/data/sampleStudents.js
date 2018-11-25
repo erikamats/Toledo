@@ -1,4 +1,4 @@
-exports.sampleStudents = [
+export const sampleStudents = [
   {
     _id: '58c039938060197ca0b52d4d',
     firstName: 'Erika',
