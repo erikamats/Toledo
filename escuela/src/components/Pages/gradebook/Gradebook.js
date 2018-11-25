@@ -1,24 +1,34 @@
 import React, { Component } from 'react';
-import sampleStudents from './data/sampleStudents';
-import sampleCourses from './data/sampleCourses';
+
+import CourseList from './CourseList'
+import StudentsList from './StudentsList'
+
+import { sampleStudents } from './data/sampleStudents';
+import { sampleCourses } from './data/sampleCourses';
 
 export default class componentName extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      courses: {},
+      courses: [],
+      students: []
     }
   }
-  loadAllCourses = () => {
-    this.setState({ courses: sampleCourses })
+  viewCourses = () => {
+    this.setState({ courses: sampleCourses, students: [] })
+  }
+  viewStudents = () => {
+    this.setState({ courses: [], students: sampleStudents })
   }
 
   render() {
     return (
       <div>
-        <p>{this.state.courses.toString()}</p>
-        <button onClick={this.loadAllCourses} />
+        <button onClick={this.viewCourses}>View All Courses</button>
+        <button onClick={this.viewStudents}>View All Students</button>
+        <StudentsList students={this.state.students}></StudentsList>
+        <CourseList courses={this.state.courses}></CourseList>
       </div>
     )
   }

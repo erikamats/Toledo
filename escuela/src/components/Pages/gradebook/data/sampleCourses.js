@@ -1,4 +1,4 @@
-exports.sampleCourses = [
+export const sampleCourses = [
   {
     _id: '58c065dbbbb1a51e0d43a04f',
     courseName: 'Catapult Construction',
