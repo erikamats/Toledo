@@ -9,15 +9,6 @@ import {
   POST_COURSE_SUCCESS
 } from './types';
 
-export const fetchUsers = () => async dispatch => {
-  const res = await axios.get('/students');
-
-  dispatch({
-    type: FETCH_USERS,
-    payload: res,
-  });
-};
-
 export const postUser = userData => async dispatch => {
   const res = await axios.post('/register-student', userData);
 
