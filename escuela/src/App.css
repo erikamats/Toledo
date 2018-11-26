@@ -4,7 +4,6 @@
     width: 50%;
     height: 400px;
     background: url("./images/crayons.png") no-repeat;
-    border: solid black 2px
 
 }
 .transparent-wrapper{
@@ -24,10 +23,12 @@
 }
 
 .transparent-wrapper.one{
-    margin-left: 30%
+    margin-left: 34%
 }
 
-
+.transparent-wrapper.two h3{
+    color:yellow;
+}
 .transparent-wrapper h3{
     color:red;
 }
@@ -39,5 +40,4 @@
     width: 50%;
     height: 400px;
     background: url("./images/color-pencils.png") no-repeat;
-    border: solid black 2px
 }

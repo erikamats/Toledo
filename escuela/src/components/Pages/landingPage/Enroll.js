@@ -16,8 +16,8 @@ class Enroll extends Component{
                     </Col>
                     <Col className="other-box">
                         <div className="transparent-wrapper two">
-                            <h3>CALL TO ACTION</h3>
-                            <p>What Else can be important?</p>
+                            <h3>ENROLL NOW</h3>
+                            <p>Next session begins January 2019</p>
                             <NavLink href="#"><Button color="danger">Button</Button></NavLink>
                         </div>
                     </Col>
