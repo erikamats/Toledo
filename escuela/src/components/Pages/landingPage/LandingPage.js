@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import LinkButton from "../../common/linkButton";
 import SliderForm from "./SliderForm";
+import EnrollBox from './Enroll';
 
 class LandingPage extends Component {
   // will add form to update sliders
@@ -14,7 +15,7 @@ class LandingPage extends Component {
           id="carouselExampleIndicators"
           className="carousel slide mx-auto "
           data-ride="carousel"
-          data-interval="3000"
+          data-interval="90000000"
           style={{ height: "70vh" }}
         >
           <ol className="carousel-indicators">
@@ -103,7 +104,8 @@ class LandingPage extends Component {
             Contact Us
           </a>
         </nav>
-        <SliderForm />
+        <EnrollBox />
+        {/* <SliderForm /> */}
       </div>
     );
   }

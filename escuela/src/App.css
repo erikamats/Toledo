@@ -1,0 +1,43 @@
+
+/*//////////////////LANDING PAGE ENROLL SECTION///////////*/
+.enroll-box{
+    width: 50%;
+    height: 400px;
+    background: url("./images/crayons.png") no-repeat;
+    border: solid black 2px
+
+}
+.transparent-wrapper{
+    width:65%;
+    height: 40%;
+    background: rgba(12, 12, 228, 0.482);
+    border-radius: 10px;
+    margin-top: 60px;
+    text-align: center
+}
+
+.transparent-wrapper.one {
+    padding: 15px 0px 15px 200px 
+}
+.transparent-wrapper.two {
+    padding: 15px 200px 15px 0px 
+}
+
+.transparent-wrapper.one{
+    margin-left: 30%
+}
+
+
+.transparent-wrapper h3{
+    color:red;
+}
+.transparent-wrapper p{
+    color: white
+}
+
+.other-box{
+    width: 50%;
+    height: 400px;
+    background: url("./images/color-pencils.png") no-repeat;
+    border: solid black 2px
+}
