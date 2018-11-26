@@ -89,7 +89,7 @@ class LandingPage extends Component {
             <span className="sr-only">Next</span>
           </a>
         </div>
-        <nav className="nav nav-pills justify-content-centepr bg-light">
+        <nav className="nav nav-pills justify-content-center bg-light">
           <a className="nav-item nav-link active" href="#">
             About
           </a>
