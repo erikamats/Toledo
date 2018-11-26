@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const app = require('./app');
 
 // import environmental variables from our variables.env file
-require('dotenv').config({ path: 'variables.env' });
+// require('dotenv').config({ path: 'variables.env' });
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student', { useNewUrlParser: true });
