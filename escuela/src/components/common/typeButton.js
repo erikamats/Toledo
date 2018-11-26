@@ -5,7 +5,7 @@ export const TypeButton = ({ text, onClick, type }) => {
     <button 
     type={type} 
     onClick={onClick} 
-    className="btn bg-warning" >
+    className="btn bg-secondary" >
     {text} 
     </button>
   );

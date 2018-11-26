@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 export default () => {
   return (
     <nav className="navbar navbar-expand-lg  navbar-light text-white " style={{backgroundColor:"#b5d4fd"}}>
-      <a class="navbar-brand text-white" href="/" >Colegio Bilingüe Toledo</a>
+      <a className="navbar-brand text-white" href="/" >Colegio Bilingüe Toledo</a>
       <button
         className="navbar-toggler"
         type="button"

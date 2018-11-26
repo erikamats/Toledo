@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import LinkButton from "../../common/linkButton";
-import SliderForm from "./SliderForm"
+import SliderForm from "./SliderForm";
 
 class LandingPage extends Component {
-    
-    // will add form to update sliders
-    // will later map through each and prepend newest articles
+  // will add form to update sliders
+  // will later map through each and prepend newest articles
   render() {
     return (
       <div>
-        <h1> This will be our Landing</h1>
+        <h1 className="col-12 text-center"> This will be our Landing</h1>
 
         <div
           id="carouselExampleIndicators"
@@ -29,19 +28,15 @@ class LandingPage extends Component {
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-
               <img
                 className="d-block w-100"
-                src="https://images.unsplash.com/photo-1498250914266-015d559b73af?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76f6c15c1393b4013ad9ec91ec8c34a1&auto=format&fit=crop&w=1650&q=80"
+                src="https://images.unsplash.com/photo-1516383607781-913a19294fd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb89d6cf255ed4d30f539a2546a8967a&auto=format&fit=crop&w=800&q=60"
                 alt="First slide"
                 style={{ height: "70vh" }}
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h1 className="text-dark">View Calendar</h1>
-             <LinkButton
-                 text="View Calendar"
-                 href="/calendar"
-             />
+                <LinkButton text="View Calendar" href="/calendar" />
               </div>
             </div>
             <div className="carousel-item">
@@ -51,9 +46,12 @@ class LandingPage extends Component {
                 alt="Second slide"
                 style={{ height: "70vh" }}
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h1 className="text-dark">Caption</h1>
-                <button className=" btn text-muted bg-warning"> Button to article</button>
+                <button className=" btn text-muted bg-warning">
+                  {" "}
+                  Button to article
+                </button>
               </div>
             </div>
             <div className="carousel-item">
@@ -63,12 +61,9 @@ class LandingPage extends Component {
                 alt="Third slide"
                 style={{ height: "70vh" }}
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h1 className="text-dark">Caption2</h1>
-             <LinkButton
-                 text="Another"
-                 href="#"
-             />
+                <LinkButton text="Another" href="#" />
               </div>
             </div>
           </div>
@@ -91,9 +86,24 @@ class LandingPage extends Component {
             <span className="sr-only">Next</span>
           </a>
         </div>
-     
-     <SliderForm/>
-     
+        <nav className="nav nav-pills justify-content-center bg-light">
+          <a className="nav-item nav-link active" href="#">
+            About
+          </a>
+          <a className="nav-item nav-link" href="#">
+            Academics
+          </a>
+          <a className="nav-item nav-link" href="#">
+            Pricing
+          </a>
+          <a className="nav-item nav-link" href="#">
+            Register
+          </a>
+          <a className="nav-item nav-link" href="#">
+            Contact Us
+          </a>
+        </nav>
+        <SliderForm />
       </div>
     );
   }
