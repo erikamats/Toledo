@@ -38,6 +38,7 @@ class LandingPage extends Component {
               />
               <div className="carousel-caption d-none d-md-block">
                 <h1 className="text-dark">View Calendar</h1>
+                <p>Stay up to date on events you'd like to follow. Lorem ipsum dolor amet hammock irure thundercats salvia knausgaard cloud bread intelligentsia, aesthetic prism. Etsy dolore brooklyn pickled semiotics.</p>
                 <LinkButton text="View Calendar" href="/calendar" />
               </div>
             </div>
@@ -88,7 +89,7 @@ class LandingPage extends Component {
             <span className="sr-only">Next</span>
           </a>
         </div>
-        <nav className="nav nav-pills justify-content-center bg-light">
+        <nav className="nav nav-pills justify-content-centepr bg-light">
           <a className="nav-item nav-link active" href="#">
             About
           </a>

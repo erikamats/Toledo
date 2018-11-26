@@ -1,49 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Lato');
+:root{
+    --headingFont:'Arvo', serif;
+    --paragraphFont:'Lato', sans-serif;
+}
+
 
 /*//////////////////LANDING PAGE ENROLL SECTION///////////*/
-.enroll-box{
-    width: 50%;
-    height: 400px;
-    background: url("./images/crayons.png") no-repeat;
-
+.enroll-box {
+  width: 50%;
+  height: 400px;
+  background: url("./images/crayons.png") no-repeat;
 }
-.transparent-wrapper{
-    width:65%;
-    height: 45%;
-    background: rgba(12, 12, 228, 0.482);
-    border-radius: 10px;
-    margin-top: 60px;
-    text-align: center
+.transparent-wrapper {
+  width: 65%;
+  height: 45%;
+  background: rgba(12, 12, 228, 0.482);
+  border-radius: 10px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .transparent-wrapper.one {
-    padding: 15px 0px 15px 200px ;
-    margin-left: 35%
+  padding: 15px 0px 15px 200px;
+  margin-left: 35%;
 }
 .transparent-wrapper.two {
-    padding: 15px 200px 15px 0px ;
+  padding: 15px 200px 15px 0px;
 }
 
-.transparent-wrapper.two h3{
-    color:yellow;
+.transparent-wrapper.two h3 {
+  color: yellow;
 }
-.transparent-wrapper h3{
-    color:red;
-  
+.transparent-wrapper h3 {
+  color: red;
 }
-.transparent-wrapper p{
-    color: white;
-   
-
+.transparent-wrapper p {
+  color: white;
 }
 
-.other-box{
-    width: 50%;
-    height: 400px;
-    background: url("./images/color-pencils.png") no-repeat;
+.other-box {
+  width: 50%;
+  height: 400px;
+  background: url("./images/color-pencils.png") no-repeat;
+}
+/* Landing>About Us */
+
+.aboutUs-box {
+  text-align: center; 
+  padding:25px 0px 0px;
+  margin: 25px 0 40px;
 }
 
-.aboutUs-box{
-    height: 80vh;
-    width: 100vw;
-    background-color: grey;
+
+.aboutUs-box > h2{
+    font-size: 2em;
+    font-family: var(--headingFont);
+    /* padding-top:25px */
 }
+.aboutUs-box > p{
+    font-family: var(--paragraphFont);
+    font-size: 1.1em;
+    color:grey;
+    padding: 30px 20vw;
+}
+
+.buttonText{
+    font-family: var(--headingFont);
+}
+.aboutImg{
+    padding: 0 0 45px;
+}
+
