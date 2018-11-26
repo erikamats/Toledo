@@ -30,6 +30,11 @@ export default () => {
               Register
 						</NavLink>
           </li>
+          <li className="nav-item ">
+            <NavLink to="/dashboard" className="nav-link">
+             Dashboard
+						</NavLink>
+          </li>
           <li className="nav-item"  >
             <NavLink to="/gradebook" className="nav-link" >
               Gradebook
@@ -40,9 +45,7 @@ export default () => {
             <NavLink to="/users" className="nav-link">
               DB Users
 						</NavLink>
-          </li>
-
-             
+          </li> 
              <li className="nav-item ">
             <NavLink to="/addclass" className="nav-link">
               Add Class

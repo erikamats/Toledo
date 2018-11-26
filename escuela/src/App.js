@@ -8,8 +8,9 @@ import NavigationBar from './components/nav/NavigationBar';
 import LandingPage from './components/pages/landingPage/LandingPage';
 import ErrorPage from './components/pages/error/ErrorPage';
 import Gradebook from './components/pages/gradebook/Gradebook';
+import Dashboard from './components/pages/teacherDashboard/dashboard';
 import SignupPage from './components/pages/signup/SignupPage';
-import AddClassPage from './components/nav/nav_msg/AlertMessage';
+// import AddClassPage from './components/nav/nav_msg/AlertMessage';
 import UsersList from './components/pages/users/UsersList';
 import MessagesList from './components/nav/nav_msg/MessagesList';
 
@@ -37,7 +38,7 @@ class App extends Component {
               <Route exact path="/gradebook" component={Gradebook} />
               <Route exact path="/users" component={UsersList} />
               <Route exact path="/signup" component={SignupPage} />
-              <Route exact path="/dashboard" component={SignupPage} />
+              <Route exact path="/dashboard" component={Dashboard} />
               <Route component={ErrorPage} />
             </Switch>
           </div>
