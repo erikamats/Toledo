@@ -8,7 +8,7 @@
 }
 .transparent-wrapper{
     width:65%;
-    height: 40%;
+    height: 45%;
     background: rgba(12, 12, 228, 0.482);
     border-radius: 10px;
     margin-top: 60px;
@@ -16,14 +16,11 @@
 }
 
 .transparent-wrapper.one {
-    padding: 15px 0px 15px 200px 
+    padding: 15px 0px 15px 200px ;
+    margin-left: 35%
 }
 .transparent-wrapper.two {
-    padding: 15px 200px 15px 0px 
-}
-
-.transparent-wrapper.one{
-    margin-left: 34%
+    padding: 15px 200px 15px 0px ;
 }
 
 .transparent-wrapper.two h3{
@@ -31,13 +28,22 @@
 }
 .transparent-wrapper h3{
     color:red;
+  
 }
 .transparent-wrapper p{
-    color: white
+    color: white;
+   
+
 }
 
 .other-box{
     width: 50%;
     height: 400px;
     background: url("./images/color-pencils.png") no-repeat;
+}
+
+.aboutUs-box{
+    height: 80vh;
+    width: 100vw;
+    background-color: grey;
 }
