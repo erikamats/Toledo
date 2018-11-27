@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Lato');
-:root{
-    --headingFont:'Arvo', serif;
-    --paragraphFont:'Lato', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Arvo|Lato");
+:root {
+  --headingFont: "Arvo", serif;
+  --paragraphFont: "Lato", sans-serif;
 }
-
 
 /*//////////////////LANDING PAGE ENROLL SECTION///////////*/
 .enroll-box {
@@ -45,41 +44,43 @@
 }
 /* Landing>About Us */
 
-.aboutUs-box{
-  text-align: center; 
-  padding:10vh 0px 10vh;
+.aboutUs-box {
+  text-align: center;
+  padding: 10vh 0px 10vh;
   /* margin: 4vh 0 2vh; */
 }
 
-
-.aboutUs-box > h2{
-    font-size: 2em;
-    font-family: var(--headingFont);
-    /* padding-top:25px */
+.aboutUs-box > h2 {
+  font-size: 2em;
+  font-family: var(--headingFont);
+  /* padding-top:25px */
 }
-.aboutUs-box > p{
-   
-    padding: 30px 20vw;
-}
-
-.buttonText{
-    font-family: var(--headingFont);
-}
-.aboutImg{
-    padding: 0 0 4vh;
+.aboutUs-box > p {
+  padding: 30px 20vw;
+  color: grey;
 }
 
-.elem-high{
-    text-align: center; 
-    padding: 10vh 0 12vh;
+.buttonText {
+  font-family: var(--headingFont);
+}
+.aboutImg {
+  padding: 0 0 4vh;
+}
 
-  }
-  h3 {
-      font-family: var(--headingFont);
-  }
+.elem-high {
+  text-align: center;
+  padding: 20vh 0 10vh;
+}
+h3 {
+  font-family: var(--headingFont);
+}
 
- p{
-    font-family: var(--paragraphFont);
-    font-size: 1.1em;
-    color:grey;
-  }
+p {
+  font-family: var(--paragraphFont);
+  font-size: 1.1em;
+
+}
+.events-sec {
+  padding: 10vh 0;
+}
+

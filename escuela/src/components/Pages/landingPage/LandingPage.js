@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import LinkButton from "../../common/linkButton";
 // import SliderForm from "./SliderForm";
 import EnrollBox from './Enroll';
-import AboutUs from "./AboutUs"
-import ElemHigh from "./ElemHigh"
+import AboutUs from "./AboutUs";
+import ElemHigh from "./ElemHigh";
+import Events from "./Events";
+import "../../footer/footerCSS.css"
 
 class LandingPage extends Component {
   // will add form to update sliders
@@ -111,7 +113,8 @@ class LandingPage extends Component {
         {/* <SliderForm /> */}
         <AboutUs/>
         <ElemHigh/>
-        
+
+        <Events/>
       </div>
     );
   }

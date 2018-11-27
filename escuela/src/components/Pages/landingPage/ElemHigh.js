@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "reactstrap";
+import { Row} from "reactstrap";
 import CardImg from "./CardImg";
 import LandingCard from "./LandingCard";
 export const ElemHigh = () => {
@@ -19,7 +19,7 @@ export const ElemHigh = () => {
       <CardImg
         src="https://images.unsplash.com/photo-1508824623134-da66caa91eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ab857629734177ff166751767bac4b49&auto=format&fit=crop&w=800&q=60"
         alt="student1"
-        className="w-25 h-50  mr-5"
+        className="w-25 h-50 mr-5"
       />
 
       <CardImg
