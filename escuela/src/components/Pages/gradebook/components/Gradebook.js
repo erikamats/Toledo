@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import CourseList from './CourseList'
 import StudentsList from './StudentsList'
 
-import { sampleStudents } from './data/sampleStudents';
-import { sampleCourses } from './data/sampleCourses';
+import { sampleStudents } from '../data/sampleStudents';
+import { sampleCourses } from '../data/sampleCourses';
 
 export default class componentName extends Component {
   constructor(props) {

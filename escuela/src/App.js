@@ -8,7 +8,7 @@ import './App.css';
 import NavigationBar from './components/nav/NavigationBar';
 import LandingPage from './components/pages/landingPage/LandingPage';
 import ErrorPage from './components/pages/error/ErrorPage';
-import Gradebook from './components/pages/gradebook/Gradebook';
+import Gradebook from './components/pages/gradebook/components/Gradebook';
 import SignupPage from './components/pages/signup/SignupPage';
 import AddClassPage from './components/pages/addClass/AddClassPage';
 import UsersList from './components/pages/users/UsersList';
