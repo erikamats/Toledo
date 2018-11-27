@@ -1,30 +1,32 @@
-import React, { Component } from 'react';
-import {Container, Row, Col, NavLink, Button } from 'reactstrap';
+import React from "react";
+import { Container, Row } from "reactstrap";
+import LandingCard from "./LandingCard";
 
+const Enroll = () => {
+  return (
+    <Container fluid>
+      <Row>
+        <LandingCard
+          colClassName="enroll-box"
+          divClassName="transparent-wrapper one"
+          headerText="CALL TO ACTION"
+          cardParagraph="What else can be important. Link should go to /Register"
+          href="/register"
+          buttonColor="danger"
+        />
 
-class Enroll extends Component{
-    render(){
-        return(
-            <Container fluid>
-                <Row>
-                    <Col className="enroll-box">
-                        <div className="transparent-wrapper one">
-                            <h3>CALL TO ACTION</h3>
-                            <p>What Else can be important?</p>
-                            <NavLink href="#"><Button color="danger">Button</Button></NavLink>
-                        </div>
-                    </Col>
-                    <Col className="other-box">
-                        <div className="transparent-wrapper two">
-                            <h3>ENROLL NOW</h3>
-                            <p>Next session begins January 2019</p>
-                            <NavLink href="#"><Button color="danger">Button</Button></NavLink>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        )
-    }
-}
+        <LandingCard
+          colClassName="other-box"
+          divClassName="transparent-wrapper two"
+          headerText="ENROLL NOW"
+          cardParagraph="Next session begings Jan 2019"
+          href="/register"
+          buttonColor="danger"
+        />
+
+      </Row>
+    </Container>
+  );
+};
 
 export default Enroll;

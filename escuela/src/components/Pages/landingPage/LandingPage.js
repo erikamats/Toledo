@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import LinkButton from "../../common/linkButton";
-import SliderForm from "./SliderForm";
+// import SliderForm from "./SliderForm";
 import EnrollBox from './Enroll';
+import AboutUs from "./AboutUs"
 
 class LandingPage extends Component {
   // will add form to update sliders
@@ -9,7 +10,7 @@ class LandingPage extends Component {
   render() {
     return (
       <div>
-        <h1 className="col-12 text-center"> This will be our Landing</h1>
+        <h1 className="col-12 text-center"> Colegio Bilingüe Toledo</h1>
 
         <div
           id="carouselExampleIndicators"
@@ -37,6 +38,7 @@ class LandingPage extends Component {
               />
               <div className="carousel-caption d-none d-md-block">
                 <h1 className="text-dark">View Calendar</h1>
+                <p>Stay up to date on events you'd like to follow. Lorem ipsum dolor amet hammock irure thundercats salvia knausgaard cloud bread intelligentsia, aesthetic prism. Etsy dolore brooklyn pickled semiotics.</p>
                 <LinkButton text="View Calendar" href="/calendar" />
               </div>
             </div>
@@ -106,6 +108,8 @@ class LandingPage extends Component {
         </nav>
         <EnrollBox />
         {/* <SliderForm /> */}
+        <AboutUs/>
+        
       </div>
     );
   }
