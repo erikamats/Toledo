@@ -28,8 +28,8 @@ const store = createStore(
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Provider store={store}>
+      <Provider store={store}>
+        <Router>
           <div className="App">
             <NavigationBar />
             <MessagesList />
@@ -42,8 +42,8 @@ class App extends Component {
               <Route component={ErrorPage} />
             </Switch>
           </div>
-        </Provider>
-      </Router>
+        </Router>
+      </Provider>
     );
   }
 }
