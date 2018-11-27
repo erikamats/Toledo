@@ -2,8 +2,16 @@
 :root {
   --headingFont: "Arvo", serif;
   --paragraphFont: "Lato", sans-serif;
+  --navy: #08202e
 }
 
+
+/* //NavBar */
+.nav > .nav-item > .nav-link {
+  color:  #ffc107  ;
+  font-weight: 500;
+  font-family: var(--headingFont);
+}
 /*//////////////////LANDING PAGE ENROLL SECTION///////////*/
 .enroll-box {
   width: 50%;

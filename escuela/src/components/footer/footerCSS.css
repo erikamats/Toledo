@@ -1,28 +1,3 @@
-.form-control {
-  border-radius: 5px;
-  font-size: 13px;
-  font-weight: 700;
-  width: 100%;
-  height: 64px;
-  /* padding: 16px 20px; */
-
-  border: 1px solid #d6dadc;
-  background-color: #fff;
-  text-transform: capitalize;
-  letter-spacing: 0px;
-  margin-bottom: 30px;
-  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-  -webkit-appearance: none;
-  color: #011c28;
-}
-.form-control:focus {
-  color: #011c28;
-  outline: 0;
-  box-shadow: 0 0 0 0rem rgb(255, 255, 255);
-  border-color: #c9cdd0;
-  background-color: #f0f4f6;
-}
 
 .footer {
   background-color: #08202e;
@@ -65,18 +40,35 @@
 }
 .footer-widget ul li a {
   text-transform: capitalize;
-  /* font-size: 17px;
-    color: #636e74; */
   display: block;
-  font-weight: 600;
+  font-weight: 500;
 }
 .footer-widget ul li a:hover {
   color: goldenrod;
 }
+
+.form-control {
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  width: 100%;
+  height: 64px;
+  margin-bottom: 30px;
+}
+.form-control:focus {
+  color: #011c28;
+  outline: 1;
+  box-shadow: 0 0 0 0rem rgb(255, 255, 255);
+  border-color: #c9cdd0;
+   background-color: #f0f4f6; 
+}
+
 .newsletter-form {
   padding-top: 15px;
   font-family: var(--paragraphFont);
 }
+
+
 .newsletter-form .form-control {
   background-color: #1e2e38;
   border-color: #1e2e38;
@@ -92,15 +84,16 @@
 }
 
 .tiny-footer {
-  font-size: 14px;
+  font-size: 12px;
   padding: 20px 0px 5px;
   font-weight: 600;
   background-color: transparent;
   border-top: 1px solid #152e3d;
   color: white;
   line-height: 1;
+  font-family: var(--headingFont) !
 }
 
-a {
+.footer a {
   color: white;
 }

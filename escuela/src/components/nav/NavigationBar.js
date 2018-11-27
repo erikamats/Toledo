@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import '../../App.css'
 
 export default () => {
   return (
-    <nav className="navbar navbar-expand-lg  navbar-light text-white " style={{backgroundColor:"#b5d4fd"}}>
-      <a className="navbar-brand text-white" href="/" >Colegio Bilingüe Toledo</a>
+
+    <nav className="navbar navbar-expand-lg  navbar-light text-white " style={{backgroundColor:"var(--navy)"}} >
+           
+      <a className="navbar-brand" href="/" ><img src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png" alt="Toledo" className="w-25" /></a>
       <button
         className="navbar-toggler"
         type="button"
@@ -17,9 +19,9 @@ export default () => {
       >
         <span className="navbar-toggler-icon" />
       </button>
-      <div className="collapse navbar-collapse justify-content-end " id="navbarNav" >
+      <div className="collapse navbar-collapse justify-content-end  " id="navbarNav" >
       
-        <ul className="nav nav-justified-right">
+        <ul className="nav nav-justified-right text-warning">
           <li className="nav-item"  >
             <NavLink to="/" className="nav-link" >
               Home
@@ -52,5 +54,6 @@ export default () => {
         </ul>
       </div>
     </nav>
+
   );
 };

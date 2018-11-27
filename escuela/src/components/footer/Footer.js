@@ -8,7 +8,7 @@ let now = moment().format("YYYY");
 
 export const Footer = () => {
   return (
-    <Container fluid>
+    // <Container fluid>
       <div className="footer pt-5 justify-content-center">
         <Row>
           <Col className="col-12">
@@ -88,7 +88,7 @@ export const Footer = () => {
           </Col>
         </Row>
       </div>
-    </Container>
+    // </Container>
   );
 };
 
