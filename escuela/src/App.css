@@ -45,10 +45,10 @@
 }
 /* Landing>About Us */
 
-.aboutUs-box {
+.aboutUs-box{
   text-align: center; 
-  padding:25px 0px 0px;
-  margin: 25px 0 40px;
+  padding:10vh 0px 10vh;
+  /* margin: 4vh 0 2vh; */
 }
 
 
@@ -58,9 +58,7 @@
     /* padding-top:25px */
 }
 .aboutUs-box > p{
-    font-family: var(--paragraphFont);
-    font-size: 1.1em;
-    color:grey;
+   
     padding: 30px 20vw;
 }
 
@@ -68,8 +66,20 @@
     font-family: var(--headingFont);
 }
 .aboutImg{
-    padding: 0 0 45px;
-    margin: 0 auto;
-    justify-content: center;
+    padding: 0 0 4vh;
 }
 
+.elem-high{
+    text-align: center; 
+    padding: 10vh 0 12vh;
+
+  }
+  h3 {
+      font-family: var(--headingFont);
+  }
+
+ p{
+    font-family: var(--paragraphFont);
+    font-size: 1.1em;
+    color:grey;
+  }
