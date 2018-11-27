@@ -1,7 +1,7 @@
 import React from "react";
 
-export const cardImg = (src, imgAlt, imgClassname) => {
-  return <img src={src} alt="imgAlt" className={imgClassname} />;
+export const CardImg = ({src, alt, className}) => {
+  return <img src={src} alt={alt} className={className} />
 };
 
-export default cardImg;
+export default CardImg;

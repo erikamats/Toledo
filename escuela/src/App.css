@@ -69,5 +69,7 @@
 }
 .aboutImg{
     padding: 0 0 45px;
+    margin: 0 auto;
+    justify-content: center;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row} from 'reactstrap';
-import LargeLandingCard from './LargeLandingCard'
-
+import LargeLandingCard from './LargeLandingCard';
+import CardImg from "./CardImg";
 
 export const AboutUs = () => {
     return(
@@ -19,7 +19,10 @@ export const AboutUs = () => {
 
                 />
             </Row>
-            <img src={"https://images.unsplash.com/photo-1524646514133-d392bcf4e8b9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ba364557b0c2c0a865108d2bd255565&auto=format&fit=crop&w=800&q=60"} alt="aboutUs" className="mx-auto d-block aboutImg"/>
+            <CardImg
+            src="https://images.unsplash.com/photo-1524646514133-d392bcf4e8b9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ba364557b0c2c0a865108d2bd255565&auto=format&fit=crop&w=800&q=60" 
+            alt="aboutUs"
+            className="aboutImg mx-auto d-block"/>
         </Container>
     );
 }
