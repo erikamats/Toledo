@@ -5,7 +5,8 @@ const app = require('./app');
 require('dotenv').config({ path: 'variables.env' });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/Student', { useNewUrlParser: true });
+mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/27017/Student', { useNewUrlParser: true });
 mongoose.connection.once('open', () => console.log('Connection to MongoDB database was successful'));
 
 // import all of our models
