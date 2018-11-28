@@ -5,24 +5,14 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import './App.css';
 
-<<<<<<< HEAD
-import NavigationBar from './components/nav_msg/NavigationBar';
-import ErrorPage from './components/Pages/error/ErrorPage';
-import Gradebook from './components/Pages/gradebook/Gradebook';
-import SignupPage from './components/Pages/signup/SignupPage';
-import AddClassPage from './components/Pages/addClass/AddClassPage';
-import UsersList from './components/Pages/users/UsersList';
-import MessagesList from './components/nav_msg/MessagesList';
-=======
 import NavigationBar from './components/nav/NavigationBar';
 import LandingPage from './components/Pages/landingPage/LandingPage';
 import ErrorPage from './components/Pages/error/ErrorPage';
 import Gradebook from './components/Pages/gradebook/Gradebook';
 import SignupPage from './components/Pages/signup/SignupPage';
-import AddClassPage from './components/nav/nav_msg/AlertMessage';
+// import AddClassPage from './components/nav/nav_msg/AlertMessage';
 import UsersList from './components/Pages/users/UsersList';
 import MessagesList from './components/nav/nav_msg/MessagesList';
->>>>>>> 2034892f108d3768730427433bd8b0a3488b7b8e
 
 import reducers from './reducers';
 

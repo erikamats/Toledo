@@ -1,9 +1,4 @@
 const gradebookFunctions = require('./gradebookFunctions');
-
-// it('expects 1 to be 2, destined for failure', () => {
-//   expect(1).toBe(2);
-// })
-
 import { createGradebook, addStudent } from './gradebookFunctions';
 describe('the gradebook', () => {
 
@@ -41,7 +36,4 @@ describe('the gradebook', () => {
   })
 
 })
-
-
-
 
