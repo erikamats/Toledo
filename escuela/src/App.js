@@ -6,12 +6,12 @@ import thunk from 'redux-thunk';
 import './App.css';
 
 import NavigationBar from './components/nav/NavigationBar';
-import LandingPage from './components/Pages/landingPage/LandingPage';
-import ErrorPage from './components/Pages/error/ErrorPage';
-import Gradebook from './components/Pages/gradebook/Gradebook';
-import SignupPage from './components/Pages/signup/SignupPage';
+import LandingPage from './components/pages/landingPage/LandingPage';
+import ErrorPage from './components/pages/error/ErrorPage';
+import Gradebook from './components/pages/gradebook/Gradebook';
+import SignupPage from './components/pages/signup/SignupPage';
 // import AddClassPage from './components/nav/nav_msg/AlertMessage';
-import UsersList from './components/Pages/users/UsersList';
+import UsersList from './components/pages/users/UsersList';
 import MessagesList from './components/nav/nav_msg/MessagesList';
 
 import reducers from './reducers';
