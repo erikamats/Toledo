@@ -1,6 +1,6 @@
 import React from "react";
 import { Col } from "reactstrap";
-// import FooterListItem from "./footerListitem";
+import FooterListItem from "./footerListitem";
 
 export const FooterWidget =  ({ href, listText,footerTitle}) => {
   return (
@@ -8,7 +8,11 @@ export const FooterWidget =  ({ href, listText,footerTitle}) => {
       <div className="footer-widget d-block text-warning ">
         <div className="footer-title">{footerTitle}</div>
         <ul className="list-unstyled">
-        {/* <FooterListItem href={href} listText={listText} />*/}
+
+
+        {/* <FooterListItem href={href} listText={listText} /> */}
+
+
         </ul> 
       </div>
     </Col>

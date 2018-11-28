@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Container } from "reactstrap";
-import CardImg from "./CardImg";
+import CardImg from "./cardImg";
 import LandingCard from "./LandingCard";
 
 export const Events = () => {
