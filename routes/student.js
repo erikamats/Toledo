@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('../models/student');
 const commonValidations = require('../shared/validations/signup');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 const isEmpty = require('lodash/isEmpty');
 
 const Student = mongoose.model('Student');
@@ -29,12 +29,12 @@ module.exports = app => {
             .then(({ errors, isValid }) =>{
                 if(isValid){
                     const { fullName, email, username, password } = req.body;
-                    const password_digest = bcrypt.hashSync(password,10)
+                    // const password_digest = bcrypt.hashSync(password,10)
                     var newStudent = new Student({
                         fullName: fullName,
                         email: email,
                         username: username,
-                        password:password_digest,
+                        // password:password_digest,
                     })
         
                     newStudent.save()
