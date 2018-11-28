@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
 import LargeLandingCard from "./LargeLandingCard";
-import CardImg from "./CardImg";
+import CardImg from "./cardImg";
 
 export const AboutUs = () => {
   return (
