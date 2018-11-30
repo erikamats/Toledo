@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('../models/course');
 const isEmpty = require('lodash/isEmpty');
 
-const Course = mongoose.model('Course');
+const sampleCourse = mongoose.model('Corse');
 
 
 module.exports = app => {
@@ -48,7 +48,7 @@ module.exports = app => {
 	});
 
 	app.get('/course', (req, res) => {
-		Course.find({}, function(err, data) {
+		sampleCourse.find({}, function(err, data) {
 			console.log('>>>> ' + data);
 			res.send(data);
 		});

@@ -10,5 +10,5 @@ export default combineReducers({
     posts: userPostReducer,
     message: flashMessages,
     classes:classesReducer,
-    addCourse: addCourseReducer
+    courses: addCourseReducer
 })

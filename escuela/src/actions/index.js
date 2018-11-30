@@ -8,8 +8,12 @@ import {
   POST_COURSE_FAILED,
   POST_COURSE_SUCCESS,
   POST_SLIDER,
-  FETCH_SLIDER
+  FETCH_SLIDER,
+  DELETE_STUDENT,
+  DELETE_COURSE
 } from './types';
+
+
 
 export const fetchUsers = () => async dispatch => {
   const res = await axios.get('/students');
@@ -19,6 +23,16 @@ export const fetchUsers = () => async dispatch => {
     payload: res,
   });
 };
+
+export const deleteStudent = () => async dispatch => {
+  const res = await axios.delete('/students');
+
+  dispatch({
+    type: DELETE_STUDENT,
+    payload: res,
+  });
+};
+
 
 export const postUser = userData => async dispatch => {
   const res = await axios.post('/register-student', userData);
@@ -45,7 +59,7 @@ export const deleteMessage = id => {
 
 /* this axios call grabs the data from the backend */
 export const fetchClasses = () => async dispatch => {
-  const res = await axios.get('/course');
+  const res = await axios.get('/students');
 
   dispatch({
     type: FETCH_CLASSES,
@@ -53,18 +67,41 @@ export const fetchClasses = () => async dispatch => {
   })
 }
 
-/* this axios call puts the class data into the database */
+/* this axios call puts the class data into the database  And Creates action calls*/
+
+// export const addCourseSuccess = data => ({
+//   type: POST_COURSE_SUCCESS, data,
+// })
+
+// export const addCourseFailed = (err) => ({
+//   type: POST_COURSE_FAILED, err,
+// })
+
+// export const addCourse = (Data) => {
+//   return dispatch => {
+//     axios.get('/courses', Data)
+//       .then(res => dispatch(addCourseSuccess(res.data)))
+//       .catch(err => dispatch(addCourseFailed(err)))
+//   }
+// }
+
+/* this axios call alsow gets courses */
 
 export const addCourse = (Data) => async dispatch => {
-  axios.post('/course', Data)
+  axios.get('/courses', Data)
     .then((response) => {
-      dispatch(addCourseSucces(response))
+      dispatch(addCourseSuccess(response))
     })
     .catch(error => {
       dispatch(addCourseFailed(error.response.data))
     })
+  
+  axios.delete('/courses', Data)
+    .then((response) =>{
+      dispatch(deleteCourse(response))
+  })
 
-  const addCourseSucces = (res) => ({
+  const addCourseSuccess = (res) => ({
     type: POST_COURSE_SUCCESS,
     payload: res
   })
@@ -72,6 +109,11 @@ export const addCourse = (Data) => async dispatch => {
   const addCourseFailed = (err) => ({
     type: POST_COURSE_FAILED,
     payload: err
+  })
+
+  const deleteCourse = (del) => ({
+    type: DELETE_COURSE,
+    payload: del
   })
 }
 

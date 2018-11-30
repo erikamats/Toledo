@@ -7,3 +7,5 @@ export const POST_COURSE_SUCCESS = 'post_course_success';
 export const POST_COURSE_FAILED = 'post_course_failed';
 export const POST_SLIDER = 'post_slider';
 export const FETCH_SLIDER = 'fetch_slider'
+export const DELETE_STUDENT = 'delete_student'
+export const DELETE_COURSE = 'delete_course'
