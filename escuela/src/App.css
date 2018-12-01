@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo|Lato");
+:root {
+  --headingFont: "Arvo", serif;
+  --paragraphFont: "Lato", sans-serif;
+  --navy: #08202e
+}
+
+
+/* //NavBar */
+.nav > .nav-item > .nav-link {
+  color:  #ffc107  ;
+  font-weight: 500;
+  font-family: var(--headingFont);
+}
+/*//////////////////LANDING PAGE ENROLL SECTION///////////*/
+.enroll-box {
+  width: 50%;
+  height: 400px;
+  background: url("./images/crayons.png") no-repeat;
+}
+.transparent-wrapper {
+  width: 65%;
+  height: 45%;
+  background: rgba(12, 12, 228, 0.482);
+  border-radius: 10px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.transparent-wrapper.one {
+  padding: 15px 0px 15px 200px;
+  margin-left: 35%;
+}
+.transparent-wrapper.two {
+  padding: 15px 200px 15px 0px;
+}
+
+.transparent-wrapper.two h3 {
+  color: yellow;
+}
+.transparent-wrapper h3 {
+  color: red;
+}
+.transparent-wrapper p {
+  color: white;
+}
+
+.other-box {
+  width: 50%;
+  height: 400px;
+  background: url("./images/color-pencils.png") no-repeat;
+}
+/* Landing>About Us */
+
+.aboutUs-box {
+  text-align: center;
+  padding: 10vh 0px 10vh;
+  /* margin: 4vh 0 2vh; */
+}
+
+.aboutUs-box > h2 {
+  font-size: 2em;
+  font-family: var(--headingFont);
+  /* padding-top:25px */
+}
+.aboutUs-box > p {
+  padding: 30px 20vw;
+  color: grey;
+}
+
+.buttonText {
+  font-family: var(--headingFont);
+}
+.aboutImg {
+  padding: 0 0 4vh;
+}
+
+.elem-high {
+  text-align: center;
+  padding: 20vh 0 10vh;
+}
+h3 {
+  font-family: var(--headingFont);
+}
+
+p {
+  font-family: var(--paragraphFont);
+  font-size: 1.1em;
+
+}
+.events-sec {
+  padding: 10vh 0;
+}
+

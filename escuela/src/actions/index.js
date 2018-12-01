@@ -6,7 +6,9 @@ import {
   ADD_FLASH_MESSAGE,
   DELETE_MESSAGE,
   POST_COURSE_FAILED,
-  POST_COURSE_SUCCESS
+  POST_COURSE_SUCCESS,
+  POST_SLIDER,
+  FETCH_SLIDER
 } from './types';
 
 export const fetchUsers = () => async dispatch => {
@@ -72,3 +74,23 @@ export const addCourse = (Data) => async dispatch => {
     payload: err
   })
 }
+
+//  This axios call puts slider info into DB
+
+export const postSlider = sliderData => async dispatch => {
+  const res = await axios.post('/slider-post', sliderData);
+
+  dispatch({
+    type: POST_SLIDER,
+    payload: res,
+  });
+};
+
+export const fetchSlider = () => async dispatch => {
+  const res = await axios.get('/sliders');
+
+  dispatch({
+    type: FETCH_SLIDER,
+    payload: res,
+  });
+};
