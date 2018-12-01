@@ -4,10 +4,10 @@ import CourseList from './components/CourseList'
 import StudentsList from './components/StudentsList'
 import GradebookList from './components/GradebookList'
 
-import { sampleStudents } from './data/sampleStudents';
-import { sampleCourses } from './data/sampleCourses';
-import { sampleGradebooks } from './data/sampleGradebooks'
-import { sampleAssignments } from './data/sampleAssignments'
+import { sampleStudents } from '../../../data/sampleStudents';
+import { sampleCourses } from '../../../data/sampleCourses';
+import { sampleGradebooks } from '../../../data/sampleGradebooks'
+import { sampleAssignments } from '../../../data/sampleAssignments'
 
 export default class componentName extends Component {
   constructor(props) {
