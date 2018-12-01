@@ -1,6 +1,6 @@
 export const sampleStudents = [
   {
-    _id: '58c039938060197ca0b52d4d',
+    _id: 'student1',
     firstName: 'Erika',
     lastName: 'Matsumoto',
     gender: 'female',
@@ -8,7 +8,7 @@ export const sampleStudents = [
     currentGradeLevel: 11,
   },
   {
-    _id: '58c039ee8060197ca0b52d4e',
+    _id: 'student2',
     firstName: 'Fernando',
     lastName: 'Garcia',
     gender: 'male',
@@ -16,7 +16,7 @@ export const sampleStudents = [
     currentGradeLevel: 11,
   },
   {
-    _id: '58c03a428060197ca0b52d4f',
+    _id: 'student3',
     firstName: 'John',
     lastName: 'Moen',
     gender: 'male',
@@ -24,7 +24,7 @@ export const sampleStudents = [
     currentGradeLevel: 11,
   },
   {
-    _id: '58c03a958060197ca0b52d50',
+    _id: 'student4',
     firstName: 'Sean',
     lastName: 'Hagen-Daas',
     gender: 'male',
@@ -32,7 +32,7 @@ export const sampleStudents = [
     currentGradeLevel: 12,
   },
   {
-    _id: '58c03a958060197ca0b52d50',
+    _id: 'student5',
     firstName: 'Sue',
     lastName: 'Danglebean',
     gender: 'female',
@@ -40,7 +40,7 @@ export const sampleStudents = [
     currentGradeLevel: 12,
   },
   {
-    _id: '58c057838060197ca0b52d54',
+    _id: 'student6',
     firstName: 'Arrow',
     lastName: 'Root',
     gender: 'female',
