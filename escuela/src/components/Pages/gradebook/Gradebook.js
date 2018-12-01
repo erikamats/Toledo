@@ -7,9 +7,6 @@ import { sampleStudents } from "../../../data/sampleStudents";
 import { sampleCourses } from "../../../data/sampleCourses";
 import { sampleGradebooks } from "../../../data/sampleGradebooks";
 import { sampleAssignments } from "../../../data/sampleAssignments";
-import AssignmentForm from "./components/AssignmentForm"; 
-import { Row } from "reactstrap";
-
 
 export default class componentName extends Component {
   constructor(props) {
@@ -33,9 +30,6 @@ export default class componentName extends Component {
 // close componentDidMount
   }
 
-
-
-
   viewCourses = () => {};
   viewStudents = () => {
     this.setState({ allCourses: [], students: sampleStudents });
@@ -57,14 +51,7 @@ export default class componentName extends Component {
           <StudentsList students={this.state.students} />
           <CourseList courses={this.state.courses} />
         </div>
-        <Row>
-
-        <AssignmentForm/>
-       
-          <div className="col-6">
-            <h2> Assignment will appear heres</h2>
-          </div>
-        </Row>
+   
       </div>
     );
   }
