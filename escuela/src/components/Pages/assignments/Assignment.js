@@ -5,9 +5,13 @@ import AssignmentCard from "./AssignmentCard";
 import { Container, Row } from "reactstrap";
 
 export default class Assignment extends Component {
-  onSubmit (e){
+
+
+
+  handleSubmit (e){
     e.preventDefault();
-    console.log(e);
+    console.log(e.name);
+    console.log(e.value);
   }
   render() {
     return (
@@ -15,8 +19,8 @@ export default class Assignment extends Component {
         <Row>
         <div className="col-5 mx-5">
           <AssignmentForm
-            onSubmit={this.onSubmit} 
-            formHeading="Create Assignement"
+            onSubmit={this.handleSubmit} 
+            formHeading="Create Assignment"
             />
           </div>
           <div className="verticalLine" />
