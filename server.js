@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-const app = require('./app');
-
+// const app = require('./app');
+const express = require('express')
+const app = express();
 // import environmental variables from our variables.env file
 // require('dotenv').config({ path: 'variables.env' });
 
@@ -13,7 +14,8 @@ mongoose.connection.once('open', () => console.log('Connection to MongoDB databa
 require('./models/Student');
 require('./models/Course');
 
-require('./routes/course')(app);
+const coursera = require('./routes/course')(app);
+// app.use('/coursera', coursera)
 
 // Start our app!
 app.set('port', process.env.EXPRESS_LOCALPORT || 5000);

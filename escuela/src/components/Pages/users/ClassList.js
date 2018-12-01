@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {  addCourse } from '../../../actions';
+import {  addCourse, deleteCourse } from '../../../actions';
 import { Button } from 'reactstrap';
 
 class ClassList extends Component {
@@ -9,7 +9,7 @@ class ClassList extends Component {
     }
 
     deleteButtonClick(){
-        this.props.deleteCourse()
+        this.props.deleteCourse(this.props.course._id)
     }
 
     // renderClasses(){
@@ -23,7 +23,7 @@ class ClassList extends Component {
         return this.props.course && this.props.course.map(course =>{
             return (
                 <div>  
-                    <li key={course._id}>{course.courseName} {course.subject}</li>
+                    <li key={course._id}>{course.name} {course.subject}</li>
                     <Button onClick={this.deleteButtonClick.bind(this)}>DELETE</Button>
                 </div>
                 )
@@ -42,4 +42,4 @@ function mapStateToProps(state) {
     return { course: state.courses}
 }
 
-export default connect(mapStateToProps, {addCourse})(ClassList)
+export default connect(mapStateToProps, {addCourse, deleteCourse})    (ClassList)

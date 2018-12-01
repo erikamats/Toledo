@@ -34,7 +34,7 @@ const courseSchema = new Schema(
 
 courseSchema.plugin(uniqueValidator, { message: 'is already taken' });
 
-mongoose.model('Course', courseSchema);
+mongoose.model("Course", courseSchema);
 
 
 

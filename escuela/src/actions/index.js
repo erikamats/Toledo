@@ -88,34 +88,25 @@ export const fetchClasses = () => async dispatch => {
 /* this axios call alsow gets courses */
 
 export const addCourse = (Data) => async dispatch => {
-  axios.get('/courses', Data)
+  axios.get('/coursera', Data)
     .then((response) => {
       dispatch(addCourseSuccess(response))
     })
     .catch(error => {
       dispatch(addCourseFailed(error.response.data))
     })
-  
-  axios.delete('/courses', Data)
-    .then((response) =>{
-      dispatch(deleteCourse(response))
-  })
 
-  const addCourseSuccess = (res) => ({
-    type: POST_COURSE_SUCCESS,
-    payload: res
-  })
-
-  const addCourseFailed = (err) => ({
-    type: POST_COURSE_FAILED,
-    payload: err
-  })
-
-  const deleteCourse = (del) => ({
-    type: DELETE_COURSE,
-    payload: del
-  })
 }
+
+const addCourseSuccess = (res) => ({
+  type: POST_COURSE_SUCCESS,
+  payload: res
+})
+
+const addCourseFailed = (err) => ({
+  type: POST_COURSE_FAILED,
+  payload: err
+})
 
 //  This axios call puts slider info into DB
 
