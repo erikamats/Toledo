@@ -1,0 +1,21 @@
+.assignment-container{
+    margin: 20px 0;
+}
+
+.assignment-container h3{
+    margin: 0 0 30px;
+}
+
+.verticalLine {
+    border-left:  solid var(--navy);
+    margin: 5% 0 ;
+  }
+
+  /* .viewassigment{
+      border: 1px solid red;
+  } */
+
+  .card-text > p:not(first-child){
+      font-size: .7em;
+      line-height: .5em
+  }
