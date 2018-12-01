@@ -1,7 +1,6 @@
 const sampleStudents = require('../data/sampleStudents');
 const sampleCourses = require('../data/sampleCourses');
 const sampleGradebooks = require('../data/sampleGradebooks');
-const sampleGradebooks = require('../data/sampleGradebooks');
 const sampleAssignments = require('../data/sampleAssignments');
 
 exports.getStudents = (req, res) => {
