@@ -14,14 +14,23 @@ export default class componentName extends Component {
     super(props)
     this.state = {
       allCourses: [],
-      students: [],
+      allStudents: [],
       allGradebooks: {},
       allAssignments: {}
     }
   }
+  componentDidMount = () => {
+    this.setState({
+      allCourses: sampleCourses,
+      allStudents: sampleStudents,
+      allGradebooks: sampleGradebooks,
+      allAssignments: sampleAssignments,
+    })
+
+  }
+
 
   viewCourses = () => {
-    this.setState({ allCourses: sampleCourses, students: [] })
   }
   viewStudents = () => {
     this.setState({ allCourses: [], students: sampleStudents })
