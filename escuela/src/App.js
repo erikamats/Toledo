@@ -10,9 +10,10 @@ import LandingPage from './components/pages/landingPage/LandingPage';
 import ErrorPage from './components/pages/error/ErrorPage';
 import Gradebook from './components/pages/gradebook/Gradebook';
 import SignupPage from './components/pages/signup/SignupPage';
-// import AddClassPage from './components/nav/nav_msg/AlertMessage';
+// import AddClassPage from './components/pages/addClass/AddClassPage';
 import UsersList from './components/pages/users/UsersList';
 import MessagesList from './components/nav/nav_msg/MessagesList';
+import Footer from "./components/footer/Footer";
 
 import reducers from './reducers';
 
@@ -28,8 +29,8 @@ const store = createStore(
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Provider store={store}>
+      <Provider store={store}>
+        <Router>
           <div className="App">
             <NavigationBar />
             <MessagesList />
@@ -41,9 +42,10 @@ class App extends Component {
               <Route exact path="/dashboard" component={SignupPage} />
               <Route component={ErrorPage} />
             </Switch>
+            <Footer/>
           </div>
-        </Provider>
-      </Router>
+        </Router>
+      </Provider>
     );
   }
 }
