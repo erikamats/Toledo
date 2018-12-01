@@ -13,6 +13,7 @@ import SignupPage from './components/pages/signup/SignupPage';
 // import AddClassPage from './components/pages/addClass/AddClassPage';
 import UsersList from './components/pages/users/UsersList';
 import MessagesList from './components/nav/nav_msg/MessagesList';
+import Assignment from "./components/pages/assignments/Assignment";
 import Footer from "./components/footer/Footer";
 
 import reducers from './reducers';
@@ -36,6 +37,7 @@ class App extends Component {
             <MessagesList />
             <Switch>
               <Route exact path="/" component={LandingPage} />
+              <Route exact path="/Assignment" component={Assignment} />
               <Route exact path="/gradebook" component={Gradebook} />
               <Route exact path="/users" component={UsersList} />
               <Route exact path="/signup" component={SignupPage} />
