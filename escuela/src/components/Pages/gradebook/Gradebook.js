@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import GradeTable from "./components/GradeTable";
 import CourseList from "./components/CourseList";
 import StudentsList from "./components/StudentsList";
 import GradebookList from "./components/GradebookList";
@@ -51,7 +51,7 @@ export default class componentName extends Component {
           <StudentsList students={this.state.students} />
           <CourseList courses={this.state.courses} />
         </div>
-   
+       <GradeTable/>
       </div>
     );
   }
