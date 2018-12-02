@@ -13,8 +13,7 @@ class LandingPage extends Component {
   render() {
     return (
       <div>
-        <h1 className="col-12 text-center"> Colegio Bilingüe Toledo</h1>
-
+        
         <div
           id="carouselExampleIndicators"
           className="carousel slide mx-auto "

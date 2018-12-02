@@ -44,7 +44,9 @@
 .transparent-wrapper p {
   color: white;
 }
-
+.navlogoImg{
+  width:80px
+}
 .other-box {
   width: 50%;
   height: 400px;
@@ -55,7 +57,7 @@
 .aboutUs-box {
   text-align: center;
   padding: 10vh 0px 10vh;
-  /* margin: 4vh 0 2vh; */
+  border : 1px solid blue;
 }
 
 .aboutUs-box > h2 {
@@ -78,6 +80,7 @@
 .elem-high {
   text-align: center;
   padding: 20vh 0 10vh;
+  border : 1px solid red;
 }
 h3 {
   font-family: var(--headingFont);
@@ -90,5 +93,6 @@ p {
 }
 .events-sec {
   padding: 10vh 0;
+  border : 1px solid green;
 }
 
