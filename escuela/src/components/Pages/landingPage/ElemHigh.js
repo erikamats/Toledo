@@ -4,7 +4,7 @@ import CardImg from "./cardImg";
 import LandingCard from "./LandingCard";
 export const ElemHigh = () => {
   return (
-    <Row className="justify-content-center elem-high">
+    <div className="justify-content-center elem-high">
       <LandingCard
         colClassName="col-2"
         divClassName="text-right"
@@ -38,7 +38,7 @@ export const ElemHigh = () => {
         buttonText=""
         btnClassname="d-none"
       />
-    </Row>
+    </div>
   );
 };
 

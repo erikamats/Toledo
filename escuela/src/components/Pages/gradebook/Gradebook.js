@@ -35,25 +35,20 @@ export default class componentName extends Component {
 // close componentDidMount
   }
 
-  viewCourses = () => {};
-  viewStudents = () => {
-    this.setState({ allCourses: [], students: sampleStudents });
-  };
-
   render() {
     return (
       <div>
         <div>
-        <GradeTable onLoad={this.viewStudents} students={this.state.students}/>
+        <GradeTable students={this.state.allStudents}/>
         <hr/>
           <GradebookList
             gradebooks={this.state.gradebooks}
             assignments={sampleAssignments}
           />
-          <button onClick={this.viewCourses}>View All Courses</button>
-          <button onClick={this.viewStudents}>View All Students</button>
-          <StudentsList students={this.state.students} />
-          <CourseList courses={this.state.courses} />
+          <button onClick={this.state.allCourses}>View All Courses</button>
+          <button onClick={this.state.allStudents}>View All Students</button>
+          <StudentsList students={this.state.allStudents} />
+          <CourseList courses={this.state.allCourses} />
         </div>
       
       </div>

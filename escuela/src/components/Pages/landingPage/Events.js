@@ -6,7 +6,7 @@ import LandingCard from "./LandingCard";
 export const Events = () => {
   return (
     <Container fluid >
-      <Row className="justify-content-center events-sec">
+      <div className="justify-content-center events-sec">
         <LandingCard
           colClassName="col-5 px-auto "
           divClassName="text-center  bg-warning align-middle py-5  mr-1"
@@ -24,7 +24,7 @@ export const Events = () => {
           className="col-5 h-25 ml-5"
         />
      
-      </Row>
+      </div>
     </Container>
   );
 };
