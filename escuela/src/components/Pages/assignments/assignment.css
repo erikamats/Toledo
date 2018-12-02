@@ -1,0 +1,28 @@
+.assignment-container{
+    margin: 30px 0;
+}
+
+.assignment-container h3{
+    margin:  30px 0;
+}
+
+.verticalLine {
+    border-left:  solid var(--navy);
+    margin: 8% 0 ;
+  }
+
+  /* .viewassigment{
+      border: 1px solid red;
+  } */
+
+  .form-control{
+      margin-bottom: 15px
+  }
+
+  .card-text > p:not(first-child){
+      font-size: .7em;
+      line-height: .5em
+  }
+  .custom-file{
+      margin:20px 0 ;
+  }

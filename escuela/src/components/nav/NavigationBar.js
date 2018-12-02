@@ -28,6 +28,11 @@ export default () => {
 						</NavLink>
           </li>
           <li className="nav-item" >
+            <NavLink to="/Assignment" className="nav-link" >
+              Assignment
+						</NavLink>
+          </li>
+          <li className="nav-item" >
             <NavLink to="/signup" className="nav-link" >
               Register
 						</NavLink>

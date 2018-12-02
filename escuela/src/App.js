@@ -13,6 +13,7 @@ import SignupPage from './components/pages/signup/SignupPage';
 // import AddClassPage from './components/pages/addClass/AddClassPage';
 import UsersList from './components/pages/users/UsersList';
 import MessagesList from './components/nav/nav_msg/MessagesList';
+import Assignment from "./components/pages/assignments/Assignment";
 import Footer from "./components/footer/Footer";
 
 import reducers from './reducers';
@@ -22,7 +23,7 @@ const store = createStore(
   {},
   compose(
     applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
+    window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : f => f
   )
 );
 
@@ -36,13 +37,14 @@ class App extends Component {
             <MessagesList />
             <Switch>
               <Route exact path="/" component={LandingPage} />
+              <Route exact path="/Assignment" component={Assignment} />
               <Route exact path="/gradebook" component={Gradebook} />
               <Route exact path="/users" component={UsersList} />
               <Route exact path="/signup" component={SignupPage} />
               <Route exact path="/dashboard" component={SignupPage} />
               <Route component={ErrorPage} />
             </Switch>
-            <Footer/>
+            <Footer />
           </div>
         </Router>
       </Provider>
