@@ -74,10 +74,4 @@ module.exports = app => {
 			 res.json({})
 		})
 	})
-
-	// Tank.deleteOne({ size: 'large' }, function (err) {
-	// 	if (err) return handleError(err);
-	// 	// deleted at most one tank document
-	//   });
-
 };
