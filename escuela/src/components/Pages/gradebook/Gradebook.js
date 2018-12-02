@@ -20,6 +20,11 @@ export default class componentName extends Component {
     };
     //close constructor
   }
+
+//added this which takes over onclick button method: viewStudents to test GradeTable
+  componentWillMount () {
+    this.setState({  students: sampleStudents });
+  }
   componentDidMount = () => {
     this.setState({
       allCourses: sampleCourses,
@@ -34,14 +39,13 @@ export default class componentName extends Component {
   viewStudents = () => {
     this.setState({ allCourses: [], students: sampleStudents });
   };
-  onSubmit(e) {
-    e.preventDefault();
-    console.log("This Will Submit");
-  }
+
   render() {
     return (
       <div>
         <div>
+        <GradeTable onLoad={this.viewStudents} students={this.state.students}/>
+        <hr/>
           <GradebookList
             gradebooks={this.state.gradebooks}
             assignments={sampleAssignments}
@@ -51,7 +55,7 @@ export default class componentName extends Component {
           <StudentsList students={this.state.students} />
           <CourseList courses={this.state.courses} />
         </div>
-       <GradeTable/>
+      
       </div>
     );
   }
