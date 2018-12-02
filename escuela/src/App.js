@@ -37,7 +37,7 @@ class App extends Component {
             <MessagesList />
             <Switch>
               <Route exact path="/" component={LandingPage} />
-              <Route exact path="/Assignment" component={Assignment} />
+              <Route exact path="/assignment" component={Assignment} />
               <Route exact path="/gradebook" component={Gradebook} />
               <Route exact path="/users" component={UsersList} />
               <Route exact path="/signup" component={SignupPage} />
