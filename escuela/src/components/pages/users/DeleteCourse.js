@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCourses } from '../../../actions';
+import {  addCourse, deleteCourse } from '../../../actions';
 import { Button } from 'reactstrap';
 
 class ClassList extends Component {
     componentDidMount(){
-        this.props.fetchCourses();
+        this.props.addCourse();
     }
 
     deleteButtonClick(){
@@ -42,4 +42,4 @@ function mapStateToProps(state) {
     return { course: state.courses}
 }
 
-export default connect(mapStateToProps, {fetchCourses})    (ClassList)
+export default connect(mapStateToProps, {addCourse, deleteCourse})    (ClassList)

@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 // const app = require('./app');
 const express = require('express')
 const app = express();
+app.use(express.json());
+
 // import environmental variables from our variables.env file
 // require('dotenv').config({ path: 'variables.env' });
 

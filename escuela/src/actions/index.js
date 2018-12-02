@@ -1,7 +1,6 @@
 import axios from 'axios';
 import {
   FETCH_USERS,
-  FETCH_CLASSES,
   POST_USER,
   ADD_FLASH_MESSAGE,
   DELETE_MESSAGE,
@@ -10,7 +9,11 @@ import {
   POST_SLIDER,
   FETCH_SLIDER,
   DELETE_STUDENT,
-  DELETE_COURSE
+  DELETE_COURSE,
+  FETCH_COURSE_SUCCESS,
+  FETCHING_COURSES_FAILED,
+  SET_COURSES
+
 } from './types';
 
 
@@ -58,55 +61,64 @@ export const deleteMessage = id => {
 };
 
 /* this axios call grabs the data from the backend */
-export const fetchClasses = () => async dispatch => {
-  const res = await axios.get('/students');
-
-  dispatch({
-    type: FETCH_CLASSES,
-    payload: res
-  })
-}
 
 /* this axios call puts the class data into the database  And Creates action calls*/
 
-// export const addCourseSuccess = data => ({
-//   type: POST_COURSE_SUCCESS, data,
-// })
+export const addCourse = (Data) => {
+  return dispatch => {
+    axios.post('/course-registration', Data)
+      .then(res => dispatch(addCourseSuccess(res.data)))
+      .then(data=> dispatch(courseSync(data.course)))
+      .catch(err => dispatch(addCourseFailed(err)))
+  }
+}
 
-// export const addCourseFailed = (err) => ({
-//   type: POST_COURSE_FAILED, err,
-// })
+export const courseSync = courses =>({
+  type:SET_COURSES,
+  courses
+})
 
-// export const addCourse = (Data) => {
-//   return dispatch => {
-//     axios.get('/courses', Data)
-//       .then(res => dispatch(addCourseSuccess(res.data)))
-//       .catch(err => dispatch(addCourseFailed(err)))
-//   }
-// }
+export const addCourseSuccess = data => ({
+  type: POST_COURSE_SUCCESS, data,
+})
+
+export const addCourseFailed = (err) => ({
+  type: POST_COURSE_FAILED, err,
+})
 
 /* this axios call alsow gets courses */
 
-export const addCourse = (Data) => async dispatch => {
+export const fetchCourses = (Data) => async dispatch => {
   axios.get('/coursera', Data)
     .then((response) => {
-      dispatch(addCourseSuccess(response))
+      dispatch(fetchCourseSuccess(response))
     })
     .catch(error => {
-      dispatch(addCourseFailed(error.response.data))
+      dispatch(fetchingCoursesFailed(error.response.data))
     })
 
 }
 
-const addCourseSuccess = (res) => ({
-  type: POST_COURSE_SUCCESS,
+const fetchCourseSuccess = (res) => ({
+  type: FETCH_COURSE_SUCCESS,
   payload: res
 })
 
-const addCourseFailed = (err) => ({
-  type: POST_COURSE_FAILED,
+const fetchingCoursesFailed = (err) => ({
+  type: FETCHING_COURSES_FAILED,
   payload: err
 })
+
+export const deleteCourse = (id) => async dispatch => {
+  axios.delete(`/coursera/${id}`)
+    .then( data => dispatch(courseDeleted(id)));
+}
+
+const courseDeleted = (courseId) => ({
+  type: DELETE_COURSE,
+  courseId
+})
+
 
 //  This axios call puts slider info into DB
 

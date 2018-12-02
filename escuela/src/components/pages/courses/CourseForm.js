@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import TextFieldGroup from "../../common/TextFieldGroup";
-import ClassList from "./ClassList";
 import Validator from 'validator';
 import isEmpty from "lodash/isEmpty";
+import { withRouter } from 'react-router-dom';
 
 function validateInput(data) {
 
@@ -77,7 +77,7 @@ class AddClassForm extends Component {
 
 
         <form onSubmit={this.onSubmit} className="col-12">
-          <h1> Add a New Class</h1>
+          <h1> Add a New Course</h1>
 
           <TextFieldGroup
             label="Course Name"
@@ -123,12 +123,9 @@ class AddClassForm extends Component {
           </div>
         </form>
 
-        <ClassList />
-
-
       </section>
     );
   }
 }
 
-export default AddClassForm;
+export default withRouter(AddClassForm);

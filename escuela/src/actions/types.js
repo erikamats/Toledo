@@ -1,5 +1,4 @@
 export const FETCH_USERS = 'fetch_users';
-export const FETCH_CLASSES = 'fetch_classes';
 export const POST_USER = 'post_user';
 export const ADD_FLASH_MESSAGE = 'add_flash_message';
 export const DELETE_MESSAGE = 'delete_message';
@@ -9,3 +8,6 @@ export const POST_SLIDER = 'post_slider';
 export const FETCH_SLIDER = 'fetch_slider'
 export const DELETE_STUDENT = 'delete_student'
 export const DELETE_COURSE = 'delete_course'
+export const FETCH_COURSE_SUCCESS = 'FETCH_COURSES_SUCCESS'
+export const FETCHING_COURSES_FAILED = 'FETCHING_COURSES_FAILED'
+export const SET_COURSES = 'SET_COURSES'
