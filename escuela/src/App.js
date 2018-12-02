@@ -4,9 +4,9 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk'
 import ScrollToTop from './ScrollToTop';
 import NavigationBar from './components/NavigationBar';
-import ErrorPage from './components/Pages/ErrorPage';
-import Gradebook from './components/Pages/Gradebook';
-import SignupPage from './components/Pages/SignupPage';
+import ErrorPage from './components/pages/ErrorPage';
+import Gradebook from './components/pages/Gradebook';
+import SignupPage from './components/pages/SignupPage';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import reducers from './reducers';
