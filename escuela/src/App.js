@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import './App.css';
-
+import Header from "./components/header/Header";
 import NavigationBar from './components/nav/NavigationBar';
 import LandingPage from './components/pages/landingPage/LandingPage';
 import ErrorPage from './components/pages/error/ErrorPage';
@@ -33,8 +33,9 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <NavigationBar />
+          <Header/>
             <MessagesList />
+            {/* <NavigationBar /> */}
             <Switch>
               <Route exact path="/" component={LandingPage} />
               <Route exact path="/assignment" component={Assignment} />

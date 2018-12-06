@@ -2,16 +2,58 @@
 :root {
   --headingFont: "Arvo", serif;
   --paragraphFont: "Lato", sans-serif;
-  --navy: #08202e
+  --navy: #08202e;
+  --medNavy: #0e3968;
+  --yellow: #f8ef28;
+  --grey: #e8e8e8;
+  /* --yellow: #ffc107 */
 }
 
+.header-section {
+  position: relative;
+  z-index: 99980;
+  background-color: var(--yellow);
+  /* height: 4vh; */
+}
+.header-top {
+  width: 100%;
+}
+.header-top > .nav-item{
+  list-style: none;
+  align-content: right;
+  justify-content: right;
+  display: inline-block;
+}
+.header-top > .nav-item >.nav-link{
+  display: inline-block;
+
+}
+.header-main {
+  background-color: var(--navy);
+}
+
+.navbar {
+  background-color: var(--grey);
+}
+
+.navlogoImg {
+  /* position: absolute; */
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 150px;
+}
+
+.nav-link {
+  color: var(--medNavy);
+}
 
 /* //NavBar */
-.nav > .nav-item > .nav-link {
-  color:  #ffc107  ;
+/* .nav > .nav-item > .nav-link {
+  color:  var(--yellow) ;
   font-weight: 500;
   font-family: var(--headingFont);
-}
+} */
 /*//////////////////LANDING PAGE ENROLL SECTION///////////*/
 .enroll-box {
   width: 50%;
@@ -44,9 +86,7 @@
 .transparent-wrapper p {
   color: white;
 }
-.navlogoImg{
-  width:80px
-}
+
 .other-box {
   width: 50%;
   height: 400px;
@@ -57,7 +97,7 @@
 .aboutUs-box {
   text-align: center;
   padding: 10vh 0px 10vh;
-  border : 1px solid blue;
+  border: 1px solid blue;
 }
 
 .aboutUs-box > h2 {
@@ -80,7 +120,7 @@
 .elem-high {
   text-align: center;
   padding: 20vh 0 10vh;
-  border : 1px solid red;
+  border: 1px solid red;
 }
 h3 {
   font-family: var(--headingFont);
@@ -89,10 +129,8 @@ h3 {
 p {
   font-family: var(--paragraphFont);
   font-size: 1.1em;
-
 }
 .events-sec {
   padding: 10vh 0;
-  border : 1px solid green;
+  border: 1px solid green;
 }
-

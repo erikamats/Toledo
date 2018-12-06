@@ -32,7 +32,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar  light expand="md">
           <NavbarBrand href="/"><img src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png" alt="Toledo" className="navlogoImg" />Colegio Bilingüe Toledo</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -43,8 +43,8 @@ export default class Example extends React.Component {
                 </NavLink>              
               </NavItem>
               <NavItem>
-                <NavLink to="/signup" className="nav-link" >
-                  Register
+                <NavLink to="/assignment" className="nav-link" >
+                  Assignment
                 </NavLink>              
               </NavItem>
               <NavItem>
