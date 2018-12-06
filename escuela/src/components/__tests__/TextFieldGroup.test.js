@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Gradebook from './Gradebook';
+import TextFieldGroup from '../common/TextFieldGroup';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Gradebook />, div);
+  ReactDOM.render(<TextFieldGroup />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

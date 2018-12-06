@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StudentsList from './components/StudentsList';
+import CourseList from 'components/gradebook/components/CourseList';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<StudentsList />, div);
+  ReactDOM.render(<CourseList />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
