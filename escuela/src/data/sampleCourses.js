@@ -1,6 +1,6 @@
 export const sampleCourses = [
   {
-    _id: 'course1',
+    id: 'course1',
     courseName: 'Algorithmic Zen',
     subject: 'Math',
     startDate: new Date('01/01/2019'),
@@ -10,7 +10,7 @@ export const sampleCourses = [
     classEndTime: '1215',
   },
   {
-    _id: 'course2',
+    id: 'course2',
     courseName: 'Catapult Construction',
     subject: 'Science',
     startDate: new Date('01/01/2019'),
@@ -20,7 +20,7 @@ export const sampleCourses = [
     classEndTime: '1000',
   },
   {
-    _id: 'course3',
+    id: 'course3',
     courseName: 'World Geography 2',
     subject: 'Social Studies',
     startDate: new Date('01/01/2019'),
@@ -30,7 +30,7 @@ export const sampleCourses = [
     classEndTime: '1545',
   },
   {
-    _id: 'course4',
+    id: 'course4',
     courseName: 'Film as Literature',
     subject: 'Humanities',
     startDate: new Date('03/01/2019'),
@@ -40,7 +40,7 @@ export const sampleCourses = [
     classEndTime: '1000',
   },
   {
-    _id: 'course5',
+    id: 'course5',
     courseName: 'Boots and Cats and Bass',
     subject: 'Arts',
     startDate: new Date('03/01/2019'),
@@ -50,7 +50,7 @@ export const sampleCourses = [
     classEndTime: '1215',
   },
   {
-    _id: 'course6',
+    id: 'course6',
     courseName: 'Gradebook/Escuela Web Apps',
     subject: 'Technology',
     startDate: new Date('11/12/2018'),

@@ -1,13 +1,22 @@
-export const FETCH_USERS = 'fetch_users';
-export const FETCH_CLASSES = 'fetch_classes';
-export const POST_USER = 'post_user';
-export const ADD_FLASH_MESSAGE = 'add_flash_message';
-export const DELETE_MESSAGE = 'delete_message';
-export const POST_COURSE_SUCCESS = 'post_course_success';
-export const POST_COURSE_FAILED = 'post_course_failed';
-export const POST_SLIDER = 'post_slider';
-export const FETCH_SLIDER = 'fetch_slider'
+export const FETCH_USERS = 'FETCH_USERS'
+export const FETCH_CLASSES = 'FETCH_CLASSES'
+export const POST_USER = 'POST_USER'
+export const ADD_FLASH_MESSAGE = 'ADD_FLASH_MESSAGE'
+export const DELETE_MESSAGE = 'DELETE_MESSAGE'
+export const POST_COURSE_SUCCESS = 'POST_COURSE_SUCCESS'
+export const POST_COURSE_FAILED = 'POST_COURSE_FAILED'
+export const POST_SLIDER = 'POST_SLIDER'
+export const FETCH_SLIDER = 'FETCH_SLIDER'
 
 // gradebook
-export const ADD_GRADEBOOK_BY_ID = 'add_gradebook_by_id'
-export const REMOVE_GRADEBOOK_BY_ID = 'remove_gradebook_by_id'
+export const ADD_GRADEBOOK = 'ADD_GRADEBOOK'
+export const REMOVE_GRADEBOOK = 'REMOVE_GRADEBOOK'
+export const UPDATE_GRADEBOOK = 'UPDATE_GRADEBOOK'
+// assignment
+export const ADD_ASSIGNMENT = 'ADD_ASSIGNMENT'
+export const REMOVE_ASSIGNMENT = 'REMOVE_ASSIGNMENT'
+export const UPDATE_ASSIGNMENT = 'UPDATE_ASSIGNMENT'
+// student
+export const ADD_STUDENT = 'ADD_STUDENT'
+export const REMOVE_STUDENT = 'REMOVE_STUDENT'
+export const UPDATE_STUDENT = 'UPDATE_STUDENT'

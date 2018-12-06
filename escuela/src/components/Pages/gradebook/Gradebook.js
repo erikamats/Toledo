@@ -21,9 +21,9 @@ export default class componentName extends Component {
     //close constructor
   }
 
-//added this which takes over onclick button method: viewStudents to test GradeTable
-  componentWillMount () {
-    this.setState({  students: sampleStudents });
+  //added this which takes over onclick button method: viewStudents to test GradeTable
+  componentWillMount() {
+    this.setState({ students: sampleStudents });
   }
   componentDidMount = () => {
     this.setState({
@@ -32,25 +32,23 @@ export default class componentName extends Component {
       allGradebooks: sampleGradebooks,
       allAssignments: sampleAssignments,
     });
-// close componentDidMount
+    // close componentDidMount
   }
 
   render() {
     return (
       <div>
         <div>
-        <GradeTable students={this.state.allStudents}/>
-        <hr/>
+          <GradeTable students={this.state.allStudents} />
+          <hr />
           <GradebookList
             gradebooks={this.state.gradebooks}
             assignments={sampleAssignments}
           />
-          <button onClick={this.state.allCourses}>View All Courses</button>
-          <button onClick={this.state.allStudents}>View All Students</button>
           <StudentsList students={this.state.allStudents} />
           <CourseList courses={this.state.allCourses} />
         </div>
-      
+
       </div>
     );
   }

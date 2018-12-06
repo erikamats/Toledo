@@ -6,7 +6,7 @@ export default (props) => {
     <div>
       <ul>
         {students && students.map(student => (
-          <li key={student.studentName}>
+          <li key={student.id}>
             <h5>{student.firstName}{' '}{student.lastName}</h5>
             <p>Gender: {student.gender}</p>
             <p>Date Enrolled: {student.dateEnrolled.toDateString()}</p>
