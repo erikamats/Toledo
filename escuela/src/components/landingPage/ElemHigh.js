@@ -1,6 +1,6 @@
 import React from "react";
-import { Row} from "reactstrap";
-import CardImg from "./cardImg";
+import { Row } from "reactstrap";
+import CardImg from "./CardImg";
 import LandingCard from "./LandingCard";
 export const ElemHigh = () => {
   return (

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import LinkButton from "../../common/linkButton";
+import LinkButton from "../common/LinkButton";
 // import SliderForm from "./SliderForm";
 import EnrollBox from './Enroll';
 import AboutUs from "./AboutUs";
 import ElemHigh from "./ElemHigh";
 import Events from "./Events";
-import "../../footer/footerCSS.css"
+import "../footer/footerCSS.css"
 
 class LandingPage extends Component {
   // will add form to update sliders
@@ -13,7 +13,7 @@ class LandingPage extends Component {
   render() {
     return (
       <div>
-        
+
         <div
           id="carouselExampleIndicators"
           className="carousel slide mx-auto "
@@ -110,10 +110,10 @@ class LandingPage extends Component {
         </nav>
         <EnrollBox />
         {/* <SliderForm /> */}
-        <AboutUs/>
-        <ElemHigh/>
+        <AboutUs />
+        <ElemHigh />
 
-        <Events/>
+        <Events />
       </div>
     );
   }

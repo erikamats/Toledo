@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SignupForm from './SignupForm';
 import { connect } from 'react-redux';
-import { postUser, addFlashMessage } from '../../../actions';
+import { postUser, addFlashMessage } from '../../actions';
 
 class SignupPage extends Component {
   render() {

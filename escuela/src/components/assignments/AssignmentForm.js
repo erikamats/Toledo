@@ -1,5 +1,5 @@
 import React from "react";
-import TextFieldGroup from "../../common/TextFieldGroup";
+import TextFieldGroup from "../common/TextFieldGroup";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const AssignmentForm = ({

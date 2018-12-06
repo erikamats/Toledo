@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TextFieldGroup from '../../../components/common/TextFieldGroup';
+import TextFieldGroup from '../common/TextFieldGroup';
 import Validator from 'validator';
 import isEmpty from 'lodash/isEmpty';
 import { withRouter } from 'react-router-dom';

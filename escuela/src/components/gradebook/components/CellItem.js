@@ -4,7 +4,7 @@ import React from "react";
 const CellItem = () => {
   return (
     <td >
-     <input type="number"/>
+      <input type="number" />
     </td>
 
     //close return
