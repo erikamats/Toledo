@@ -1,14 +1,20 @@
 import axios from 'axios';
 import * as ActionTypes from './types'
 
-export const fetchUsers = () => async dispatch => {
-  const res = await axios.get('/students');
-
-  dispatch({
-    type: FETCH_USERS,
-    payload: res,
-  });
-};
+export {
+  addGradebook, removeGradebook,
+  updateGradebook
+} from './gradebookActions';
+export {
+  addStudent,
+  removeStudent,
+  updateStudent,
+} from './studentActions';
+export {
+  addAssignment,
+  removeAssignment,
+  updateAssignment
+} from './assignmentActions';
 
 export const fetchUsers = () => async dispatch => {
   const res = await axios.get('/students');
