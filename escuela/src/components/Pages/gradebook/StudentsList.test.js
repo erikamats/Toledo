@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StudentsList from './StudentsList';
+import StudentsList from './components/StudentsList';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
