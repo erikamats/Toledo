@@ -8,7 +8,7 @@ export default (props) => {
         {courses && courses.map(course => (
           <li key={course.courseName}>
             <h5>{course.courseName}</h5>
-            <p>ID: {course._id}</p>
+            <p>ID: {course.id}</p>
             <p>Subject: {course.subject}</p>
             <p>Start Date: {course.startDate.toDateString()}</p>
             <p>End Date: {course.endDate.toDateString()}</p>
