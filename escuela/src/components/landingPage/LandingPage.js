@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import LinkButton from "../common/LinkButton";
+import LinkButton from "../common/linkButton";
 // import SliderForm from "./SliderForm";
 import EnrollBox from './Enroll';
 import AboutUs from "./AboutUs";

@@ -1,6 +1,6 @@
 import React from "react";
-import HeaderItem from "./headerItem";
-import CellItem from "./cellItem";
+import HeaderItem from "./HeaderItem";
+import CellItem from "./CellItem";
 
 const GradeItem = ({ students }) => {
   return (

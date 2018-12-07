@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderItem from "./headerItem";
+import HeaderItem from "./HeaderItem";
 
 const GradeTableHeader =() => {
     return(
