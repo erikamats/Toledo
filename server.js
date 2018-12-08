@@ -18,7 +18,10 @@ try {
 mongoose.connection.once('open', () => console.log('Connection to MongoDB database was successful!'));
 
 // import all of our models
-require('./models/Student');
+require('./models/student');
+require('./models/course');
+require('./models/assignment');
+require('./models/gradebook');
 
 // Start our app!
 app.set('port', process.env.EXPRESS_LOCALPORT || 5000);
