@@ -39,7 +39,7 @@ class LandingPage extends Component {
                 style={{ height: "70vh" }}
               />
               <div className="carousel-caption d-none d-md-block">
-                <h1 className="text-dark">View Calendar</h1>
+                <h1>Latest Events</h1>
                 <p>Stay up to date on events you'd like to follow. Lorem ipsum dolor amet hammock irure thundercats salvia knausgaard cloud bread intelligentsia, aesthetic prism. Etsy dolore brooklyn pickled semiotics.</p>
                 <LinkButton text="View Calendar" href="/calendar" />
               </div>

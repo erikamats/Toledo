@@ -5,14 +5,16 @@
   --navy: #08202e;
   --medNavy: #0e3968;
   --yellow: #f8ef28;
+  --lightyellow: #F2E175;
   --grey: #e8e8e8;
+  --red:#E50005;
   /* --yellow: #ffc107 */
 }
 
 .header-section {
   position: relative;
   z-index: 99980;
-  background-color: var(--yellow);
+  background-color: var(--lightyellow);
   /* height: 4vh; */
 }
 .header-top {
@@ -31,7 +33,7 @@
 }
 .header-main {
   background-color: var(--navy);
-  height: 14vh;
+  height: 13vh;
   color: white;
   justify-items: center;
   align-items: center;
@@ -39,19 +41,38 @@
 }
 
 .navbar {
-  background-color: var(--grey);
+  background-color: var(--lightyellow);
 }
 
 .navlogoImg {
   /* position: absolute; */
   display: block;
-  margin: -2vh auto 0;
+  margin: -4vh auto 0;
   padding: 0;
-  width: 29vh;
+  width: 24vh;
 }
 
 .nav-link {
   color: var(--medNavy);
+}
+
+.carousel-caption {
+  background-color: var(--lightyellow);
+  top: 220px;
+  bottom: 200px;
+  /* height: 100%; */
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  z-index: 10;
+  padding: 40px;
+  color: var(--navy);
+  text-align: center;
+
+}
+.carousel-caption > h1{
+  font-family: var(--headingFont);
+  color: var(--red)
 }
 
 /* //NavBar */
