@@ -5,7 +5,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import './App.css';
 import Header from "./components/header/Header";
-import NavigationBar from './components/nav/NavigationBar';
+// import NavigationBar from './components/nav/NavigationBar';
 import LandingPage from './components/pages/landingPage/LandingPage';
 import ErrorPage from './components/pages/error/ErrorPage';
 import Gradebook from './components/pages/gradebook/Gradebook';

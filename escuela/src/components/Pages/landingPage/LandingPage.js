@@ -34,7 +34,7 @@ class LandingPage extends Component {
             <div className="carousel-item active">
               <img
                 className="d-block w-100"
-                src="https://images.unsplash.com/photo-1516383607781-913a19294fd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb89d6cf255ed4d30f539a2546a8967a&auto=format&fit=crop&w=800&q=60"
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2209&q=80"
                 alt="First slide"
                 style={{ height: "70vh" }}
               />
@@ -64,7 +64,7 @@ class LandingPage extends Component {
                 className="d-block w-100"
                 src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-0.3.5&s=103730400a4578e366cb641d1a870842&auto=format&fit=crop&w=900&q=60"
                 alt="Third slide"
-                style={{ height: "70vh" }}
+                style={{ height: "72vh" }}
               />
               <div className="carousel-caption d-none d-md-block">
                 <h1 className="text-dark">Caption2</h1>
