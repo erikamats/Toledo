@@ -7,6 +7,7 @@ import ElemHigh from "./ElemHigh";
 import Events from "./Events";
 import "../footer/footerCSS.css"
 
+
 class LandingPage extends Component {
   // will add form to update sliders
   // will later map through each and prepend newest articles
@@ -19,7 +20,7 @@ class LandingPage extends Component {
           className="carousel slide mx-auto "
           data-ride="carousel"
           data-interval="90000000"
-          style={{ height: "70vh" }}
+          style={{ height: "50vh" }}
         >
           <ol className="carousel-indicators">
             <li
@@ -34,12 +35,12 @@ class LandingPage extends Component {
             <div className="carousel-item active">
               <img
                 className="d-block w-100"
-                src="https://images.unsplash.com/photo-1516383607781-913a19294fd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb89d6cf255ed4d30f539a2546a8967a&auto=format&fit=crop&w=800&q=60"
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2209&q=80"
                 alt="First slide"
-                style={{ height: "70vh" }}
+                style={{ height: "50vh" }}
               />
               <div className="carousel-caption d-none d-md-block">
-                <h1 className="text-dark">View Calendar</h1>
+                <h1>Latest Events</h1>
                 <p>Stay up to date on events you'd like to follow. Lorem ipsum dolor amet hammock irure thundercats salvia knausgaard cloud bread intelligentsia, aesthetic prism. Etsy dolore brooklyn pickled semiotics.</p>
                 <LinkButton text="View Calendar" href="/calendar" />
               </div>
@@ -64,7 +65,7 @@ class LandingPage extends Component {
                 className="d-block w-100"
                 src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-0.3.5&s=103730400a4578e366cb641d1a870842&auto=format&fit=crop&w=900&q=60"
                 alt="Third slide"
-                style={{ height: "70vh" }}
+                style={{ height: "72vh" }}
               />
               <div className="carousel-caption d-none d-md-block">
                 <h1 className="text-dark">Caption2</h1>
@@ -101,7 +102,7 @@ class LandingPage extends Component {
           <a className="nav-item nav-link" href="#">
             Pricing
           </a>
-          <a className="nav-item nav-link" href="#">
+          <a className="nav-item nav-link" href="/signup">
             Register
           </a>
           <a className="nav-item nav-link" href="#">

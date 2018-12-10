@@ -10,9 +10,10 @@ const Enroll = () => {
           colClassName="enroll-box"
           divClassName="transparent-wrapper one"
           headerText="CALL TO ACTION"
-          cardParagraph="What else can be important. Link should go to /Register"
+          cardParagraph="What else can be important. "
           href="/register"
           buttonColor="danger"
+          btnText="Take Action"
         />
 
         <LandingCard
@@ -21,7 +22,8 @@ const Enroll = () => {
           headerText="ENROLL NOW"
           cardParagraph="Next session begings Jan 2019"
           href="/register"
-          buttonColor="danger"
+          buttonColor="warning"
+          btnText="Register Now"
         />
 
       </Row>
