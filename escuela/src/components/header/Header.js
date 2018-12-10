@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink, NavItem, Col , Row} from "reactstrap";
+import { NavLink, NavItem, Col, Row } from "reactstrap";
 export default class Header extends Component {
   render() {
     return (
@@ -22,11 +22,27 @@ export default class Header extends Component {
             </NavLink>
           </NavItem>
         </div>
-        <Row className="header-main">
-           <Col> <h4> Colegio Bilingüe Toledo</h4></Col>
-           <Col> <img src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png" alt="Toledo" className="navlogoImg" /></Col>
-           <Col> Parent Portal</Col>
-        </Row>
+        <Col>
+          <Row className="header-main">
+            <Col>
+              {" "}
+              <h4> Colegio Bilingüe Toledo</h4>
+            </Col>
+            <Col>
+              {" "}
+              <img
+                src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png"
+                alt="Toledo"
+                className="navlogoImg"
+              />
+            </Col>
+            <Col> 
+            <i className="fab fa-facebook-square fa-2x"/>
+            <i className="fab fa-twitter fa-2x"/>
+            <i className="fab fa-google-plus-square fa-2x"/>
+            </Col>
+          </Row>
+        </Col>
       </div>
     );
   }
