@@ -5,23 +5,23 @@
   --navy: #08202e;
   --medNavy: #0e3968;
   --yellow: #f8ef28;
-  --lightyellow: #F2E175;
+  --lightyellow: #f2e175;
   --grey: #e8e8e8;
-  --red:#E50005;
+  --red: #e50005;
   /* --yellow: #ffc107 */
 }
 
 .header-section {
   position: relative;
   z-index: 99980;
-  width:100%;
+  width: 100%;
   background-color: var(--lightyellow);
   /* height: 4vh; */
 }
 .header-top {
   width: 100%;
   height: 3vh;
-  padding:  0 9vw 0 0 ;
+  padding: 0 9vw 0 0;
 }
 .header-top > .nav-item {
   list-style: none;
@@ -41,14 +41,13 @@
   text-align: center;
 }
 
-.header-main > .col > h4{
+.header-main > .col > h4 {
   text-transform: uppercase;
   font-weight: 450;
 }
 
-.header-main > .col> .fab{
+.header-main > .col > .fab {
   margin: 0 20px;
- 
 }
 
 .navbar {
@@ -70,22 +69,20 @@
 .carousel-caption {
   background-color: var(--lightyellow);
   /* top: 220px;*/
-  bottom: 300px; 
-   position: absolute;
+  bottom: 300px;
+  position: absolute;
   /* right: 15%;
   left: 15%; */
   width: 50vw;
-  margin:0 auto;
+  margin: 0 auto;
   z-index: 10;
   padding: 20px 35px;
   color: var(--navy);
   text-align: center;
-
-
 }
-.carousel-caption > h1{
+.carousel-caption > h1 {
   font-family: var(--headingFont);
-  color: var(--red)
+  color: var(--red);
 }
 
 /* //NavBar */
@@ -98,7 +95,7 @@
 .enroll-box {
   width: 50%;
   height: 300px;
-  background-color: var(--navy)
+  background-color: var(--navy);
 }
 .transparent-wrapper {
   width: 65%;
@@ -117,12 +114,12 @@
 .transparent-wrapper.two {
   /* padding: 15px 200px 15px 0px;
    */
-   padding: 1em 2em 2em;
-   text-align: left;
+  padding: 1em 2em 2em;
+  text-align: left;
 }
 
 .transparent-wrapper.two h3 {
-  color: var(--lightyellow)
+  color: var(--lightyellow);
 }
 .transparent-wrapper h3 {
   color: red;
@@ -134,14 +131,13 @@
 .other-box {
   width: 50%;
   height: 300px;
-  background-color: var(--medNavy)
+  background-color: var(--medNavy);
 }
 /* Landing>About Us */
 
 .aboutUs-box {
   text-align: center;
   padding: 10vh 0px 10vh;
-
 }
 
 .aboutUs-box > h2 {
@@ -165,12 +161,13 @@
   margin: 7vh 0 0;
   text-align: center;
   padding: 15vh 0;
-  
-background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80")
+
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
 }
 
-.text-left > .nav-link, .text-right > .nav-link{
-  padding:0;
+.text-left > .nav-link,
+.text-right > .nav-link {
+  padding: 0;
 }
 h3 {
   font-family: var(--headingFont);
@@ -180,7 +177,31 @@ p {
   font-family: var(--paragraphFont);
   font-size: 1.1em;
 }
+
+.event-container{
+padding:0;
+background-image: linear-gradient(to top, var(--navy) 0%, #ffffff 60%);
+}
+.white-filler {
+  /* border: 1px solid red; */
+  height: 200px;
+  background: linear-gradient(white, 10%, transparent);
+
+}
 .events-sec {
-  padding: 10vh 0;
-  border: 1px solid green;
+     padding: 25vh 0 0;
+  /* border: 1px solid green; */
+  background-image: url('https://res.cloudinary.com/matsi/image/upload/v1544420399/Toledo/chalkboard-3655846_1920.jpg') ;
+object-fit:cover;
+height: 100vh;
+ 
+}
+.events {
+  margin: -5vh 50vh 0 0;
+  
+  float: right;
+}
+.hands {
+  float:right;
+  margin: 0 10vw 0 0;
 }
