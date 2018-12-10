@@ -16,6 +16,7 @@
     "react-transition-group": "^2.5.0",
     "reactstrap": "^6.5.0",
     "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.7",
     "redux-thunk": "^2.3.0",
     "shortid": "^2.2.14"
   },
