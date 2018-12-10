@@ -10,6 +10,12 @@
   --red: #e50005;
   /* --yellow: #ffc107 */
 }
+.header-main  a:visited,
+.header-main  a:active,
+.header-main  a:link{
+text-decoration: none;
+color: white
+}
 
 .header-section {
   position: relative;
