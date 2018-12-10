@@ -4,7 +4,9 @@ import userPostReducer from './userPostReducer';
 import flashMessages from './flashMessages';
 import classesReducer from './classesReducer';
 import addCourseReducer from './addCourseReducer';
-import gradebooksReducer from './gradebooksReducer';
+import gradebookReducer from './gradebookReducer';
+import assignmentReducer from './assignmentReducer';
+import studentReducer from './studentReducer';
 
 export default combineReducers({
   users: usersReducer,
@@ -12,5 +14,7 @@ export default combineReducers({
   message: flashMessages,
   classes: classesReducer,
   addCourse: addCourseReducer,
-  allGradebooks: gradebooksReducer
+  gradebooks: gradebookReducer,
+  students: studentReducer,
+  assignments: assignmentReducer,
 })

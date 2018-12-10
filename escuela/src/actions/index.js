@@ -1,21 +1,26 @@
 import axios from 'axios';
-import {
-  FETCH_USERS,
-  FETCH_CLASSES,
-  POST_USER,
-  ADD_FLASH_MESSAGE,
-  DELETE_MESSAGE,
-  POST_COURSE_FAILED,
-  POST_COURSE_SUCCESS,
-  POST_SLIDER,
-  FETCH_SLIDER
-} from './types';
+import * as ActionTypes from './types'
+
+export {
+  addGradebook, removeGradebook,
+  updateGradebook
+} from './gradebookActions';
+export {
+  addStudent,
+  removeStudent,
+  updateStudent,
+} from './studentActions';
+export {
+  addAssignment,
+  removeAssignment,
+  updateAssignment
+} from './assignmentActions';
 
 export const fetchUsers = () => async dispatch => {
   const res = await axios.get('/students');
 
   dispatch({
-    type: FETCH_USERS,
+    type: ActionTypes.FETCH_USERS,
     payload: res,
   });
 };
@@ -24,21 +29,21 @@ export const postUser = userData => async dispatch => {
   const res = await axios.post('/register-student', userData);
 
   dispatch({
-    type: POST_USER,
+    type: ActionTypes.POST_USER,
     payload: res,
   });
 };
 
 export const addFlashMessage = message => {
   return {
-    type: ADD_FLASH_MESSAGE,
+    type: ActionTypes.ADD_FLASH_MESSAGE,
     message,
   };
 };
 
 export const deleteMessage = id => {
   return {
-    type: DELETE_MESSAGE,
+    type: ActionTypes.DELETE_MESSAGE,
     id,
   };
 };
@@ -48,7 +53,7 @@ export const fetchClasses = () => async dispatch => {
   const res = await axios.get('/course');
 
   dispatch({
-    type: FETCH_CLASSES,
+    type: ActionTypes.FETCH_CLASSES,
     payload: res
   })
 }
@@ -58,19 +63,19 @@ export const fetchClasses = () => async dispatch => {
 export const addCourse = (Data) => async dispatch => {
   axios.post('/course', Data)
     .then((response) => {
-      dispatch(addCourseSucces(response))
+      dispatch(addCourseSuccess(response))
     })
     .catch(error => {
       dispatch(addCourseFailed(error.response.data))
     })
 
-  const addCourseSucces = (res) => ({
-    type: POST_COURSE_SUCCESS,
+  const addCourseSuccess = (res) => ({
+    type: ActionTypes.POST_COURSE_SUCCESS,
     payload: res
   })
 
   const addCourseFailed = (err) => ({
-    type: POST_COURSE_FAILED,
+    type: ActionTypes.POST_COURSE_FAILED,
     payload: err
   })
 }
@@ -81,7 +86,7 @@ export const postSlider = sliderData => async dispatch => {
   const res = await axios.post('/slider-post', sliderData);
 
   dispatch({
-    type: POST_SLIDER,
+    type: ActionTypes.POST_SLIDER,
     payload: res,
   });
 };
@@ -90,7 +95,7 @@ export const fetchSlider = () => async dispatch => {
   const res = await axios.get('/sliders');
 
   dispatch({
-    type: FETCH_SLIDER,
+    type: ActionTypes.FETCH_SLIDER,
     payload: res,
   });
 };
