@@ -70,7 +70,7 @@
 .carousel-caption {
   background-color: var(--lightyellow);
   /* top: 220px;*/
-  bottom: 200px; 
+  bottom: 300px; 
    position: absolute;
   /* right: 15%;
   left: 15%; */
@@ -97,28 +97,32 @@
 /*//////////////////LANDING PAGE ENROLL SECTION///////////*/
 .enroll-box {
   width: 50%;
-  height: 400px;
-  background: url("./images/crayons.png") no-repeat;
+  height: 300px;
+  background-color: var(--navy)
 }
 .transparent-wrapper {
   width: 65%;
-  height: 45%;
-  background: rgba(12, 12, 228, 0.482);
+  height: 10em;
+  background: rgba(19, 59, 192, 0.288);
   border-radius: 10px;
-  margin-top: 60px;
+  margin-top: 5em;
   text-align: center;
 }
 
 .transparent-wrapper.one {
-  padding: 15px 0px 15px 200px;
+  padding: 1em 2em 2em;
+  text-align: right;
   margin-left: 35%;
 }
 .transparent-wrapper.two {
-  padding: 15px 200px 15px 0px;
+  /* padding: 15px 200px 15px 0px;
+   */
+   padding: 1em 2em 2em;
+   text-align: left;
 }
 
 .transparent-wrapper.two h3 {
-  color: yellow;
+  color: var(--lightyellow)
 }
 .transparent-wrapper h3 {
   color: red;
@@ -129,8 +133,8 @@
 
 .other-box {
   width: 50%;
-  height: 400px;
-  background: url("./images/color-pencils.png") no-repeat;
+  height: 300px;
+  background-color: var(--medNavy)
 }
 /* Landing>About Us */
 

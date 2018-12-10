@@ -19,7 +19,7 @@ class LandingPage extends Component {
           className="carousel slide mx-auto "
           data-ride="carousel"
           data-interval="90000000"
-          style={{ height: "70vh" }}
+          style={{ height: "50vh" }}
         >
           <ol className="carousel-indicators">
             <li
