@@ -37,7 +37,7 @@ export const ElemHigh = () => {
         buttonColor="danger"
         btnText="High School"
         buttonClass="btn btn-md"
-    
+      
       />
     </Row>
   );
