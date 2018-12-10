@@ -34,7 +34,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar  light expand="md">
-          <NavbarBrand href="/"><img src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png" alt="Toledo" className="navlogoImg" />Colegio Bilingüe Toledo</NavbarBrand>
+          {/* <NavbarBrand href="/"><img src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png" alt="Toledo" className="navlogoImg" />Colegio Bilingüe Toledo</NavbarBrand> */}
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

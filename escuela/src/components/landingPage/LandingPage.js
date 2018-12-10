@@ -7,6 +7,7 @@ import ElemHigh from "./ElemHigh";
 import Events from "./Events";
 import "../footer/footerCSS.css"
 
+
 class LandingPage extends Component {
   // will add form to update sliders
   // will later map through each and prepend newest articles
@@ -36,7 +37,7 @@ class LandingPage extends Component {
                 className="d-block w-100"
                 src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2209&q=80"
                 alt="First slide"
-                style={{ height: "70vh" }}
+                style={{ height: "50vh" }}
               />
               <div className="carousel-caption d-none d-md-block">
                 <h1>Latest Events</h1>
@@ -101,7 +102,7 @@ class LandingPage extends Component {
           <a className="nav-item nav-link" href="#">
             Pricing
           </a>
-          <a className="nav-item nav-link" href="#">
+          <a className="nav-item nav-link" href="/signup">
             Register
           </a>
           <a className="nav-item nav-link" href="#">

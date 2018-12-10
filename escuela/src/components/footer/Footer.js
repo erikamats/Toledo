@@ -1,14 +1,8 @@
 import React from "react";
-import { Container, Row, Col, Button, Form, Input } from "reactstrap";
-<<<<<<< HEAD
-// import FooterWidget from "./footerwidget";
-import FooterListItem from "./FooterListItem";
-import * as moment from "moment";
-=======
+import {  Row, Col, Button, Form, Input } from "reactstrap";
 // import FooterWidget from "./FooterWidget";
-import FooterListItem from "./FooterListitem";
+import FooterListItem from "./FooterListItem";
 import moment from "moment";
->>>>>>> f76e130074266b3dc76a71d8b2c50290ac740e8c
 
 let now = moment().format("YYYY");
 

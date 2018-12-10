@@ -1,32 +1,35 @@
 import React, { Component } from "react";
-import { NavLink, NavItem, Col, Row } from "reactstrap";
+import { NavLink, NavItem, Col, Row, Nav } from "reactstrap";
 export default class Header extends Component {
   render() {
     return (
       <div className="header-section">
-        <div className="header-top">
+        <Nav className="header-top">
           <NavItem>
-            <NavLink to="/" className="nav-link">
-              Admin
-            </NavLink>
+            <NavLink href="/assignment">Assignment</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink to="/events" className="nav-link">
-              Events
+            <NavLink href="/events">Events</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/gradebook" className="nav-link">
+              Gradebook
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/parent" className="nav-link">
-              ParentWeb
+            <NavLink href="/signup" className="nav-link">
+              Register
             </NavLink>
           </NavItem>
-        </div>
+        </Nav>
         <Col>
           <Row className="header-main">
             <Col>
               {" "}
-              <h4> Colegio Bilingüe Toledo</h4>
+              <a href="/">
+                <h4> Colegio Bilingüe Toledo</h4>{" "}
+              </a>
             </Col>
             <Col>
               {" "}
@@ -36,10 +39,10 @@ export default class Header extends Component {
                 className="navlogoImg"
               />
             </Col>
-            <Col> 
-            <i className="fab fa-facebook-square fa-2x"/>
-            <i className="fab fa-twitter fa-2x"/>
-            <i className="fab fa-google-plus-square fa-2x"/>
+            <Col>
+              <i className="fab fa-facebook-square fa-2x" />
+              <i className="fab fa-twitter fa-2x" />
+              <i className="fab fa-google-plus-square fa-2x" />
             </Col>
           </Row>
         </Col>
