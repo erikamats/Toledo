@@ -4,17 +4,18 @@
   --paragraphFont: "Lato", sans-serif;
   --navy: #10316b;
   --medNavy: #0b409c;
+  /* --yellow: #ffde25; */
   --yellow: #fdbe34;
   /* --lightyellow: #f2e175; */
   --grey: #f2f7ff;
   --red: #e50005;
   /* --yellow: #ffc107 */
 }
-.header-main  a:visited,
-.header-main  a:active,
-.header-main  a:link{
-text-decoration: none;
-color: white
+.header-main a:visited,
+.header-main a:active,
+.header-main a:link {
+  text-decoration: none;
+  color: white;
 }
 
 .header-section {
@@ -30,13 +31,11 @@ color: white
   padding: 0 1.5vw 0 0;
   justify-content: flex-end;
   float: 1px;
-  
 }
 
 .header-top > .nav-item > .nav-link {
   display: inline;
   color: var(--navy);
-
 }
 .header-main {
   background-color: var(--navy);
@@ -47,9 +46,11 @@ color: white
   text-align: center;
 }
 
-.header-main > .col > h4 {
+.header-main > .col > a > h4 {
   text-transform: uppercase;
-  font-weight: 450;
+  font-size: 1.4em;
+  font-family: var(--headingFont);
+  margin: 0 auto;
 }
 
 .header-main > .col > .fab {
@@ -132,7 +133,6 @@ color: white
   height: 300px;
   background-color: var(--medNavy);
 }
-
 
 .aboutUs-box {
   text-align: center;
