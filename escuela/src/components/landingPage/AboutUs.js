@@ -15,7 +15,7 @@ export const AboutUs = () => {
           href="/about"
           buttonColor="warning"
           buttonText="Learn More"
-          btnClassname="btn-md text-white buttonText"
+          btnClassname="btn-md buttonText"
         />
       </Row>
       <CardImg

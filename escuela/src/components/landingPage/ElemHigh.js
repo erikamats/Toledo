@@ -11,7 +11,7 @@ export const ElemHigh = () => {
         headerText="Primaria"
         cardParagraph="Info about Elementary"
         href="/elementary"
-        buttonColor="danger"
+        
         btnText="Elementary"
         buttonClass="btn btn-md"
       />
@@ -34,7 +34,7 @@ export const ElemHigh = () => {
         headerText="Secundaria"
         cardParagraph="Info about HS"
         href="/highschool"
-        buttonColor="danger"
+
         btnText="High School"
         buttonClass="btn btn-md"
       
