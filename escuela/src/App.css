@@ -2,11 +2,11 @@
 :root {
   --headingFont: "Arvo", serif;
   --paragraphFont: "Lato", sans-serif;
-  --navy: #08202e;
-  --medNavy: #0e3968;
-  --yellow: #f8ef28;
-  --lightyellow: #f2e175;
-  --grey: #e8e8e8;
+  --navy: #10316b;
+  --medNavy: #0b409c;
+  --yellow: #fdbe34;
+  /* --lightyellow: #f2e175; */
+  --grey: #f2f7ff;
   --red: #e50005;
   /* --yellow: #ffc107 */
 }
@@ -21,7 +21,7 @@ color: white
   position: relative;
   z-index: 99980;
   width: 100%;
-  background-color: var(--lightyellow);
+  background-color: var(--yellow);
   /* height: 4vh; */
 }
 .header-top {
@@ -57,7 +57,7 @@ color: white
 }
 
 .navbar {
-  background-color: var(--lightyellow);
+  background-color: var(--yellow);
 }
 
 .navlogoImg {
@@ -73,7 +73,7 @@ color: white
 }
 
 .carousel-caption {
-  background-color: var(--lightyellow);
+  background-color: var(--yellow);
   /* top: 220px;*/
   bottom: 120px;
   position: absolute;
@@ -119,7 +119,7 @@ color: white
 }
 
 .transparent-wrapper.two h3 {
-  color: var(--lightyellow);
+  color: var(--yellow);
 }
 .transparent-wrapper h3 {
   color: red;
