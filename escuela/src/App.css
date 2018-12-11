@@ -58,6 +58,24 @@
 .header-main > .col > .fab {
   margin: 0 20px;
 }
+.fa *{
+  color:var(--grey)
+}
+.fa-facebook-square:hover{
+  color: #4867aa;
+  transform:scale(1.2)
+}
+
+.fa-twitter:hover{
+  color: #1ea0f1;
+  transform:scale(1.2)
+}
+
+.fa-google-plus-square:hover{
+  color: #db4437;
+  transform:scale(1.2)
+}
+
 
 /*//////////////////Mid Landing Page Nav///////////*/
 .navbar {

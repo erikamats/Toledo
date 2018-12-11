@@ -40,7 +40,8 @@ export default class Header extends Component {
               />
             </Col>
             <Col>
-              <i className="fab fa-facebook-square fa-2x" />
+
+                    <i className="fab fa-facebook-square fa-2x "/>
               <i className="fab fa-twitter fa-2x" />
               <i className="fab fa-google-plus-square fa-2x" />
             </Col>
