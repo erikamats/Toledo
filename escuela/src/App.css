@@ -60,7 +60,8 @@
 .slider-btn{
   color: var(--grey);
   font-size: 1.1em;
-  background-color: var(--medNavy)
+  background-color: var(--medNavy);
+  font-family: var(--headingFont)
 }
 
 .navbar {
@@ -128,7 +129,7 @@
   color: var(--yellow);
 }
 .transparent-wrapper h3 {
-  color: red;
+  color:var(--yellow);
 }
 .transparent-wrapper p {
   color: white;
