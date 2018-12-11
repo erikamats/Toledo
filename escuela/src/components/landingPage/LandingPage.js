@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import LinkButton from "../common/linkButton";
 // import SliderForm from "./SliderForm";
-import EnrollBox from './Enroll';
+import EnrollBox from "./Enroll";
 import AboutUs from "./AboutUs";
 import ElemHigh from "./ElemHigh";
 import Events from "./Events";
-import "../footer/footerCSS.css"
-
+import "../footer/footerCSS.css";
+import { Nav, NavItem, NavLink } from "reactstrap";
 
 class LandingPage extends Component {
   // will add form to update sliders
@@ -14,7 +14,6 @@ class LandingPage extends Component {
   render() {
     return (
       <div>
-
         <div
           id="carouselExampleIndicators"
           className="carousel slide mx-auto "
@@ -41,7 +40,12 @@ class LandingPage extends Component {
               />
               <div className="carousel-caption d-none d-md-block">
                 <h1>Latest Events</h1>
-                <p>Stay up to date on events you'd like to follow. Lorem ipsum dolor amet hammock irure thundercats salvia knausgaard cloud bread intelligentsia, aesthetic prism. Etsy dolore brooklyn pickled semiotics.</p>
+                <p>
+                  Stay up to date on events you'd like to follow. Lorem ipsum
+                  dolor amet hammock irure thundercats salvia knausgaard cloud
+                  bread intelligentsia, aesthetic prism. Etsy dolore brooklyn
+                  pickled semiotics.
+                </p>
                 <LinkButton text="View Calendar" href="/calendar" />
               </div>
             </div>
@@ -92,7 +96,25 @@ class LandingPage extends Component {
             <span className="sr-only">Next</span>
           </a>
         </div>
-        <nav className="nav nav-pills justify-content-center bg-light">
+        <Nav className="justify-content-center ">
+          <NavItem>
+            <NavLink href="/about">About</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/academics">Academics</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/pricing">Pricing</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/signup">Register</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/contact">Contact Us</NavLink>
+          </NavItem>
+        </Nav>
+
+        {/* <nav className="nav nav-pills justify-content-center ">
           <a className="nav-item nav-link active" href="#">
             About
           </a>
@@ -108,7 +130,7 @@ class LandingPage extends Component {
           <a className="nav-item nav-link" href="#">
             Contact Us
           </a>
-        </nav>
+        </nav> */}
         <EnrollBox />
         {/* <SliderForm /> */}
         <AboutUs />
