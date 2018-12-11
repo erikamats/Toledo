@@ -38,7 +38,7 @@ class LandingPage extends Component {
                 alt="First slide"
                 style={{ height: "50vh" }}
               />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption">
                 <h1>Latest Events</h1>
                 <p>
                   Stay up to date on events you'd like to follow. Lorem ipsum

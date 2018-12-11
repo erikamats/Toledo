@@ -2,6 +2,8 @@ import React from "react";
 import { Row } from "reactstrap";
 import CardImg from "./CardImg";
 import LandingCard from "./LandingCard";
+
+
 export const ElemHigh = () => {
   return (
     <Row className="justify-content-center elem-high">
@@ -26,7 +28,7 @@ export const ElemHigh = () => {
         src="https://images.unsplash.com/photo-1494883759339-0b042055a4ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3607f384da70239b98b2172bd7e4dd41&auto=format&fit=crop&w=800&q=60"
         alt="student2"
         className="w-25 h-25 ml-5"
-      />
+       />
 
       <LandingCard
         colClassName="col-2"
@@ -34,7 +36,6 @@ export const ElemHigh = () => {
         headerText="Secundaria"
         cardParagraph="Info about HS"
         href="/highschool"
-
         btnText="High School"
         buttonClass="btn btn-md"
       
