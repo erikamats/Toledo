@@ -118,6 +118,10 @@
   text-align: right;
   margin-left: 35%;
 }
+.transparent-wrapper.one > a >.btn,
+.transparent-wrapper.two > a >.btn{
+  font-family: var(--headingFont)
+}
 .transparent-wrapper.two {
   /* padding: 15px 200px 15px 0px;
    */
@@ -147,17 +151,22 @@
 }
 
 .aboutUs-box > h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: var(--headingFont);
+  color: var(--navy)
   /* padding-top:25px */
 }
 .aboutUs-box > p {
   padding: 30px 20vw;
   color: grey;
+  font-size: 1.5em;
+  line-height: 1.7em
 }
 
 .buttonText {
   font-family: var(--headingFont);
+  color: var(--medNavy) !important;
+  font-size: 1.2em;
 }
 .aboutImg {
   padding: 0 0 4vh;
