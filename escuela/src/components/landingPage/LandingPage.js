@@ -49,7 +49,7 @@ class LandingPage extends Component {
                 <LinkButton text="View Calendar" href="/calendar" />
               </div>
             </div>
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
               <img
                 className="d-block w-100"
                 src="https://images.unsplash.com/photo-1459664018906-085c36f472af?ixlib=rb-0.3.5&s=d9689cd685d7055e618f665251d1fc5c&auto=format&fit=crop&w=900&q=60"
@@ -63,8 +63,8 @@ class LandingPage extends Component {
                   Button to article
                 </button>
               </div>
-            </div>
-            <div className="carousel-item">
+            </div> */}
+            {/* <div className="carousel-item">
               <img
                 className="d-block w-100"
                 src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-0.3.5&s=103730400a4578e366cb641d1a870842&auto=format&fit=crop&w=900&q=60"
@@ -75,7 +75,7 @@ class LandingPage extends Component {
                 <h1 className="text-dark">Caption2</h1>
                 <LinkButton text="Another" href="#" />
               </div>
-            </div>
+            </div> */}
           </div>
           <a
             className="carousel-control-prev"
@@ -113,24 +113,7 @@ class LandingPage extends Component {
             <NavLink href="/contact">Contact Us</NavLink>
           </NavItem>
         </Nav>
-
-        {/* <nav className="nav nav-pills justify-content-center ">
-          <a className="nav-item nav-link active" href="#">
-            About
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Academics
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Pricing
-          </a>
-          <a className="nav-item nav-link" href="/signup">
-            Register
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Contact Us
-          </a>
-        </nav> */}
+      
         <EnrollBox />
         {/* <SliderForm /> */}
         <AboutUs />
