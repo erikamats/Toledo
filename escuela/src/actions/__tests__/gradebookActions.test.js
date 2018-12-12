@@ -14,7 +14,7 @@ const testGradebook = {
       gradeWeight0to1: '1',
     }
   ],
-  studentsById: {
+  studentsArray: {
     'student1': {
       id: 'student1',
       name: 'Erika'
