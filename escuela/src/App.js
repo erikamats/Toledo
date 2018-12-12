@@ -6,7 +6,7 @@ import MessagesList from './components/flashMessages/MessagesList';
 
 import LandingPage from './components/landingPage/LandingPage';
 import ErrorPage from './components/error/ErrorPage';
-import Gradebook from './components/gradebook/Gradebook';
+import GradebookContainer from './components/gradebook/GradebookContainer';
 import SignupPage from './components/signup/SignupPage';
 import UsersList from './components/users/UsersList';
 import Assignment from "./components/assignments/Assignment";
@@ -24,7 +24,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/assignment" component={Assignment} />
-            <Route exact path="/gradebook" component={Gradebook} />
+            <Route exact path="/gradebook" component={GradebookContainer} />
             <Route exact path="/users" component={UsersList} />
             <Route exact path="/signup" component={SignupPage} />
             <Route exact path="/dashboard" component={SignupPage} />
