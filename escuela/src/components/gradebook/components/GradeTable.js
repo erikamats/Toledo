@@ -13,9 +13,13 @@ const GradeTable = (props) => {
       <GradeTableHeader />
 
       <tbody>
-        {students && students.map(student => (
-          <GradeItem key={student.id} students={student.firstName} />
-        ))}
+        {students && Object.keys(students).map((studentsKey) => {
+          if (studentsKey === 'isLoading' || studentsKey === 'error') { return null }
+          const student = students[studentsKey]
+          return (
+            <GradeItem key={student.id} students={student.firstName} />
+          )
+        })}
         {/* <GradeItem studentName="Erika" />
           <GradeItem studentName="Bob" />
           <GradeItem studentName="John" />

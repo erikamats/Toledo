@@ -1,55 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import GradeTable from "./components/GradeTable";
-import CourseList from "./components/CourseList";
-import StudentsList from "./components/StudentsList";
 import GradebookList from "./components/GradebookList";
-import { sampleStudents } from "../../data/sampleStudents";
-import { sampleCourses } from "../../data/sampleCourses";
-import { sampleGradebooks } from "../../data/sampleGradebooks";
-import { sampleAssignments } from "../../data/sampleAssignments"
+import StudentsList from "./components/StudentsList";
+// import CourseList from "./components/CourseList";
 
-export default class componentName extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      allCourses: [],
-      allStudents: [],
-      allGradebooks: {},
-      allAssignments: {}
-      //close State
-    };
-    //close constructor
-  }
+import { student1 } from 'data/sampleStudents'
+import { gradebook1 } from 'data/sampleGradebooks'
+import { assignment1 } from 'data/sampleAssignments'
+import { course1 } from 'data/sampleCourses'
 
-  //added this which takes over onclick button method: viewStudents to test GradeTable
-  componentWillMount() {
-    this.setState({ students: sampleStudents });
-  }
-  componentDidMount = () => {
-    this.setState({
-      allCourses: sampleCourses,
-      allStudents: sampleStudents,
-      allGradebooks: sampleGradebooks,
-      allAssignments: sampleAssignments,
-    });
-    // close componentDidMount
-  }
+export default (props) => {
 
-  render() {
-    return (
+  const { gradebooks, students, assignments, onSaveStudent, onSaveGradebook, onSaveAssignment } = props
+
+  return (
+    <div>
       <div>
-        <div>
-          <GradeTable students={this.state.allStudents} />
-          <hr />
-          <GradebookList
-            gradebooks={this.state.gradebooks}
-            assignments={sampleAssignments}
-          />
-          <StudentsList students={this.state.allStudents} />
-          <CourseList courses={this.state.allCourses} />
-        </div>
-
+        <GradeTable students={students} />
+        <hr />
+        <GradebookList
+          gradebooks={gradebooks}
+          assignments={assignments}
+        />
+        <button onClick={() => onSaveStudent(student1)}>
+          Save student1
+        </button>
+        <button onClick={() => onSaveGradebook(gradebook1)}>
+          Save gradebook1
+        </button>
+        <button onClick={() => onSaveAssignment(assignment1)}>
+          Save assignment1
+        </button>
+        <StudentsList students={students} />
+        {/* <CourseList courses={this.state.allCourses} /> */}
       </div>
-    );
-  }
+    </div>
+  )
 }
