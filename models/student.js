@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
-
-const uniqueValidator = require('mongoose-unique-validator');
-
+mongoose.Promise = global.Promise
+const uniqueValidator = require('mongoose-unique-validator')
 const studentSchema = new mongoose.Schema(
   {
     id: {
       type: String,
-      unique: true,
       trim: true,
+      unique: true,
       required: [true, 'An id is required'],
     },
     firstName: {
@@ -20,13 +19,6 @@ const studentSchema = new mongoose.Schema(
       trim: true,
       required: [true, 'A last name is required'],
     },
-    email: {
-      type: String,
-      unique: true,
-      lowercase: true,
-      required: [true, 'An email is required'],
-      match: [/\S+@\S+\.\S+/, 'is invalid'],
-    },
     gender: String,
     dateEnrolled: {
       type: Date,
@@ -36,7 +28,5 @@ const studentSchema = new mongoose.Schema(
   },
   { timestamps: true },
 );
-
-studentSchema.plugin(uniqueValidator, { message: 'id is already taken' });
-
+studentSchema.plugin(uniqueValidator, { message: 'id is taken' })
 module.exports = mongoose.model('Student', studentSchema);

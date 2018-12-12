@@ -2,6 +2,16 @@ const mongoose = require('mongoose');
 
 const uniqueValidator = require('mongoose-unique-validator');
 
+const assignedStudent = new mongoose.Schema(
+  {
+    id: {
+      type: String
+    },
+    name: {
+      type: String
+    }
+  }
+)
 const assignmentSchema = new mongoose.Schema(
   {
     id: {
@@ -19,13 +29,8 @@ const assignmentSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    studentsAssignedToById: {
-      studentId: {
-        id: String,
-        name: String,
-      }
-    },
-  }
+    studentsAssignedTo: [assignedStudent]
+  },
 );
 
 assignmentSchema.plugin(uniqueValidator, { message: 'id is already taken' });
