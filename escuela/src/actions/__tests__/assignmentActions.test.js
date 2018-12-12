@@ -9,7 +9,7 @@ const testAssignment = {
   id: 'assignment1',
   name: 'Incrementing and Decrementing worksheet',
   associatedGradebookById: 'gradebook1',
-  studentsAssignedToById: {
+  studentsAssignedTo: {
     'student1': {
       id: 'student1',
       name: 'Erika'

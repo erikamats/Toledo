@@ -5,14 +5,22 @@ export default (props) => {
   return (
     <div>
       <ul>
-        {students && students.map(student => (
-          <li key={student.id}>
-            <h5>{student.firstName}{' '}{student.lastName}</h5>
-            <p>Gender: {student.gender}</p>
-            <p>Date Enrolled: {student.dateEnrolled.toDateString()}</p>
-            <p>Current Grade Level: {student.currentGradeLevel}</p>
-          </li>
-        ))}
+        {students && Object.keys(students).map((studentsKey) => {
+          if (studentsKey === 'isLoading' || studentsKey === 'error') { return null }
+          const { id, firstName, lastName, gender, dateEnrolled, currentGradeLevel } = students[studentsKey]
+          return (
+            <li key={id}>
+              <h5>{firstName}{' '}{lastName}</h5>
+              <p>Gender: {gender}</p>
+              <p>Date Enrolled:
+              {dateEnrolled
+                  ? new Date(dateEnrolled).toDateString()
+                  : ''}
+              </p>
+              <p>Current Grade Level: {currentGradeLevel}</p>
+            </li>
+          )
+        })}
       </ul>
     </div>
   )

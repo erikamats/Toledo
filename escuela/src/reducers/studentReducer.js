@@ -3,9 +3,20 @@ import { updateObject } from './utilityFunctions'
 
 export default (state = {}, action) => {
   switch (action.type) {
-    case ActionTypes.ADD_STUDENT:
+    case ActionTypes.ADD_DB_STUDENT_STARTED:
       return updateObject(state, {
-        [action.payload.id]: action.payload
+        isLoading: true
+      })
+    case ActionTypes.ADD_DB_STUDENT_SUCCESS:
+      return updateObject(state, {
+        [action.payload.id]: action.payload,
+        isLoading: false,
+        error: action.error
+      })
+    case ActionTypes.ADD_DB_STUDENT_FAILURE:
+      return updateObject(state, {
+        isLoading: false,
+        error: action.error
       })
     case ActionTypes.REMOVE_STUDENT:
       return updateObject(state, {
