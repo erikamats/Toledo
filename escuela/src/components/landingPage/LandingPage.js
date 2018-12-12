@@ -9,15 +9,14 @@ import Events from "./Events";
 import "../footer/footerCSS.css";
 import NavMain from "../nav/Nav";
 
-
 class LandingPage extends Component {
   // will add form to update sliders
   // will later map through each and prepend newest articles
   render() {
     return (
       <div>
-    <CarouselSlider/>
-        <NavMain/>
+        <CarouselSlider />
+        <NavMain />
         <EnrollBox />
         {/* <SliderForm /> */}
         <AboutUs />

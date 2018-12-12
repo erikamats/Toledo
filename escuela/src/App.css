@@ -148,7 +148,7 @@
 .transparent-wrapper {
   width: 65%;
   height: 10em;
-  background: var(--navy);
+
   border-radius: 5px;
   margin-top: 5em;
   text-align: center;
@@ -158,6 +158,7 @@
   padding: 1em 2em 2em;
   text-align: right;
   margin-left: 35%;
+  background: var(--medNavy);
 }
 .transparent-wrapper.one > a > .btn,
 .transparent-wrapper.two > a > .btn {
@@ -166,6 +167,7 @@
 .transparent-wrapper.two {
   padding: 1em 2em 2em;
   text-align: left;
+  background: var(--navy);
 }
 
 .transparent-wrapper.two h3,
