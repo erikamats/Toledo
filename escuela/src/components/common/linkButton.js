@@ -4,7 +4,7 @@ export const LinkButton = ({ text, href }) => {
   return (
 
     <a
-      className="btn btn-secondary warning" 
+      className="btn slider-btn" 
       href={href}
       role="button">
       {text}

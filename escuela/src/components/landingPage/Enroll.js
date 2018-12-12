@@ -12,7 +12,7 @@ const Enroll = () => {
           headerText="CALL TO ACTION"
           cardParagraph="What else can be important. "
           href="/register"
-          buttonColor="danger"
+          buttonColor="warning "
           btnText="Take Action"
         />
 
