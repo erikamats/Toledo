@@ -21,7 +21,6 @@ export const Events = () => {
           headerText="Events"
           cardParagraph="The inside scoop on all events"
           href="/events"
-          buttonColor="secondary"
           btnText="Got to Events"
           buttonClass="btn-md"
         />

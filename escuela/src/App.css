@@ -260,8 +260,13 @@ p {
   object-fit: cover;
   height: 80vh;
 }
-.events {
+.events{
   margin: 0 auto;
+}
+
+.events >.text-center> .nav-link> .btn-md{
+  background-color: var(--medNavy);
+  font-family: var(--headingFont);
 }
 .hands {
   float: right;
