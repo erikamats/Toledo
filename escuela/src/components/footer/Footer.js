@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Button, Form, Input } from "reactstrap";
+import {  Row, Col, Button, Form, Input } from "reactstrap";
 // import FooterWidget from "./FooterWidget";
-import FooterListItem from "./FooterListitem";
+import FooterListItem from "./FooterListItem";
 import moment from "moment";
 
 let now = moment().format("YYYY");

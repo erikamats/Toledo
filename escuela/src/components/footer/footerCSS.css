@@ -1,6 +1,6 @@
 
 .footer {
-  background-color: #08202e;
+  background-color: var(--navy);
   padding: 80px 80px 0;
   /* color: #636e74; */
   font-weight: 400;
@@ -9,10 +9,11 @@
   text-rendering: optimizeLegibility;
   letter-spacing: 0px;
   line-height: 34px;
+  clear:right;
 
 }
 .footer-line {
-  border-color: #152e3d;
+  border-color: var(--medNavy);
 }
 
 .footerImg {
@@ -69,17 +70,17 @@
 
 
 .newsletter-form .form-control {
-  background-color: #1e2e38;
-  border-color: #1e2e38;
+  background-color: var(--medNavy);
+  border-color:var(--navy);
 }
 .newsletter-form .form-control:focus {
-  color: #fff;
+  color: var(--grey);
 }
 .newsletter-form input::-webkit-input-placeholder {
-  color: #fff !important;
+  color: var(--grey) !important;
 }
 .newsletter-form input:focus::-webkit-input-placeholder {
-  color: #fff !important;
+  color: var(--grey) !important;
 }
 
 .tiny-footer {

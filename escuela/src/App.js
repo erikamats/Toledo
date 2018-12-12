@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-
-import NavigationBar from './components/nav/NavigationBar';
+// import NavigationBar from './components/nav/NavigationBar';
 import MessagesList from './components/flashMessages/MessagesList';
-
 import LandingPage from './components/landingPage/LandingPage';
 import ErrorPage from './components/error/ErrorPage';
 import GradebookContainer from './components/gradebook/GradebookContainer';
@@ -11,7 +9,7 @@ import SignupPage from './components/signup/SignupPage';
 import UsersList from './components/users/UsersList';
 import Assignment from "./components/assignments/Assignment";
 import Footer from "./components/footer/Footer";
-
+import Header from "./components/header/Header"
 import './App.css';
 
 class App extends Component {
@@ -19,7 +17,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <NavigationBar />
+        <Header/>
+         {/* <NavigationBar /> */}
           <MessagesList />
           <Switch>
             <Route exact path="/" component={LandingPage} />
@@ -30,6 +29,7 @@ class App extends Component {
             <Route exact path="/dashboard" component={SignupPage} />
             <Route component={ErrorPage} />
           </Switch>
+         
           <Footer />
         </div>
       </Router>
