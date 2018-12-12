@@ -1,4 +1,4 @@
-exports.sampleCourses = [
+exports.course1 =
   {
     id: 'course1',
     courseName: 'Algorithmic Zen',
@@ -8,7 +8,8 @@ exports.sampleCourses = [
     classDays: 'M, W, F',
     classStartTime: '1015',
     classEndTime: '1215',
-  },
+  }
+exports.course2 =
   {
     id: 'course2',
     courseName: 'Catapult Construction',
@@ -18,7 +19,8 @@ exports.sampleCourses = [
     classDays: 'M, W, F',
     classStartTime: '0800',
     classEndTime: '1000',
-  },
+  }
+exports.course3 =
   {
     id: 'course3',
     courseName: 'World Geography 2',
@@ -28,7 +30,8 @@ exports.sampleCourses = [
     classDays: 'M, W, F',
     classStartTime: '1345',
     classEndTime: '1545',
-  },
+  }
+exports.course4 =
   {
     id: 'course4',
     courseName: 'Film as Literature',
@@ -38,7 +41,8 @@ exports.sampleCourses = [
     classDays: 'T, Th',
     classStartTime: '0800',
     classEndTime: '1000',
-  },
+  }
+exports.course5 =
   {
     id: 'course5',
     courseName: 'Boots and Cats and Bass',
@@ -48,7 +52,8 @@ exports.sampleCourses = [
     classDays: 'T, Th',
     classStartTime: '1015',
     classEndTime: '1215',
-  },
+  }
+exports.course6 =
   {
     id: 'course6',
     courseName: 'Gradebook/Escuela Web Apps',
@@ -58,5 +63,13 @@ exports.sampleCourses = [
     classDays: 'T, Th',
     classStartTime: '1345',
     classEndTime: '1545',
-  },
-];
+  }
+exports.sampleCourses = {
+  course1: exports.course1,
+  course2: exports.course2,
+  course3: exports.course3,
+  course4: exports.course4,
+  course5: exports.course5,
+  course6: exports.course6
+
+}
