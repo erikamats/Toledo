@@ -11,25 +11,25 @@ import { course1 } from 'data/sampleCourses'
 
 export default (props) => {
 
-  const { gradebooks, students, assignments, onSaveStudent, onSaveGradebook, onSaveAssignment } = props
+  const { gradebooks, students, assignments, onGetAssignments, onGetStudents, onSaveStudent, onGetGradebooks, onSaveGradebook, onSaveAssignment } = props
 
   return (
     <div>
       <div>
         <GradeTable students={students} />
         <hr />
-        <GradebookList
+        {/* <GradebookList
           gradebooks={gradebooks}
           assignments={assignments}
-        />
-        <button onClick={() => onSaveStudent(student1)}>
-          Save student1
+        /> */}
+        <button onClick={() => onGetAssignments()}>
+          Get assignments
         </button>
-        <button onClick={() => onSaveGradebook(gradebook1)}>
-          Save gradebook1
+        <button onClick={() => onGetGradebooks()}>
+          Get gradebooks
         </button>
-        <button onClick={() => onSaveAssignment(assignment1)}>
-          Save assignment1
+        <button onClick={() => onGetStudents()}>
+          Get students
         </button>
         <StudentsList students={students} />
         {/* <CourseList courses={this.state.allCourses} /> */}
