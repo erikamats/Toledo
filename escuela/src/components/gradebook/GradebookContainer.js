@@ -1,12 +1,14 @@
 import { connect } from 'react-redux'
-import * as ActionTypes from 'actions/types'
 import {
+  getGradebooks,
   saveGradebook,
   removeGradebook,
   updateGradebook,
+  getStudents,
   saveStudent,
   removeStudent,
   updateStudent,
+  getAssignments,
   saveAssignment,
   removeAssignment,
   updateAssignment
@@ -23,6 +25,9 @@ function mapStateToProps(state) {
 }
 const mapDispatchToProps = dispatch => {
   return {
+    onGetGradebooks: () => {
+      dispatch(getGradebooks())
+    },
     onSaveGradebook: gradebook => {
       dispatch(saveGradebook(gradebook))
     },
@@ -32,6 +37,9 @@ const mapDispatchToProps = dispatch => {
     onRemoveGradebook: gradebookId => {
       dispatch(removeGradebook(gradebookId))
     },
+    onGetStudents: () => {
+      dispatch(getStudents())
+    },
     onSaveStudent: student => {
       dispatch(saveStudent(student))
     },
@@ -40,6 +48,9 @@ const mapDispatchToProps = dispatch => {
     },
     onUpdateStudent: student => {
       dispatch(updateStudent(student))
+    },
+    onGetAssignments: () => {
+      dispatch(getAssignments())
     },
     onSaveAssignment: assignment => {
       dispatch(saveAssignment(assignment))
