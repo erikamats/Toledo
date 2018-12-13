@@ -1,0 +1,351 @@
+[
+  {
+    "_id": "58c0884fbbb1a51e0d43a05a",
+    "associatedCourseId": "58c0880bbbb1a51e0d43a056",
+    "name": "Web Dev Gradebook",
+    "gradePortions": [
+      {
+        "portionName": "Tests",
+        "gradeWeight0to1": "0.4"
+      },
+      {
+        "portionName": "Quizzes",
+        "gradeWeight0to1": "0.3"
+      },
+      {
+        "portionName": "Homework",
+        "gradeWeight0to1": "0.3"
+      }
+    ],
+    "studentsIdArray": [
+      "58c039938060197ca0b52d4d",
+      "58c039ee8060197ca0b52d4e",
+      "58c03a428060197ca0b52d4f"
+    ],
+    "assignmentsArray": [
+      {
+        "assignmentId": "58c03ac18060197ca0b52d51",
+        "gradePortionType": "Homework",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "95",
+            "feedback": "Good job, but you only wrote down 1 thing that was clarified!"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "100",
+            "feedback": "Great work, I learned 3 things reading about your 3 things!!!"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "0",
+            "feedback": "You clearly read the React manual and wrote about it in piglatin and invisible ink, NOT VERY GOOD EFFORT!!! :("
+          }
+        ]
+      },
+      {
+        "assignmentId": "58c03af28060197ca0b52d53",
+        "gradePortionType": "Homework",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "98",
+            "feedback": "Wonderfully illuminating second point!"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "85",
+            "feedback": "Please don't do your writing in marker, but otherwise good job!"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "30",
+            "feedback": "See me soon about tutoring on Redux"
+          }
+        ]
+      },
+      {
+        "assignmentId": "58c08780bbb1a51e0d43a050",
+        "gradePortionType": "Tests",
+        "gradesAndFeedback": []
+      },
+      {
+        "assignmentId": "58c08796bbb1a51e0d43a051",
+        "gradePortionType": "Tests",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "100",
+            "feedback": "A landing page in 5 minutes, and you nailed the javascript portion!"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "90",
+            "feedback": "Great short term mockup, and solid performance on the javascript!"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "33",
+            "feedback": "You wrote all your answers in HTML, so convert it back to plain text so I can read it and I will regrade your exam."
+          }
+        ]
+      },
+      {
+        "assignmentId": "58c08796bbb1a51e0d43a051",
+        "gradePortionType": "Tests",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "100",
+            "feedback": "A landing page in 5 minutes, and you nailed the javascript portion!"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "90",
+            "feedback": "Great short term mockup, and solid performance on the javascript!"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "33",
+            "feedback": "You wrote all your answers in HTML, so convert it back to plain text so I can read it and I will regrade your exam."
+          }
+        ]
+      },
+      {
+        "assignmentId": "58c087acbbb1a51e0d43a052",
+        "gradePortionType": "Quizzes",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "75",
+            "feedback": "Re-read the material"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "80",
+            "feedback": "Re-read the section about async state changes"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "50",
+            "feedback": "Re-read the material"
+          }
+        ]
+      },
+      {
+        "assignmentId": "58c087b9bbb1a51e0d43a053",
+        "gradePortionType": "Quizzes",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "95",
+            "feedback": "Wonderful!"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "90",
+            "feedback": "Good job!"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "92",
+            "feedback": "Great!"
+          }
+        ]
+      },
+      {
+        "assignmentId": "58c0888ebbb1a51e0d43a05d",
+        "gradePortionType": "Quizzes",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "100",
+            "feedback": "You are a mongoddess!"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "90",
+            "feedback": "Watch out for those error catches"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "60",
+            "feedback": "You deleted the school's database with your bad code!"
+          }
+        ]
+      },
+      {
+        "assignmentId": "58c089e1d1d97c276fd56cd7",
+        "gradePortionType": "Extra Credit",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "5",
+            "feedback": "Cool app! +5 to final grade"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "50",
+            "feedback": "50 points added to Exam scores, awesome app!"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "100",
+            "feedback": "Replace one quiz grade with a 100! Neat app!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "58c08863bbb1a51e0d43a05b",
+    "associatedCourseId": "58c087debbb1a51e0d43a054",
+    "name": "3rd Graders",
+    "gradePortions": [
+      {
+        "portionName": "Science",
+        "gradeWeight0to1": "0.25"
+      },
+      {
+        "portionName": "Math",
+        "gradeWeight0to1": "0.25"
+      },
+      {
+        "portionName": "Reading",
+        "gradeWeight0to1": "0.25"
+      },
+      {
+        "portionName": "Social Studies",
+        "gradeWeight0to1": "0.25"
+      }
+    ],
+    "studentsIdArray": [
+      "58c05f928060197ca0b52d59",
+      "58c05fd08060197ca0b52d5a",
+      "58c060558060197ca0b52d5b",
+      "58c060e98060197ca0b52d5d",
+      "58c0609b8060197ca0b52d5c",
+      "58c061518060197ca0b52d5e",
+      "58c065dbbbb1a51e0d43a04f"
+    ],
+    "assignmentsArray": []
+  },
+  {
+    "_id": "58c08878bbb1a51e0d43a05c",
+    "associatedCourseId": "58c08841bbb1a51e0d43a059",
+    "name": "Art of Mexico Projects",
+    "gradePortions": [
+      {
+        "portionName": "Submissions",
+        "gradeWeight0to1": "1.0"
+      }
+    ],
+    "studentsIdArray": [
+      "58c039938060197ca0b52d4d",
+      "58c039ee8060197ca0b52d4e",
+      "58c03a428060197ca0b52d4f",
+      "58c03a958060197ca0b52d50",
+      "58c057838060197ca0b52d54",
+      "58c05aef8060197ca0b52d55",
+      "58c05b558060197ca0b52d56",
+      "58c05bcd8060197ca0b52d57",
+      "58c05c208060197ca0b52d58",
+      "58c05f928060197ca0b52d59",
+      "58c05fd08060197ca0b52d5a",
+      "58c060558060197ca0b52d5b",
+      "58c060e98060197ca0b52d5d",
+      "58c0609b8060197ca0b52d5c",
+      "58c061518060197ca0b52d5e",
+      "58c065dbbbb1a51e0d43a04f"
+    ],
+    "assignmentsArray": [
+      {
+        "assignmentId": "58c088a9bbb1a51e0d43a05e",
+        "gradePortionType": "Submissions",
+        "gradesAndFeedback": [
+          {
+            "studentId": "58c039938060197ca0b52d4d",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c039ee8060197ca0b52d4e",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c03a428060197ca0b52d4f",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c03a958060197ca0b52d50",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c057838060197ca0b52d54",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c05aef8060197ca0b52d55",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c05b558060197ca0b52d56",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c05bcd8060197ca0b52d57",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c05c208060197ca0b52d58",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c05f928060197ca0b52d59",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c05fd08060197ca0b52d5a",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c060558060197ca0b52d5b",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c060e98060197ca0b52d5d",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c0609b8060197ca0b52d5c",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c061518060197ca0b52d5e",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          },
+          {
+            "studentId": "58c065dbbbb1a51e0d43a04f",
+            "grade": "100",
+            "feedback": "Perfecto!"
+          }
+        ]
+      }
+    ]
+  }
+]
