@@ -1,6 +1,30 @@
 import * as ActionTypes from './types';
 import axios from 'axios'
+// GET STUDENT
+export const getStudents = () => {
+  return dispatch => {
+    dispatch(getStudentsStarted())
+    axios.get('/students').then(res => {
+      console.dir(res)
+      dispatch(getStudentsSuccess(res.data))
+    }).catch(error => {
+      dispatch(getStudentsFailure(error))
+    })
+  }
+}
+const getStudentsStarted = () => ({
+  type: ActionTypes.GET_DB_STUDENTS_STARTED
+})
+const getStudentsSuccess = students => ({
+  type: ActionTypes.GET_DB_STUDENTS_SUCCESS,
+  payload: { students }
+})
+const getStudentsFailure = error => ({
+  type: ActionTypes.GET_DB_STUDENTS_FAILURE,
+  error: error
+})
 
+// SAVE STUDENT
 export const saveStudent = (student) => {
   return dispatch => {
     dispatch(saveStudentStarted())
@@ -23,7 +47,6 @@ const saveStudentFailure = error => ({
   type: ActionTypes.ADD_DB_STUDENT_FAILURE,
   error: error.response.data
 })
-
 export const removeStudent = (id) => {
   return {
     type: ActionTypes.REMOVE_STUDENT,

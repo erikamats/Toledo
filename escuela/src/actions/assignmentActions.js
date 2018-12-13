@@ -1,10 +1,35 @@
 import * as ActionTypes from './types';
-import Axios from 'axios';
+import axios from 'axios';
 
+// GET ASSIGNMENTS
+export const getAssignments = () => {
+  return dispatch => {
+    dispatch(getAssignmentsStarted())
+    axios.get('/assignments').then(res => {
+      console.dir(res)
+      dispatch(getAssignmentsSuccess(res.data))
+    }).catch(error => {
+      dispatch(getAssignmentsFailure(error))
+    })
+  }
+}
+const getAssignmentsStarted = () => ({
+  type: ActionTypes.GET_DB_ASSIGNMENTS_STARTED
+})
+const getAssignmentsSuccess = assignments => ({
+  type: ActionTypes.GET_DB_ASSIGNMENTS_SUCCESS,
+  payload: { assignments }
+})
+const getAssignmentsFailure = error => ({
+  type: ActionTypes.GET_DB_ASSIGNMENTS_FAILURE,
+  error: error
+})
+
+// SAVE ASSIGNMENT
 export const saveAssignment = (assignment) => {
   return dispatch => {
     dispatch(saveAssignmentStarted())
-    Axios.post('/register-assignment', { assignment }).then(res => {
+    axios.post('/register-assignment', { assignment }).then(res => {
       dispatch(saveAssignmentSuccess(res.data))
     }).catch(error => {
       dispatch(saveAssignmentFailure(error))
