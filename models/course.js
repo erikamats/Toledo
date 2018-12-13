@@ -1,14 +1,8 @@
 const mongoose = require('mongoose');
-const uniqueValidator = require('mongoose-unique-validator');
 
 const courseSchema = new mongoose.Schema(
+
   {
-    id: {
-      type: String,
-      trim: true,
-      unique: true,
-      required: [true, 'A course id is required'],
-    },
     courseName: {
       type: String,
       trim: true,
@@ -27,17 +21,12 @@ const courseSchema = new mongoose.Schema(
       type: Date,
       default: Date.now(),
     },
-    capacity: {
-      type: Number,
-      required: false,
-    },
-    classDays: String,
+    classDays: [String],
     classStartTime: String,
     classEndTime: String
   },
   { timestamps: true }
-);
 
-courseSchema.plugin(uniqueValidator, { message: 'id is already taken' });
+);
 
 module.exports = mongoose.model('Course', courseSchema);
