@@ -1,6 +1,6 @@
 import React from "react";
 import { Col } from "reactstrap";
-import FooterListItem from "./FooterListitem";
+import FooterListItem from "./FooterListItem";
 
 export const FooterWidget = ({ href, listText, footerTitle }) => {
   return (
