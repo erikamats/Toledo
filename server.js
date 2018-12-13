@@ -10,8 +10,8 @@ const connectURI = process.env.MONGODB_URI;
 try {
   console.log('Attempting mongoDB connection')
   mongoose.connect(connectURI, { useNewUrlParser: true });
-} catch{
-  console.log(`Connection failed. Attempted URI: ${connectURI}`)
+} catch (error) {
+  console.log(error)
 } finally {
   console.log('Onwards!')
 }
