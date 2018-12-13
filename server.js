@@ -8,12 +8,9 @@ require('dotenv').config({ path: 'variables.env' });
 mongoose.Promise = global.Promise; // Tell Mongoose to use ES6 promises
 const connectURI = process.env.MONGODB_URI;
 try {
-  console.log('Attempting mongoDB connection')
   mongoose.connect(connectURI, { useNewUrlParser: true });
 } catch (error) {
   console.log(error)
-} finally {
-  console.log('Onwards!')
 }
 mongoose.connection.once('open', () => console.log('Connection to MongoDB database was successful!'));
 
