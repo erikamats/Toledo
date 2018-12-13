@@ -19,6 +19,7 @@ require('./models/student');
 require('./models/course');
 require('./models/assignment');
 require('./models/gradebook');
+require('./models/user');
 
 // Start our app!
 app.set('port', process.env.EXPRESS_LOCALPORT || 5000);
