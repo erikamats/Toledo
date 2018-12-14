@@ -7,7 +7,7 @@ export default (props) => {
     <div>
       <h2>Student List</h2>
       <ul>
-        {students.students.map((student) => {
+        {students.students && students.students.map((student) => {
           const { id, firstName, lastName, gender, dateEnrolled, currentGradeLevel } = student
           return (
             <li key={id}>
