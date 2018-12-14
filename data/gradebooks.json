@@ -77,17 +77,17 @@
           {
             "studentId": "58c039938060197ca0b52d4d",
             "grade": "100",
-            "feedback": "A landing page in 5 minutes, and you nailed the javascript portion!"
+            "feedback": "Another perfect score, amazing!"
           },
           {
             "studentId": "58c039ee8060197ca0b52d4e",
             "grade": "90",
-            "feedback": "Great short term mockup, and solid performance on the javascript!"
+            "feedback": "What a beast!"
           },
           {
             "studentId": "58c03a428060197ca0b52d4f",
-            "grade": "33",
-            "feedback": "You wrote all your answers in HTML, so convert it back to plain text so I can read it and I will regrade your exam."
+            "grade": "80",
+            "feedback": "Much better, but your function calls were all wrong and no closure."
           }
         ]
       },
