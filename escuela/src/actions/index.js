@@ -2,15 +2,18 @@ import axios from 'axios';
 import * as ActionTypes from './types'
 
 export {
+  getGradebooks,
   saveGradebook, removeGradebook,
   updateGradebook
 } from './gradebookActions';
 export {
+  getStudents,
   saveStudent,
   removeStudent,
   updateStudent,
 } from './studentActions';
 export {
+  getAssignments,
   saveAssignment,
   removeAssignment,
   updateAssignment

@@ -3,6 +3,22 @@ import { updateObject } from './utilityFunctions'
 
 export default (state = {}, action) => {
   switch (action.type) {
+    case ActionTypes.GET_DB_GRADEBOOKS_STARTED:
+      return updateObject(state, {
+        isLoading: true,
+        error: false
+      })
+    case ActionTypes.GET_DB_GRADEBOOKS_SUCCESS:
+      return updateObject(state, {
+        ...action.payload,
+        isLoading: false,
+        error: false
+      })
+    case ActionTypes.GET_DB_GRADEBOOKS_FAILURE:
+      return updateObject(state, {
+        isLoading: false,
+        error: action.error
+      })
     case ActionTypes.ADD_DB_GRADEBOOK_STARTED:
       return updateObject(state, {
         isLoading: true,

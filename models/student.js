@@ -1,32 +1,25 @@
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise
-const uniqueValidator = require('mongoose-unique-validator')
-const studentSchema = new mongoose.Schema(
-  {
-    id: {
-      type: String,
-      trim: true,
-      unique: true,
-      required: [true, 'An id is required'],
-    },
-    firstName: {
-      type: String,
-      trim: true,
-      required: [true, 'A first name is required'],
-    },
-    lastName: {
-      type: String,
-      trim: true,
-      required: [true, 'A last name is required'],
-    },
-    gender: String,
-    dateEnrolled: {
-      type: Date,
-      default: Date.now(),
-    },
-    currentGradeLevel: Number
+
+const studentSchema = new mongoose.Schema({
+  firstName: {
+    type: String,
+    trim: true,
+    required: [true, 'A first name is required'],
   },
-  { timestamps: true },
-);
-studentSchema.plugin(uniqueValidator, { message: 'id is taken' })
+  lastName: {
+    type: String,
+    trim: true,
+    required: [true, 'A last name is required'],
+  },
+  birthday: Date,
+  gender: String,
+  dateEnrolled: {
+    type: Date,
+    default: Date.now(),
+  },
+  currentGradeLevel: Number,
+  photo: String,
+},
+  { timestamps: true });
+
 module.exports = mongoose.model('Student', studentSchema);

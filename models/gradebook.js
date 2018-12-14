@@ -1,42 +1,43 @@
 const mongoose = require('mongoose');
 
-const uniqueValidator = require('mongoose-unique-validator');
-const assignedStudent = new mongoose.Schema(
-  {
-    id: {
-      type: String
-    },
-    name: {
-      type: String
-    }
-  }
-)
-const gradebookSchema = new mongoose.Schema(
-  {
-    id: {
-      type: String,
-      unique: true,
-      trim: true,
-      required: [true, 'An id is required'],
-    },
-    courseCommonName: {
-      type: String,
-      trim: true,
-    },
-    associatedCourseId: {
-      type: String,
-      trim: true,
-    },
-    gradePortions: [
-      {
-        portionName: String,
-        gradeWeight0to1: String
-      }
-    ],
-    studentsArray: [assignedStudent],
+const gradebookSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    trim: true,
   },
-);
-
-gradebookSchema.plugin(uniqueValidator, { message: 'id is already taken' });
+  associatedCourseId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Course',
+  },
+  gradePortions: [
+    {
+      portionName: String,
+      gradeWeight0to1: String
+    }
+  ],
+  studentsIdArray: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Student'
+  }],
+  assignmentsArray: [
+    {
+      assignmentId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Assignment',
+      },
+      gradePortionType: String,
+      gradesAndFeedback: [
+        {
+          studentId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Student'
+          },
+          grade: String,
+          feedback: String
+        }
+      ]
+    }
+  ]
+});
 
 module.exports = mongoose.model('Gradebook', gradebookSchema);

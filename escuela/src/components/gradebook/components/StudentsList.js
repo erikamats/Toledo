@@ -1,13 +1,14 @@
 import React from 'react'
 
 export default (props) => {
-  const { students } = props;
+  const { students } = props
+  const { isLoading, error } = students
   return (
     <div>
+      <h2>Student List</h2>
       <ul>
-        {students && Object.keys(students).map((studentsKey) => {
-          if (studentsKey === 'isLoading' || studentsKey === 'error') { return null }
-          const { id, firstName, lastName, gender, dateEnrolled, currentGradeLevel } = students[studentsKey]
+        {students.students && students.students.map((student) => {
+          const { id, firstName, lastName, gender, dateEnrolled, currentGradeLevel } = student
           return (
             <li key={id}>
               <h5>{firstName}{' '}{lastName}</h5>
