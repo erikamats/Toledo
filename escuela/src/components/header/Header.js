@@ -32,12 +32,13 @@ export default class Header extends Component {
               </a>
             </Col>
             <Col>
-              {" "}
+            <a href="/">
               <img
                 src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png"
                 alt="Toledo"
                 className="navlogoImg"
               />
+              </a>
             </Col>
             <Col>
               <i className="fab fa-facebook-square fa-2x " />
