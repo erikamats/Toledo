@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-// import NavigationBar from './components/nav/NavigationBar';
 import MessagesList from './components/flashMessages/MessagesList';
+import TeacherDashboard from "./components/teacherDashboard/teacherDashboard";
 import LandingPage from './components/landingPage/LandingPage';
 import ErrorPage from './components/error/ErrorPage';
 import GradebookContainer from './components/gradebook/GradebookContainer';
@@ -27,7 +27,7 @@ class App extends Component {
             <Route exact path="/gradebook" component={GradebookContainer} />
             <Route exact path="/users" component={UsersList} />
             <Route exact path="/signup" component={SignupPage} />
-            {/* <Route exact path="/dashboard" component={Dashboard} /> */}
+            <Route exact path="/dashboard" component={TeacherDashboard} />
             <Route component={ErrorPage} />
           </Switch>
          
