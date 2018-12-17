@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import MessagesList from './components/flashMessages/MessagesList';
-import TeacherDashboard from "./components/teacherDashboard/teacherDashboard";
+import TeacherDashboard from "./components/teacherDashboard/TeacherDashboard";
 import LandingPage from './components/landingPage/LandingPage';
 import ErrorPage from './components/error/ErrorPage';
 import GradebookContainer from './components/gradebook/GradebookContainer';
@@ -30,7 +30,6 @@ class App extends Component {
             <Route exact path="/dashboard" component={TeacherDashboard} />
             <Route component={ErrorPage} />
           </Switch>
-         
           <Footer />
         </div>
       </Router>

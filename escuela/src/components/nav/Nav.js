@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 export const NavMain = () =>{
     return(
-        <Nav className="justify-content-center ">
+        <Nav className="justify-content-center mainNav">
           <NavItem>
             <NavLink href="/about">About</NavLink>
           </NavItem>

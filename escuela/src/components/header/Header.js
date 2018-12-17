@@ -5,10 +5,12 @@ export default class Header extends Component {
     return (
       <div className="header-section">
         <Nav className="header-top">
+        <NavItem>
+            <NavLink href="/dashboard">Dashboard</NavLink>
+          </NavItem>
           <NavItem>
             <NavLink href="/assignment">Assignment</NavLink>
           </NavItem>
-
           <NavItem>
             <NavLink href="/events">Events</NavLink>
           </NavItem>
