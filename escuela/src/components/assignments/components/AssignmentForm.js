@@ -1,5 +1,5 @@
 import React from "react";
-import TextFieldGroup from "../common/TextFieldGroup";
+import TextFieldGroup from "../../common/TextFieldGroup";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const AssignmentForm = ({
@@ -49,7 +49,7 @@ const AssignmentForm = ({
 
       <div className="custom-file">
         <input type="file" className="custom-file-input" id="customFile" />
-        <label className="custom-file-label" for="customFile">
+        <label className="custom-file-label" htmlFor="customFile">
           Choose file - funct. needed
         </label>
       </div>

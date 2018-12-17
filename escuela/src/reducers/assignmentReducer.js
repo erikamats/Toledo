@@ -21,14 +21,13 @@ export default (state = {}, action) => {
       })
     case ActionTypes.ADD_DB_ASSIGNMENT_STARTED:
       return updateObject(state, {
-        isLoading: true,
-        error: false
+        isLoading: true     
       })
     case ActionTypes.ADD_DB_ASSIGNMENT_SUCCESS:
       return updateObject(state, {
-        [action.payload._id]: action.payload,
+        [action.payload.id]: action.payload,
         isLoading: false,
-        error: false
+        error: action.error
       })
     case ActionTypes.ADD_DB_ASSIGNMENT_FAILURE:
       return updateObject(state, {
@@ -37,11 +36,11 @@ export default (state = {}, action) => {
       })
     case ActionTypes.REMOVE_ASSIGNMENT:
       return updateObject(state, {
-        [action.payload._id]: undefined
+        [action.payload.id]: undefined
       })
     case ActionTypes.UPDATE_ASSIGNMENT:
       return updateObject(state, {
-        [action.payload._id]: updateObject(state[action.payload._id], action.payload)
+        [action.payload.id]: updateObject(state[action.payload.id], action.payload)
       })
     default: return state;
   }

@@ -7,7 +7,8 @@ import ErrorPage from './components/error/ErrorPage';
 import GradebookContainer from './components/gradebook/GradebookContainer';
 import SignupPage from './components/signup/SignupPage';
 import UsersList from './components/users/UsersList';
-import Assignment from "./components/assignments/Assignment";
+// import Assignment from "./components/assignments/Assignment";
+import AssignmentContainer from './components/assignments/AssignmentContainer';
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header"
 import './App.css';
@@ -22,11 +23,11 @@ class App extends Component {
           <MessagesList />
           <Switch>
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/assignment" component={Assignment} />
+            <Route exact path="/assignment" component={AssignmentContainer} />
             <Route exact path="/gradebook" component={GradebookContainer} />
             <Route exact path="/users" component={UsersList} />
             <Route exact path="/signup" component={SignupPage} />
-            <Route exact path="/dashboard" component={SignupPage} />
+            {/* <Route exact path="/dashboard" component={Dashboard} /> */}
             <Route component={ErrorPage} />
           </Switch>
          

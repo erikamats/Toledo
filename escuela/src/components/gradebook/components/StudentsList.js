@@ -2,7 +2,7 @@ import React from 'react'
 
 export default (props) => {
   const { students } = props
-  const { isLoading, error } = students
+  // const { isLoading, error } = students
   return (
     <div>
       <h2>Student List</h2>
