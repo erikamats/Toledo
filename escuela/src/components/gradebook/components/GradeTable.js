@@ -3,23 +3,18 @@ import { Table } from "reactstrap";
 import GradeTableHeader from "./GradeTableHeader";
 import GradeItem from "./GradeItem";
 
-
-const GradeTable = (props) => {
-
-  //   render(props) {
+const GradeTable = props => {
   const { students } = props;
-  return (
+    return (
     <Table hover>
       <GradeTableHeader />
 
       <tbody>
-        {students && Object.keys(students).map((studentsKey) => {
-          if (studentsKey === 'isLoading' || studentsKey === 'error') { return null }
-          const student = students[studentsKey]
-          return (
-            <GradeItem key={student.id} students={student.firstName} />
-          )
-        })}
+        {students.students &&
+          students.students.map(student => {
+            const { id, firstName, lastName } = student;
+            return <GradeItem key={id} students={firstName + " " + lastName} />;
+          })}
         {/* <GradeItem studentName="Erika" />
           <GradeItem studentName="Bob" />
           <GradeItem studentName="John" />
@@ -31,5 +26,5 @@ const GradeTable = (props) => {
   //close render
   //   }
   //close component
-}
+};
 export default GradeTable;

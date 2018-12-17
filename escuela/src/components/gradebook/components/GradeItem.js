@@ -2,7 +2,8 @@ import React from "react";
 import HeaderItem from "./HeaderItem";
 import CellItem from "./CellItem";
 
-const GradeItem = ({ students }) => {
+const GradeItem = props => {
+  const { students } = props;
   return (
     //eventually will map through length of assignments
 
