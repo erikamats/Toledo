@@ -103,7 +103,7 @@
   background-color: var(--yellow);
   vertical-align: middle;
   position: absolute;
-  /* bottom: 12vh; */
+  bottom: 12vh;
   display: flex;
   flex-direction: column;
   width: 50%;
