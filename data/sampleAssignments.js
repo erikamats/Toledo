@@ -1,7 +1,6 @@
 exports.assignment1 = {
   id: 'assignment1',
   name: 'Incrementing and Decrementing worksheet',
-  associatedGradebookById: 'gradebook1',
   studentsAssignedTo: [
     {
       id: 'student1',
@@ -20,7 +19,6 @@ exports.assignment1 = {
 exports.assignment2 = {
   id: 'assignment2',
   name: 'Incrementing and Decrementing worksheet',
-  associatedGradebookById: 'gradebook1',
   studentsAssignedTo: [
     {
       id: 'student1',

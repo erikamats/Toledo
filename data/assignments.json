@@ -1,55 +1,46 @@
 [
   {
     "_id": "58c03ac18060197ca0b52d51",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "WebDev Homework 1",
     "description": "Read the Redux manual, write down 3 new things you learn"
   },
   {
     "_id": "58c03af28060197ca0b52d53",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "WebDev Homework 2",
     "description": "Read the entire Redux manual again, write down 3 things that became much clearer on this read-through."
   },
   {
     "_id": "58c08780bbb1a51e0d43a050",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "WebDev Test 1",
     "description": "Exam 1"
   },
   {
     "_id": "58c08796bbb1a51e0d43a051",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "WebDev Test 2",
     "description": "Exam 2"
   },
   {
     "_id": "58c087acbbb1a51e0d43a052",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "WebDev Quiz 1",
     "description": "Quiz over React"
   },
   {
     "_id": "58c087b9bbb1a51e0d43a053",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "WebDev Quiz 2",
     "description": "over Redux"
   },
   {
     "_id": "58c0888ebbb1a51e0d43a05d",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "WebDev Quiz 3",
     "description": "quiz on mongoose/mongodb operations"
   },
   {
     "_id": "58c089e1d1d97c276fd56cd7",
-    "associatedGradebookById": "58c0884fbbb1a51e0d43a05a",
     "name": "Extra Credit App",
     "description": "convert a previously made react app to a react native app"
   },
   {
     "_id": "58c088a9bbb1a51e0d43a05e",
-    "associatedGradebookById": "58c08878bbb1a51e0d43a05c",
     "name": "Dia de Los Muertos Art Project",
     "description": ""
   }

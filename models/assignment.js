@@ -10,10 +10,6 @@ const assignmentSchema = new mongoose.Schema({
     type: String,
     trim: true
   },
-  associatedGradebookById: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Gradebook',
-  }
 });
 
 module.exports = mongoose.model('Assignment', assignmentSchema);
