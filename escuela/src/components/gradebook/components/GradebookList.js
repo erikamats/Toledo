@@ -5,20 +5,15 @@ export default (props) => {
   return (
     <div>
       <ul>
-        {gradebooks && Object.keys(gradebooks).map((gradebooksKey) => {
-          if (gradebooksKey === 'isLoading' || gradebooksKey === 'error') { return null }
-          const { id, courseCommonName, gradePortions, associatedCourseId, assignmentsIdArray } = gradebooks[gradebooksKey]
+        {gradebooks.gradebooks && gradebooks.gradebooks.map((gradebook) => {
+          const { _id, name, associatedCourse, studentsInClass } = gradebook
           return (
-            <li key={id}>
-              <h3>{courseCommonName}</h3>
-              <p>associatedCourseId: {associatedCourseId}</p>
-              <h5>gradePortions</h5>
-              <ul>{gradePortions.map(portion => (
-                <li key={portion.portionName}>
-                  <h6>{portion.portionName}</h6>
-                  <p>{portion.gradeWeight0to1}</p>
-                </li>
-              ))}
+            <li key={_id}>
+              <h3>{name}</h3>
+              <p>For course: {associatedCourse.courseName}</p>
+              <h6>Students in Class</h6>
+              <ul>
+                {studentsInClass.map((student) => (<li key={student._id}>{`${student.firstName} ${student.lastName}`}</li>))}
               </ul>
             </li>
           )
