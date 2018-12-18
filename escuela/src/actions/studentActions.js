@@ -5,7 +5,7 @@ export const getStudents = () => {
   return dispatch => {
     dispatch(getStudentsStarted())
     axios.get('/students').then(res => {
-      console.dir(res)
+      console.dir(res.data)
       dispatch(getStudentsSuccess(res.data))
     }).catch(error => {
       dispatch(getStudentsFailure(error))

@@ -6,7 +6,7 @@ export const getAssignments = () => {
   return dispatch => {
     dispatch(getAssignmentsStarted())
     axios.get('/assignments').then(res => {
-      console.dir(res)
+      console.dir(res.data)
       dispatch(getAssignmentsSuccess(res.data))
     }).catch(error => {
       dispatch(getAssignmentsFailure(error))

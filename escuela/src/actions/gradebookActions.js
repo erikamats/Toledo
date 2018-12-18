@@ -6,7 +6,7 @@ export const getGradebooks = () => {
   return dispatch => {
     dispatch(getGradebooksStarted())
     axios.get('/gradebooks').then(res => {
-      console.dir(res)
+      console.dir(res.data)
       dispatch(getGradebooksSuccess(res.data))
     }).catch(error => {
       dispatch(getGradebooksFailure(error))
