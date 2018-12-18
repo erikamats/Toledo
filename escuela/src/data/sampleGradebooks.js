@@ -1,6 +1,6 @@
 export const gradebook1 = {
   id: 'gradebook1',
-  associatedCourseId: 'course1',
+  associatedCourse: 'course1',
   courseCommonName: 'Algorithmic Zen',
   gradePortions: [
     {
@@ -26,7 +26,7 @@ export const gradebook1 = {
 }
 export const gradebook2 = {
   id: 'gradebook2',
-  associatedCourseId: 'course2',
+  associatedCourse: 'course2',
   courseCommonName: 'Catapult Construction',
   gradePortions: [
     {
@@ -56,7 +56,7 @@ export const gradebook2 = {
 }
 export const gradebook3 = {
   id: 'gradebook3',
-  associatedCourseId: 'course3',
+  associatedCourse: 'course3',
   courseCommonName: 'World Geography 2',
   gradePortions: [
     {

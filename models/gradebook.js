@@ -5,7 +5,7 @@ const gradebookSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
-  associatedCourseId: {
+  associatedCourse: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Course',
   },

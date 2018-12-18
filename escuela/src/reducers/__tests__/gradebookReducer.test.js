@@ -11,7 +11,7 @@ describe('gradebookReducer', () => {
     const after = {
       gradebook1: {
         id: 'gradebook1',
-        associatedCourseId: 'course1',
+        associatedCourse: 'course1',
         courseCommonName: 'Algorithmic Zen',
         gradePortions: [
           {
@@ -37,7 +37,7 @@ describe('gradebookReducer', () => {
     }
     const gradebookToAdd = {
       id: 'gradebook1',
-      associatedCourseId: 'course1',
+      associatedCourse: 'course1',
       courseCommonName: 'Algorithmic Zen',
       gradePortions: [
         {
@@ -70,7 +70,7 @@ describe('gradebookReducer', () => {
     const before = {
       gradebook1: {
         id: 'gradebook1',
-        associatedCourseId: 'course1',
+        associatedCourse: 'course1',
         courseCommonName: 'Algorithmic Zen',
         gradePortions: [
           {
@@ -95,7 +95,7 @@ describe('gradebookReducer', () => {
       },
       gradebook2: {
         id: 'gradebook2',
-        associatedCourseId: 'course2',
+        associatedCourse: 'course2',
         courseCommonName: 'Catapult Construction',
         gradePortions: [
           {
@@ -126,7 +126,7 @@ describe('gradebookReducer', () => {
     const after = {
       gradebook1: {
         id: 'gradebook1',
-        associatedCourseId: 'course1',
+        associatedCourse: 'course1',
         courseCommonName: 'Algorithmic Zen',
         gradePortions: [
           {
@@ -162,7 +162,7 @@ test('should update a gradebook', () => {
   const before = {
     gradebook1: {
       id: 'gradebook1',
-      associatedCourseId: 'course1',
+      associatedCourse: 'course1',
       courseCommonName: 'Algorithmic Zen',
       gradePortions: [
         {
@@ -189,7 +189,7 @@ test('should update a gradebook', () => {
   const after = {
     gradebook1: {
       id: 'gradebook1',
-      associatedCourseId: 'course1',
+      associatedCourse: 'course1',
       courseCommonName: 'Algorithmic Zen',
       gradePortions: [
         {

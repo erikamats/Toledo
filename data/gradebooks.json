@@ -1,7 +1,7 @@
 [
   {
     "_id": "58c0884fbbb1a51e0d43a05a",
-    "associatedCourseId": "58c0880bbbb1a51e0d43a056",
+    "associatedCourse": "58c0880bbbb1a51e0d43a056",
     "name": "Web Dev Gradebook",
     "gradePortions": [
       {
@@ -200,7 +200,7 @@
   },
   {
     "_id": "58c08863bbb1a51e0d43a05b",
-    "associatedCourseId": "58c087debbb1a51e0d43a054",
+    "associatedCourse": "58c087debbb1a51e0d43a054",
     "name": "3rd Graders",
     "gradePortions": [
       {
@@ -233,7 +233,7 @@
   },
   {
     "_id": "58c08878bbb1a51e0d43a05c",
-    "associatedCourseId": "58c08841bbb1a51e0d43a059",
+    "associatedCourse": "58c08841bbb1a51e0d43a059",
     "name": "Art of Mexico Projects",
     "gradePortions": [
       {

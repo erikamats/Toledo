@@ -6,7 +6,7 @@ import {
 
 const testGradebook = {
   id: 'gradebook1',
-  associatedCourseId: 'course1',
+  associatedCourse: 'course1',
   courseCommonName: 'Algorithmic Zen',
   gradePortions: [
     {
