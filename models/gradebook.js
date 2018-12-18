@@ -40,4 +40,13 @@ const gradebookSchema = new mongoose.Schema({
   ]
 });
 
+function autopopulate(next) {
+  this.populate('associatedCourse');
+  this.populate('studentsInClass');
+  next();
+}
+
+gradebookSchema.pre('find', autopopulate);
+gradebookSchema.pre('findOne', autopopulate);
+
 module.exports = mongoose.model('Gradebook', gradebookSchema);
