@@ -18,6 +18,12 @@ export {
   removeAssignment,
   updateAssignment
 } from './assignmentActions';
+export {
+  registerUser,
+  loginUser,
+  setCurrentUser,
+  logoutUser
+} from './authActions';
 
 export const fetchUsers = () => async dispatch => {
   const res = await axios.get('/students');
