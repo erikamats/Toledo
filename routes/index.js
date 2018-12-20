@@ -1,7 +1,7 @@
 const express = require('express');
 const { catchErrors } = require('../handlers/errorHandlers');
 const gradebookController = require('../controllers/gradebookController');
-const homepageController = require('../controllers/homepageController');
+const userController = require('../controllers/userController');
 
 const router = express.Router();
 
