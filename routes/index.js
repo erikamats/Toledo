@@ -15,4 +15,10 @@ router.post('/register-gradebook', catchErrors(gradebookController.saveGradebook
 router.post('/register-assignment', catchErrors(gradebookController.saveAssignment));
 router.post('/register-course', gradebookController.saveCourse);
 
+router.post('/register', userController.register);
+
+router.post('/login', userController.login);
+
+router.get('/me', userController.authenticateUser, userController.myProfile);
+
 module.exports = router;
