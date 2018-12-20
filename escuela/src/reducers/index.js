@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import usersReducer from './userReducers';
+import authReducer from './authReducer';
 import userPostReducer from './userPostReducer';
 import flashMessages from './flashMessages';
 import classesReducer from './classesReducer';
@@ -9,7 +9,7 @@ import assignmentReducer from './assignmentReducer';
 import studentReducer from './studentReducer';
 
 export default combineReducers({
-  users: usersReducer,
+  auth: authReducer,
   posts: userPostReducer,
   message: flashMessages,
   classes: classesReducer,
