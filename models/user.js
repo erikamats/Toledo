@@ -1,26 +1,29 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-mongoose.Promise = global.Promise;
-const validator = require('validator');
 
-const userSchema = new Schema({
-  email: {
-    type: String,
-    unique: true,
-    lowercase: true,
-    trim: true,
-    validate: [validator.isEmail, 'Invalid Email Address'],
-    required: 'Please supply an email address',
-  },
+const Schema = mongoose.Schema;
+
+const UserSchema = new Schema({
   name: {
     type: String,
-    required: 'Please supply a name',
-    trim: true,
+    required: true
   },
-  resetPasswordToken: String,
-  resetPasswordExpires: Date,
-  salt: String,
-  hash: String
+  email: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  avatar: {
+    type: String
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  }
 });
 
-module.exports = mongoose.model('User', userSchema);
+const User = mongoose.model('User', UserSchema);
+
+module.exports = User;
