@@ -32,6 +32,11 @@ exports.register = function (req, res) {
         password: req.body.password,
         avatar
       });
+      // SEND THEM THIS SO THEY CAN LOG IN AUTOMATICALLY AFTER SUCCESSFUL REGISTER
+      const loginUserForAfterRegister = {
+        email: req.body.email,
+        password: req.body.password,
+      }
 
       bcrypt.genSalt(10, (err, salt) => {
         if (err) console.error('There was an error', err);
@@ -42,9 +47,9 @@ exports.register = function (req, res) {
               newUser.password = hash;
               newUser
                 .save()
-                .then(user => {
-                  res.json(user)
-                });
+                .then(newUser => {
+                  res.send(loginUserForAfterRegister)
+                })
             }
           });
         }
