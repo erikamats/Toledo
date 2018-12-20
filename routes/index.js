@@ -5,7 +5,6 @@ const userController = require('../controllers/userController');
 
 const router = express.Router();
 
-router.get('/', homepageController.sendSampleDataAsJSON)
 router.get('/students', catchErrors(gradebookController.getStudents))
 router.get('/gradebooks', catchErrors(gradebookController.getGradebooks))
 router.get('/assignments', catchErrors(gradebookController.getAssignments))
