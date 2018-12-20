@@ -1,5 +1,5 @@
 const express = require('express');
-
+const passport = require('passport');
 // We may add session features later
 // const session = require('express-session');
 // const MongoStore = require('connect-mongo')(session);
@@ -19,6 +19,10 @@ const errorHandlers = require('./handlers/errorHandlers');
 
 // create our Express app
 const app = express();
+
+// use passport jwt authentication
+app.use(passport.initialize());
+require('./validation/passport')(passport);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === 'production') {
