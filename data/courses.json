@@ -1,0 +1,87 @@
+[
+  {
+    "_id": "58c087debbb1a51e0d43a054",
+    "courseName": "3rd Grade Class",
+    "subject": "All",
+    "startDate": "2018-08-01T08:00:00.000Z",
+    "endDate": "2018-12-20T20:00:00.000Z",
+    "classDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "classStartTime": "0800",
+    "classEndTime": "1500"
+  },
+  {
+    "_id": "58c087f4bbb1a51e0d43a055",
+    "courseName": "2nd Grade Class",
+    "subject": "All",
+    "startDate": "2018-08-01T08:00:00.000Z",
+    "endDate": "2018-12-20T20:00:00.000Z",
+    "classDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "classStartTime": "0800",
+    "classEndTime": "1500"
+  },
+  {
+    "_id": "58c0880bbbb1a51e0d43a056",
+    "courseName": "Web Development",
+    "subject": "Technology",
+    "startDate": "2018-08-01T08:00:00.000Z",
+    "endDate": "2018-12-20T20:00:00.000Z",
+    "classDays": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "classStartTime": "0800",
+    "classEndTime": "1100"
+  },
+  {
+    "_id": "58c08821bbb1a51e0d43a057",
+    "courseName": "Algebra",
+    "subject": "Math",
+    "startDate": "2018-08-01T08:00:00.000Z",
+    "endDate": "2018-12-20T20:00:00.000Z",
+    "classDays": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "classStartTime": "1300",
+    "classEndTime": "1600"
+  },
+  {
+    "_id": "58c08832bbb1a51e0d43a058",
+    "courseName": "Creative Writing",
+    "subject": "Writing",
+    "startDate": "2018-08-01T08:00:00.000Z",
+    "endDate": "2018-12-20T20:00:00.000Z",
+    "classDays": [
+      "Tuesday",
+      "Thursday"
+    ],
+    "classStartTime": "0800",
+    "classEndTime": "1100"
+  },
+  {
+    "_id": "58c08841bbb1a51e0d43a059",
+    "courseName": "History of Mexico",
+    "subject": "History",
+    "startDate": "2018-08-01T08:00:00.000Z",
+    "endDate": "2018-12-20T20:00:00.000Z",
+    "classDays": [
+      "Thursday"
+    ],
+    "classStartTime": "1300",
+    "classEndTime": "1600"
+  }
+]

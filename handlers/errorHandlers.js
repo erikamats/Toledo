@@ -28,24 +28,17 @@ exports.notFound = (req, res, next) => {
 */
 
 exports.developmentErrors = (error, req, res, next) => {
+  console.log("Development Error")
   const stack = error.stack || '';
   const errorDetails = {
     message: error.message,
-    status: error.status,
-    stackHighlighted: stack.replace(/[a-z_-\d]+.js:\d+:\d+/gi, '<mark>$&</mark>'),
+    status: error.status || 500,
+    stack: stack
+    // use stackHighlighted if sending error as html
+    // stackHighlighted: stack.replace(/[a-z_-\d]+.js:\d+:\d+/gi, '<mark>$&</mark>',),
   };
   res.status(error.status || 500);
-  res.format({
-    // If they were asking for html, report the error with html
-    'text/html': () => {
-      res.send(`
-      <h2>Status: ${error.status}</h2>
-      <p>Message: ${error.message}</p>
-      <pre>Stack Trace: ${error.stackHighlighted}</pre>
-      `);
-    },
-    'application/json': () => res.json(errorDetails), // If they were asking for json data, report the error with json data
-  });
+  res.send(errorDetails)
 };
 
 /*
@@ -53,6 +46,7 @@ exports.developmentErrors = (error, req, res, next) => {
   No stacktraces are leaked to user
 */
 exports.productionErrors = (error, req, res, next) => {
+  console.log("Production Error")
   res.status(error.status || 500);
   res.send(`
   <h2>Status: ${error.status}</h2>

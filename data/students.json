@@ -1,0 +1,162 @@
+[
+  {
+    "_id": "58c039938060197ca0b52d4d",
+    "firstName": "Erika",
+    "lastName": "Matsumoto",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "1990-01-01T17:04:19.860Z",
+    "dateEnrolled": "2018-08-08T17:04:19.860Z",
+    "currentGradeLevel": 10
+  },
+  {
+    "_id": "58c039ee8060197ca0b52d4e",
+    "firstName": "Fernando",
+    "lastName": "Garcia",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "1990-03-08T17:05:50.134Z",
+    "dateEnrolled": "2017-07-08T17:05:50.134Z",
+    "currentGradeLevel": 10
+  },
+  {
+    "_id": "58c03a428060197ca0b52d4f",
+    "firstName": "John",
+    "lastName": "Moen",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "1989-12-25T17:07:14.681Z",
+    "dateEnrolled": "2018-08-11T17:07:14.681Z",
+    "currentGradeLevel": 10
+  },
+  {
+    "_id": "58c03a958060197ca0b52d50",
+    "firstName": "Cynthia",
+    "lastName": "Torres",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "2000-05-19T17:08:37.131Z",
+    "dateEnrolled": "2018-06-08T17:08:37.131Z",
+    "currentGradeLevel": 11
+  },
+  {
+    "_id": "58c057838060197ca0b52d54",
+    "firstName": "Jose",
+    "lastName": "Robledos",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "2001-03-08T19:12:03.957Z",
+    "dateEnrolled": "2018-08-10T19:12:03.957Z",
+    "currentGradeLevel": 11
+  },
+  {
+    "_id": "58c05aef8060197ca0b52d55",
+    "firstName": "Terry",
+    "lastName": "Garcia",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "2000-01-08T19:26:39.863Z",
+    "dateEnrolled": "2018-08-18T19:26:39.863Z",
+    "currentGradeLevel": 11
+  },
+  {
+    "_id": "58c05b558060197ca0b52d56",
+    "firstName": "Nina",
+    "lastName": "Flores",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "2008-02-18T19:28:21.738Z",
+    "dateEnrolled": "2017-03-08T19:28:21.738Z",
+    "currentGradeLevel": 2
+  },
+  {
+    "_id": "58c05bcd8060197ca0b52d57",
+    "firstName": "Claudia",
+    "lastName": "Morales",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "2007-03-11T19:30:21.147Z",
+    "dateEnrolled": "2018-08-08T19:30:21.147Z",
+    "currentGradeLevel": 2
+  },
+  {
+    "_id": "58c05c208060197ca0b52d58",
+    "firstName": "Timothy",
+    "lastName": "Greene",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "2007-11-17T19:31:44.389Z",
+    "dateEnrolled": "2018-08-08T19:31:44.389Z",
+    "currentGradeLevel": 2
+  },
+  {
+    "_id": "58c05f928060197ca0b52d59",
+    "firstName": "Leslie",
+    "lastName": "DeSoto",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "2007-01-10T19:46:26.122Z",
+    "dateEnrolled": "2017-03-08T19:46:26.122Z",
+    "currentGradeLevel": 3
+  },
+  {
+    "_id": "58c05fd08060197ca0b52d5a",
+    "firstName": "Connor",
+    "lastName": "Delorean",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "2006-03-08T19:47:28.651Z",
+    "dateEnrolled": "2018-08-10T19:47:28.651Z",
+    "currentGradeLevel": 3
+  },
+  {
+    "_id": "58c060558060197ca0b52d5b",
+    "firstName": "Eduardo",
+    "lastName": "Stark",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "2017-03-08T19:49:41.971Z",
+    "dateEnrolled": "2018-12-08T19:49:41.971Z",
+    "currentGradeLevel": 3
+  },
+  {
+    "_id": "58c060e98060197ca0b52d5d",
+    "firstName": "Jorge",
+    "lastName": "Machina",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "2007-02-28T19:52:09.768Z",
+    "dateEnrolled": "2018-08-08T19:52:09.768Z",
+    "currentGradeLevel": 3
+  },
+  {
+    "_id": "58c0609b8060197ca0b52d5c",
+    "firstName": "Angelica",
+    "lastName": "Morales",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "2008-05-16T19:50:51.495Z",
+    "dateEnrolled": "2017-03-08T19:50:51.495Z",
+    "currentGradeLevel": 3
+  },
+  {
+    "_id": "58c061518060197ca0b52d5e",
+    "firstName": "Evan",
+    "lastName": "Carr",
+    "photo": "picture.jpg",
+    "gender": "male",
+    "birthday": "2007-07-04T19:53:53.295Z",
+    "dateEnrolled": "2018-08-08T19:53:53.295Z",
+    "currentGradeLevel": 3
+  },
+  {
+    "_id": "58c065dbbbb1a51e0d43a04f",
+    "firstName": "Lilly",
+    "lastName": "Harper",
+    "photo": "picture.jpg",
+    "gender": "female",
+    "birthday": "2007-05-08T19:46:26.122Z",
+    "dateEnrolled": "2018-08-08T19:46:26.122Z",
+    "currentGradeLevel": 3
+  }
+]

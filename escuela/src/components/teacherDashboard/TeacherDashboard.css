@@ -1,0 +1,46 @@
+.dashNav {
+  width: 120px;
+  /* max-width: 170px; */
+  overflow-y: auto;
+  background-color: var(--medNavy);
+  height: 100vh;
+  display: flex;
+  padding: 0;
+}
+.flex-column {
+  align-items: center;
+}
+.navlogoDash {
+  width: 90%;
+  height: 100%;
+}
+.dashNavItem {
+  height: 90px;
+  display: flex;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+.dashNavItem:hover {
+  background-color: var(--yellow);
+  transform: scale(1.1);
+  font-weight: bolder;
+}
+
+.dashNav > .nav > .nav-item > .nav-link {
+  align-self: center;
+  padding: 0;
+  color: var(--grey);
+  font-family: var(--headingFont);
+  font-size: 1em;
+  height: 80px;
+  padding: 0.6em 0.5em;
+}
+.dashNav > .nav > .nav-item > .nav-link:hover {
+  color: var(--navy);
+}
+.navIcon {
+  height: 45px;
+  flex: 0 100%;
+}

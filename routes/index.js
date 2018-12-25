@@ -1,24 +1,18 @@
 const express = require('express');
-
+const { catchErrors } = require('../handlers/errorHandlers');
 const gradebookController = require('../controllers/gradebookController');
 const homepageController = require('../controllers/homepageController');
-const { catchErrors } = require('../handlers/errorHandlers');
 
 const router = express.Router();
 
-// So if we go to `localhost:5000/` then the following route
-// is what will happen:
 router.get('/', homepageController.sendSampleDataAsJSON)
+router.get('/students', catchErrors(gradebookController.getStudents))
+router.get('/gradebooks', catchErrors(gradebookController.getGradebooks))
+router.get('/assignments', catchErrors(gradebookController.getAssignments))
 
-// If we were actually using async/await in the controller method we refer to, then we would wrap
-// the method in `catchErrors`
-router.get('/students', gradebookController.getStudents);
-router.get('/students-asynchronously', catchErrors(gradebookController.getStudentsAsynchronously));
-router.post('/register-student', gradebookController.addStudent);
-
-router.get('/courses', gradebookController.getCourses);
-router.get('/courses-asynchronously', catchErrors(gradebookController.getCoursesAsynchronously));
-router.post('/register-course', gradebookController.addCourse);
-
+router.post('/register-student', catchErrors(gradebookController.saveStudent));
+router.post('/register-gradebook', catchErrors(gradebookController.saveGradebook));
+router.post('/register-assignment', catchErrors(gradebookController.saveAssignment));
+router.post('/register-course', gradebookController.saveCourse);
 
 module.exports = router;

@@ -1,48 +1,37 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-
-import NavigationBar from './components/nav/NavigationBar';
-import LandingPage from './components/pages/landingPage/LandingPage';
-import ErrorPage from './components/pages/error/ErrorPage';
-import Gradebook from './components/pages/gradebook/Gradebook';
-import Dashboard from './components/pages/teacherDashboard/dashboard';
-import SignupPage from './components/pages/signup/SignupPage';
-// import AddClassPage from './components/nav/nav_msg/AlertMessage';
-import UsersList from './components/pages/users/UsersList';
-import MessagesList from './components/nav/nav_msg/MessagesList';
-
-import reducers from './reducers';
-
-const store = createStore(
-  reducers,
-  {},
-  compose(
-    applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
-  )
-);
+import MessagesList from './components/flashMessages/MessagesList';
+import TeacherDashboard from "./components/teacherDashboard/TeacherDashboard";
+import LandingPage from './components/landingPage/LandingPage';
+import ErrorPage from './components/error/ErrorPage';
+import GradebookContainer from './components/gradebook/GradebookContainer';
+import SignupPage from './components/signup/SignupPage';
+import UsersList from './components/users/UsersList';
+// import Assignment from "./components/assignments/Assignment";
+import AssignmentContainer from './components/assignments/AssignmentContainer';
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header"
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <Provider store={store}>
-          <div className="App">
-            <NavigationBar />
-            <MessagesList />
-            <Switch>
-              <Route exact path="/" component={LandingPage} />
-              <Route exact path="/gradebook" component={Gradebook} />
-              <Route exact path="/users" component={UsersList} />
-              <Route exact path="/signup" component={SignupPage} />
-              <Route exact path="/dashboard" component={Dashboard} />
-              <Route component={ErrorPage} />
-            </Switch>
-          </div>
-        </Provider>
+        <div className="App">
+        <Header/>
+         {/* <NavigationBar /> */}
+          <MessagesList />
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/assignment" component={AssignmentContainer} />
+            <Route exact path="/gradebook" component={GradebookContainer} />
+            <Route exact path="/users" component={UsersList} />
+            <Route exact path="/signup" component={SignupPage} />
+            <Route exact path="/dashboard" component={TeacherDashboard} />
+            <Route component={ErrorPage} />
+          </Switch>
+          <Footer />
+        </div>
       </Router>
     );
   }
