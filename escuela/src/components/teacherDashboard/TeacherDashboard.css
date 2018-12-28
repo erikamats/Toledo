@@ -3,6 +3,7 @@
   display: grid;
   display: -ms-grid;
   grid-template-columns: 120px auto;
+  background-color: rgb(247, 247, 247)
 }
 .dashNav {
   /* width: 120px; */
