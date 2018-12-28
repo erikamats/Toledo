@@ -7,7 +7,7 @@ import { Nav, NavItem, NavLink } from "reactstrap";
       <div className="dashNav">
         <Nav vertical>
           <NavItem className="dashNavItem">
-            <NavLink href="/">
+            <NavLink  onClick={() => props.handleClick('dashboard')}>
               <img
                 src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png"
                 alt="Toledo"
