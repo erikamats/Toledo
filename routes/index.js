@@ -15,4 +15,5 @@ router.post('/register-gradebook', catchErrors(gradebookController.saveGradebook
 router.post('/register-assignment', catchErrors(gradebookController.saveAssignment));
 router.post('/register-course', gradebookController.saveCourse);
 
+
 module.exports = router;

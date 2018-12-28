@@ -5,19 +5,11 @@ export default class Header extends Component {
     return (
       <div className="header-section">
         <Nav className="header-top">
-        <NavItem>
+          <NavItem>
             <NavLink href="/dashboard">Dashboard</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/assignment">Assignment</NavLink>
-          </NavItem>
-          <NavItem>
             <NavLink href="/events">Events</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/gradebook" className="nav-link">
-              Gradebook
-            </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/signup" className="nav-link">
@@ -34,12 +26,12 @@ export default class Header extends Component {
               </a>
             </Col>
             <Col>
-            <a href="/">
-              <img
-                src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png"
-                alt="Toledo"
-                className="navlogoImg"
-              />
+              <a href="/">
+                <img
+                  src="https://res.cloudinary.com/matsi/image/upload/v1543332132/Toledo/collegioToledo.png"
+                  alt="Toledo"
+                  className="navlogoImg"
+                />
               </a>
             </Col>
             <Col>

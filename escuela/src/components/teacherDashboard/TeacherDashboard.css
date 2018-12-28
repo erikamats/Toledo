@@ -1,12 +1,38 @@
+.dashGridContainer {
+  height: 100%;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 120px auto;
+}
 .dashNav {
-  width: 120px;
+  /* width: 120px; */
   /* max-width: 170px; */
+  /* display: flex; */
   overflow-y: auto;
   background-color: var(--medNavy);
-  height: 100vh;
-  display: flex;
+  /* height: 100vh; */
   padding: 0;
+  display: grid;
+  display: -ms-grid;
+  grid-column: 1;
 }
+.dashgridmain {
+  grid-column: 2;
+  display: grid;
+  display: -ms-grid;
+  grid-row-gap: 40px;
+  grid-template-rows: 70px 300px 150px auto;
+  padding: 0 20px;
+}
+.dashMainTitle {
+  grid-row: 1;
+}
+[class*="dashRow-"] {
+  grid-column: 1 / span 2;
+}
+.dashgridmain > div > .row {
+  margin: 0;
+}ˇ
 .flex-column {
   align-items: center;
 }
@@ -16,7 +42,7 @@
 }
 .dashNavItem {
   height: 90px;
-  display: flex;
+  /* display: flex; */
   text-align: center;
   margin: 5px 0;
   font-size: 0.95em;
