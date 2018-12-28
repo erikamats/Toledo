@@ -16,7 +16,6 @@ class App extends Component {
       <Router>
         <div className="App">
         {(window.location.pathname !== "/dashboard") ?  <Header /> : null}
-         
           <MessagesList />
           <Switch>
             <Route exact path="/" component={LandingPage} />
