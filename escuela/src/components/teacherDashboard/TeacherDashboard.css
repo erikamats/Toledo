@@ -1,9 +1,11 @@
 .dashGridContainer {
   height: 100%;
+  min-height:100vh;
   display: grid;
   display: -ms-grid;
   grid-template-columns: 120px auto;
-  background-color: rgb(247, 247, 247)
+  background-color: rgb(247, 247, 247);
+
 }
 .dashNav {
   /* width: 120px; */
@@ -23,7 +25,7 @@
   display: -ms-grid;
   grid-row-gap: 40px;
   grid-template-rows: 70px 300px 150px auto;
-  padding: 0 20px;
+  padding: 0 3em;
 }
 .dashMainTitle {
   grid-row: 1;
