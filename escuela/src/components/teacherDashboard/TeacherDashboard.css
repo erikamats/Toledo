@@ -5,7 +5,10 @@
   display: -ms-grid;
   grid-template-columns: 120px auto;
   background-color: rgb(247, 247, 247);
+}
 
+.btn:hover{
+transform:scale(1.1)
 }
 .dashNav {
   /* width: 120px; */
@@ -24,12 +27,21 @@
   display: grid;
   display: -ms-grid;
   grid-row-gap: 40px;
-  grid-template-rows: 70px 300px 150px auto;
+  grid-template-rows: 80px 300px 150px auto;
   padding: 0 3em;
 }
 .dashMainTitle {
   grid-row: 1;
+  font-family: var(--headingFont);
+  border-bottom: 5px solid var(--yellow);
+  padding: 2em 0;
+
 }
+.dashMainTitle>.col-lg-8>h1{
+line-height: .5em;
+color: var(--gray)
+}
+
 [class*="dashRow-"] {
   grid-column: 1 / span 2;
 }

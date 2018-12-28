@@ -13,12 +13,12 @@ export const DashLanding = () => {
   return (
     <div className="dashgridmain">
 
-      <Row className="dashMainTitle dashRow-1">
+      <Row className="dashMainTitle dashRow-1 ">
         <Col lg="8">
           <h1>Teacher Dashboard</h1>
         </Col>
         <Col lg="4">
-          <button>Logout</button>
+          {/* Something will go here */}
         </Col>
       </Row>
 
