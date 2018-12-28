@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./TeacherDashboard.css";
-import DashNav from "./components/dashNav";
-import DashLanding from "./components/dashLanding";
+import DashNav from "./components/DashNav";
+import DashLanding from "./components/DashLanding";
 import Attendance from "./Attendance";
 import GradebookContainer from "../gradebook/GradebookContainer";
 import Assignment from "../assignments/Assignment";
@@ -31,6 +31,8 @@ export default class TeacherDashboard extends React.Component {
         return <GradebookContainer />;
       case "assignment":
         return <Assignment />;
+        case "dashboard":
+        return <DashLanding />;
       default:
         return <DashLanding />;
     }
