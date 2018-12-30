@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
-import LandingCard from "./LandingCard";
+import LandingCard from "../common/LandingCard";
 
 const Enroll = () => {
   return (

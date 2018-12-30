@@ -4,7 +4,8 @@
   display: grid;
   display: -ms-grid;
   grid-template-columns: 120px auto;
-  background-color: rgb(247, 247, 247);
+  /* background-color: rgb(247, 247, 247); */
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #d8d7d6 100%);
 }
 
 .btn:hover{
@@ -26,14 +27,15 @@ transform:scale(1.1)
   grid-column: 2;
   display: grid;
   display: -ms-grid;
-  grid-row-gap: 40px;
-  grid-template-rows: 80px 300px 150px auto;
+  grid-row-gap: 45px;
+  grid-template-rows: 80px auto 150px ;
   padding: 0 3em;
+  margin: 0 0 40px
 }
 .dashMainTitle {
   grid-row: 1;
   font-family: var(--headingFont);
-  border-bottom: 5px solid var(--yellow);
+  border-bottom: 5px solid var(--medNavy);
   padding: 2em 0;
 
 }

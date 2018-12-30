@@ -6,8 +6,7 @@ import DashLanding from "./components/DashLanding";
 import Attendance from "./Attendance";
 import GradebookContainer from "../gradebook/GradebookContainer";
 import Assignment from "../assignments/Assignment";
-import $ from "jquery";
-import "fullcalendar";
+
 
 
 export default class TeacherDashboard extends React.Component {
@@ -40,27 +39,29 @@ export default class TeacherDashboard extends React.Component {
 
   componentDidMount() {
     window.scrollTo(0, 145);
-    $("#calendar").fullCalendar({
-      defaultView: "month",
-      header: { center: "month,agendaWeek" }, // buttons for switching between views
+    // $("#calendar").fullCalendar({
+    //   defaultView: "month",
+    //   header: { center: "month,agendaWeek" }, // buttons for switching between views
 
-      views: {
-        month: {
-          // name of view
-          titleFormat: "YYYY, MM, DD"
-          // other view-specific options here
-        }
-      }
-    });
+    //   views: {
+    //     month: {
+    //       // name of view
+    //       titleFormat: "YYYY, MM, DD"
+    //       // other view-specific options here
+    //     }
+    //   }
+    // });
   }
 
   render() {
     return (
       <Router>
         <div className="dashGridContainer">
+
           <DashNav render={this.state.render} handleClick={this.handleClick} />
           {this.renderSubComp()}
         </div>
+        
       </Router>
     );
   }

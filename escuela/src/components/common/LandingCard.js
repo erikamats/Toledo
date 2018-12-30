@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, NavLink, Button } from "reactstrap";
 
+
 export const LandingCard = ({
   colClassName,
   divClassName,
@@ -9,13 +10,27 @@ export const LandingCard = ({
   href,
   buttonColor,
   btnText,
-  buttonClass
+  buttonClass,
+  style,
+  subHeader,
+  secondHeader,
+  date,
+  paragraphClassName,
+  subHeaderClassName,
+  subText,
+  dashHeaderText,
+  secondHeaderClassName
 }) => {
   return (
     <Col className={colClassName}>
-      <div className={divClassName}>
+      <div className={divClassName} style={style}>
         <h3>{headerText}</h3>
-        <p>{cardParagraph}</p>
+        <h5>{dashHeaderText}</h5>
+        <span>{subText}</span>
+        <span>{date}</span>
+        <h4 className={secondHeaderClassName}>{secondHeader}</h4>
+        <h1 className={subHeaderClassName}>{subHeader}</h1>
+        <p className={paragraphClassName}> {cardParagraph}</p>
         <NavLink href={href}>
           <Button color={buttonColor} className={buttonClass}>
             {btnText}
