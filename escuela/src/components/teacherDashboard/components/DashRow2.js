@@ -35,7 +35,7 @@ const DashRow2 = () => {
           style={{
             backgroundColor: "white",
             border: "2px solid",
-            borderColor: "#44CAE8",
+            borderColor: "var(--medNavy)",
             borderRadius: "5px",
             color: "#000000"
           }}
@@ -58,7 +58,7 @@ const DashRow2 = () => {
           style={{
             backgroundColor: "white",
             border: "2px solid",
-            borderColor: "#933ec5",
+            borderColor: "var(--medNavy)",
             borderRadius: "5px",
             color: "#000000"
           }}
@@ -81,7 +81,7 @@ const DashRow2 = () => {
           style={{
             backgroundColor: "white",
             border: "2px solid",
-            borderColor: "#ff5722",
+            borderColor: "#eb5151",
             borderRadius: "5px",
             color: "#000000"
           }}
