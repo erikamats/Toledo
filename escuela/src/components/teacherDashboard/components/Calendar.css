@@ -1,57 +1,60 @@
 /* Calendar.css     */
 
 #external-events {
-    /* float: left; */
-    width: 150px;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-    border-radius:5px;
-    background: rgb(255, 255, 255);
-    text-align: left;
-    font-size: 14px;
-    margin: 0;
+  /* float: left; */
+  /* width: 150px; */
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 14px;
+  margin: 0;
 }
 
-    
 /* Draggable Events Title */
 #external-events h4 {
-    font-size: 1em;
-    margin-top: 0;
-    padding-top: 1em;
+  font-size: 1em;
+  margin-top: 0;
+  padding-top: 1em;
 }
-    
+
 #external-events .fc-event {
-    margin: 10px ;
-    cursor: pointer;
-    background-image: linear-gradient(to top, var(--medNavy) 0%, var(--navy) 100%);
-    padding: .5em
+  margin: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to top,
+    var(--medNavy) 0%,
+    var(--navy) 100%
+  );
+  padding: 0.5em;
 }
-    
+
 #external-events p {
-    margin: 1.5em 0;
-    font-size: 11px;
-    color: rgb(194, 9, 9);
+  margin: 1.5em 0;
+  font-size: 11px;
+  color: rgb(194, 9, 9);
 }
-    
+
 #external-events p input {
-    margin: 0 .5em 0 0 ;
-    vertical-align: middle;
-} 
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
 
 #calendar {
+  margin: 0 ;
+  padding: 15px;
+  /* height: 100%; */
+  width: 97%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
 
-    margin: 0 ;
-    padding: 15px ;
-    height: 100%;
-    width: 100%;
-    border-radius:5px;
-    border: 1px solid #ccc;
-    background-color:white
-    } 
+}
 
-    .fc-center > h2{
-        font-size: 1.5em 
-    }
-    body .fc {
-        font-size: .8em;
-    }
+.fc-center > h2 {
+  font-size: 1.5em;
+}
+body .fc {
+  font-size: 0.8em;
+}

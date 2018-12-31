@@ -1,15 +1,15 @@
 .dashGridContainer {
   height: 100%;
-  min-height:100vh;
+  min-height: 100vh;
   display: grid;
   display: -ms-grid;
   grid-template-columns: 120px auto;
   /* background-color: rgb(247, 247, 247); */
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #d8d7d6 100%);
+  background-color: #f6f8fa;
 }
 
-.btn:hover{
-transform:scale(1.1)
+.btn:hover {
+  transform: scale(1.1);
 }
 .dashNav {
   /* width: 120px; */
@@ -28,20 +28,19 @@ transform:scale(1.1)
   display: grid;
   display: -ms-grid;
   grid-row-gap: 45px;
-  grid-template-rows: 80px auto 150px ;
+  grid-template-rows: 80px auto 150px;
   padding: 0 3em;
-  margin: 0 0 40px
+  margin: 0 0 40px;
 }
 .dashMainTitle {
   grid-row: 1;
   font-family: var(--headingFont);
   border-bottom: 5px solid var(--medNavy);
   padding: 2em 0;
-
 }
-.dashMainTitle>.col-lg-8>h1{
-line-height: .5em;
-color: var(--gray)
+.dashMainTitle > .col-lg-8 > h1 {
+  line-height: 0.5em;
+  color: var(--gray);
 }
 
 [class*="dashRow-"] {
@@ -49,8 +48,8 @@ color: var(--gray)
 }
 .dashgridmain > div > .row {
   margin: 0;
-}ˇ
-.flex-column {
+}
+ˇ .flex-column {
   align-items: center;
 }
 .navlogoDash {
@@ -86,4 +85,81 @@ color: var(--gray)
 .navIcon {
   height: 45px;
   flex: 0 100%;
+}
+
+/* DashRow4 */
+.dashRow-4 {
+  padding: 0 15px;
+}
+.white-box {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.fa-vote-yea{
+  color: rgb(22, 165, 165)
+}
+.fa-gift{
+  color: var(--lightRed)
+}
+
+.fa-trash-alt{
+  padding-right: 10px;
+  color: var(--lightRed)
+}
+.white-box h3 {
+  font-size: 16px;
+  color: #444;
+}
+.white-box h4{
+  padding: 5px;
+  border-radius: 3px;
+}
+.white-box ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.basic-list li {
+  display: block;
+  padding: 11.6px 0;
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  line-height: 27px;
+  color: #303030;
+  font-size: 14px;
+}
+
+.basic-list li:first-of-type {
+  padding: 3px 0;
+  border-bottom: 3px solid rgba(120, 130, 140, 0.13);
+  /* line-height: 15px;
+  font-size: 14px; */
+  font-weight: 700;
+  /* background-color: lightgray; */
+}
+
+.label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--medNavy);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+.basic-list .label {
+  margin-top: 0px;
+  padding: 7px 10px;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: var(--yellow);
+}
+.basic-list .label-red {
+  color: white;
+  background-color: var(--lightRed);
 }

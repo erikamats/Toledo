@@ -4,12 +4,11 @@
   --paragraphFont: "Lato", sans-serif;
   --navy: #10316b;
   --medNavy: #0b409c;
-  /* --yellow: #ffde25; */
   --yellow: #fdbe34;
-  /* --lightyellow: #f2e175; */
   --grey: #f2f7ff;
   --red: #e50005;
-  /* --yellow: #ffc107 */
+  --lightRed: #eb5151
+
 }
 
 /*//////////////////Top Header///////////*/
