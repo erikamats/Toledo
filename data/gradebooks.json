@@ -2,7 +2,7 @@
   {
     "_id": "58c0884fbbb1a51e0d43a05a",
     "associatedCourseId": "58c0880bbbb1a51e0d43a056",
-    "name": "Web Dev Gradebook",
+    "gradebookName": "Web Dev Gradebook",
     "gradePortions": [
       {
         "portionName": "Tests",
@@ -22,7 +22,7 @@
       "58c039ee8060197ca0b52d4e",
       "58c03a428060197ca0b52d4f"
     ],
-    "assignmentsArray": [
+    "assignmentsInGradebook": [
       {
         "assignmentId": "58c03ac18060197ca0b52d51",
         "gradePortionType": "Homework",
@@ -201,7 +201,7 @@
   {
     "_id": "58c08863bbb1a51e0d43a05b",
     "associatedCourseId": "58c087debbb1a51e0d43a054",
-    "name": "3rd Graders",
+    "gradebookName": "3rd Graders",
     "gradePortions": [
       {
         "portionName": "Science",
@@ -229,12 +229,12 @@
       "58c061518060197ca0b52d5e",
       "58c065dbbbb1a51e0d43a04f"
     ],
-    "assignmentsArray": []
+    "assignmentsInGradebook": []
   },
   {
     "_id": "58c08878bbb1a51e0d43a05c",
     "associatedCourseId": "58c08841bbb1a51e0d43a059",
-    "name": "Art of Mexico Projects",
+    "gradebookName": "Art of Mexico Projects",
     "gradePortions": [
       {
         "portionName": "Submissions",
@@ -259,7 +259,7 @@
       "58c061518060197ca0b52d5e",
       "58c065dbbbb1a51e0d43a04f"
     ],
-    "assignmentsArray": [
+    "assignmentsInGradebook": [
       {
         "assignmentId": "58c088a9bbb1a51e0d43a05e",
         "gradePortionType": "Submissions",

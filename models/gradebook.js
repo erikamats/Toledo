@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const gradebookSchema = new mongoose.Schema({
-  name: {
+  gradebookName: {
     type: String,
     trim: true,
   },
@@ -19,7 +19,7 @@ const gradebookSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Student'
   }],
-  assignmentsArray: [
+  assignmentsInGradebook: [
     {
       assignmentId: {
         type: mongoose.Schema.Types.ObjectId,
