@@ -1,39 +1,25 @@
-import React from "react";
-import GradeTable from "./components/GradeTable";
+import React, { Component } from 'react'
+// import GradeTable from "./components/GradeTable";
 import GradebookList from "./components/GradebookList";
-import StudentsList from "./components/StudentsList";
+// import StudentsList from "./components/StudentsList";
 // import CourseList from "./components/CourseList";
 
-import { student1 } from 'data/sampleStudents'
-import { gradebook1 } from 'data/sampleGradebooks'
-import { assignment1 } from 'data/sampleAssignments'
-import { course1 } from 'data/sampleCourses'
 
-export default (props) => {
+export default class Gradebook extends Component {
+  componentDidMount = () => {
+    const { getAssignments, getStudents, getGradebooks } = this.props
+    getGradebooks();
+    getAssignments();
+    getStudents();
+  }
 
-  const { gradebooks, students, assignments, onGetAssignments, onGetStudents, onSaveStudent, onGetGradebooks, onSaveGradebook, onSaveAssignment } = props
-
-  return (
-    <div>
+  render() {
+    const { gradebooks, students, assignments } = this.props
+    return (
       <div>
-        <GradeTable students={students} />
-        <hr />
-        {/* <GradebookList
-          gradebooks={gradebooks}
-          assignments={assignments}
-        /> */}
-        <button onClick={() => onGetAssignments()}>
-          Get assignments
-        </button>
-        <button onClick={() => onGetGradebooks()}>
-          Get gradebooks
-        </button>
-        <button onClick={() => onGetStudents()}>
-          Get students
-        </button>
-        <StudentsList students={students} />
-        {/* <CourseList courses={this.state.allCourses} /> */}
+        <h2>Your Gradebooks</h2>
+        <GradebookList gradebooks={gradebooks} />
       </div>
-    </div>
-  )
+    )
+  }
 }
