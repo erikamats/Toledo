@@ -45,3 +45,8 @@ exports.saveCourse = async (req, res) => {
   const newCourse = await new Course(req.body.course).save()
   res.json(newCourse)
 }
+
+exports.getCourses = async (req, res) => {
+  const courses = await Course.find({});
+  res.send(courses);
+}
