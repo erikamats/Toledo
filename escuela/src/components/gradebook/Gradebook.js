@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 // import GradeTable from "./components/GradeTable";
-import GradebookList from "./components/GradebookList";
+import GradebookButtonsList from "./components/GradebookButtonsList";
 // import StudentsList from "./components/StudentsList";
 // import CourseList from "./components/CourseList";
 
 
 export default class Gradebook extends Component {
   componentDidMount = () => {
-    const { getAssignments, getStudents, getGradebooks } = this.props
+    const { getAssignments, getStudents, getGradebooks, getCourses } = this.props
     getGradebooks();
     getAssignments();
     getStudents();
+    getCourses();
   }
 
   render() {
@@ -18,7 +19,7 @@ export default class Gradebook extends Component {
     return (
       <div>
         <h2>Your Gradebooks</h2>
-        <GradebookList gradebooks={gradebooks} />
+        <GradebookButtonsList gradebooks={gradebooks} />
       </div>
     )
   }
