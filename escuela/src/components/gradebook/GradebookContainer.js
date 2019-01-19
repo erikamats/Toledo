@@ -1,7 +1,8 @@
 import { connect } from 'react-redux'
-// import * as ActionTypes from 'actions/types'
+
 import {
   getGradebooks,
+  selectGradebookForEditing,
   saveGradebook,
   removeGradebook,
   updateGradebook,
@@ -9,6 +10,10 @@ import {
   saveStudent,
   removeStudent,
   updateStudent,
+  getCourses,
+  saveCourse,
+  removeCourse,
+  updateCourse,
   getAssignments,
   saveAssignment,
   removeAssignment,
@@ -23,52 +28,31 @@ function mapStateToProps(state) {
     gradebooks: state.gradebooks,
     assignments: state.assignments,
     students: state.students,
+    courses: state.courses,
+    currentlyEditingGradebook: state.currentlyEditingGradebook
   };
 }
-const mapDispatchToProps = dispatch => {
-  return {
-    onGetGradebooks: () => {
-      dispatch(getGradebooks())
-    },
-    onSaveGradebook: gradebook => {
-      dispatch(saveGradebook(gradebook))
-    },
-    onUpdateGradebook: gradebook => {
-      dispatch(updateGradebook(gradebook))
-    },
-    onRemoveGradebook: gradebookId => {
-      dispatch(removeGradebook(gradebookId))
-    },
-    onGetStudents: () => {
-      dispatch(getStudents())
-    },
-    onSaveStudent: student => {
-      dispatch(saveStudent(student))
-    },
-    onRemoveStudent: studentId => {
-      dispatch(removeStudent(studentId))
-    },
-    onUpdateStudent: student => {
-      dispatch(updateStudent(student))
-    },
-    onGetAssignments: () => {
-      dispatch(getAssignments())
-    },
-    onSaveAssignment: assignment => {
-      dispatch(saveAssignment(assignment))
-    },
-    onRemoveAssignment: assignmentId => {
-      dispatch(removeAssignment(assignmentId))
-    },
-    onUpdateAssignment: assignment => {
-      dispatch(updateAssignment(assignment))
-    },
-  }
-}
-
 const GradebookContainer = connect(
   mapStateToProps,
-  mapDispatchToProps
+  {
+    getGradebooks,
+    selectGradebookForEditing,
+    saveGradebook,
+    removeGradebook,
+    updateGradebook,
+    getStudents,
+    saveStudent,
+    removeStudent,
+    updateStudent,
+    getCourses,
+    saveCourse,
+    removeCourse,
+    updateCourse,
+    getAssignments,
+    saveAssignment,
+    removeAssignment,
+    updateAssignment
+  }
 )(Gradebook);
 
 export default GradebookContainer

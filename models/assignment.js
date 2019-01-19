@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const assignmentSchema = new mongoose.Schema({
-  name: {
+  assignmentName: {
     type: String,
     trim: true,
     required: [true, 'An assignment name is required'],

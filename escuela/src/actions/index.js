@@ -3,6 +3,7 @@ import * as ActionTypes from './types'
 
 export {
   getGradebooks,
+  selectGradebookForEditing,
   saveGradebook, removeGradebook,
   updateGradebook
 } from './gradebookActions';
@@ -18,6 +19,12 @@ export {
   removeAssignment,
   updateAssignment
 } from './assignmentActions';
+export {
+  getCourses,
+  saveCourse,
+  removeCourse,
+  updateCourse
+} from './courseActions';
 
 export const fetchUsers = () => async dispatch => {
   const res = await axios.get('/students');

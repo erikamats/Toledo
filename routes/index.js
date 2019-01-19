@@ -9,6 +9,7 @@ router.get('/', homepageController.sendSampleDataAsJSON)
 router.get('/students', catchErrors(gradebookController.getStudents))
 router.get('/gradebooks', catchErrors(gradebookController.getGradebooks))
 router.get('/assignments', catchErrors(gradebookController.getAssignments))
+router.get('/courses', catchErrors(gradebookController.getCourses))
 
 router.post('/register-student', catchErrors(gradebookController.saveStudent));
 router.post('/register-gradebook', catchErrors(gradebookController.saveGradebook));

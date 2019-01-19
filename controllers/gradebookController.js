@@ -37,11 +37,19 @@ exports.saveGradebook = async (req, res) => {
   }
 }
 exports.getGradebooks = async (req, res) => {
-  const gradebooks = await Gradebook.find({})
-  res.send(gradebooks)
+  const gradebooks = await Gradebook.find({}).
+    populate({ path: 'studentsInGradebook', select: 'lastName firstName' }).
+    populate({ path: 'assignmentsInGradebook.assignmentId', select: 'assignmentName description' }).
+    populate({ path: 'assignmentsInGradebook.gradesAndFeedback.studentId', select: 'lastName firstName -_id' });
+  res.send(gradebooks);
 }
 
 exports.saveCourse = async (req, res) => {
   const newCourse = await new Course(req.body.course).save()
   res.json(newCourse)
+}
+
+exports.getCourses = async (req, res) => {
+  const courses = await Course.find({});
+  res.send(courses);
 }
