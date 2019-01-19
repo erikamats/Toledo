@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from 'reactstrap';
 
 export default (props) => {
-  const { gradebooks } = props;
+  const { gradebooks, selectGradebookForEditing } = props;
   return (
     <div>
       {gradebooks.gradebooks && gradebooks.gradebooks.map((gradebook) => {
@@ -10,8 +10,8 @@ export default (props) => {
         return (
           <Button
             key={gradebookName}
-            gradebook={gradebook}
             color="primary"
+            onClick={() => selectGradebookForEditing(gradebook)}
           >
             {gradebookName}
           </Button>

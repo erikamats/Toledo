@@ -6,8 +6,8 @@ import GradebookButtonsList from "./components/GradebookButtonsList";
 
 
 export default class Gradebook extends Component {
-  componentDidMount = () => {
-    const { getAssignments, getStudents, getGradebooks, getCourses } = this.props
+  componentWillMount = () => {
+    const { getAssignments, getStudents, getGradebooks, getCourses } = this.props;
     getGradebooks();
     getAssignments();
     getStudents();
@@ -15,11 +15,11 @@ export default class Gradebook extends Component {
   }
 
   render() {
-    const { gradebooks, students, assignments } = this.props
+    const { gradebooks, students, assignments, selectGradebookForEditing } = this.props
     return (
       <div>
         <h2>Your Gradebooks</h2>
-        <GradebookButtonsList gradebooks={gradebooks} />
+        <GradebookButtonsList selectGradebookForEditing={selectGradebookForEditing} gradebooks={gradebooks} />
       </div>
     )
   }
