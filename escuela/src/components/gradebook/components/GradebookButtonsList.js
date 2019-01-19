@@ -2,16 +2,19 @@ import React from 'react'
 import { Button } from 'reactstrap';
 
 export default (props) => {
-  const { gradebooks, selectGradebookForEditing } = props;
+  const { gradebooks, selectGradebookForEditing, toggleViewEditGradebook } = props;
   return (
     <div>
       {gradebooks.gradebooks && gradebooks.gradebooks.map((gradebook) => {
-        const { gradebookName, courseCommonName, gradePortions, associatedCourseId, assignmentsIdArray } = gradebook;
+        const { gradebookName, gradePortions, associatedCourseId, assignmentsInGradebook } = gradebook;
         return (
           <Button
             key={gradebookName}
             color="primary"
-            onClick={() => selectGradebookForEditing(gradebook)}
+            onClick={() => {
+              toggleViewEditGradebook();
+              selectGradebookForEditing(gradebook);
+            }}
           >
             {gradebookName}
           </Button>
