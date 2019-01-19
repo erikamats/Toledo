@@ -15,7 +15,7 @@ const gradebookSchema = new mongoose.Schema({
       gradeWeight0to1: String
     }
   ],
-  studentsIdArray: [{
+  studentsInGradebook: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Student'
   }],

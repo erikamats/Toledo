@@ -17,7 +17,7 @@
         "gradeWeight0to1": "0.3"
       }
     ],
-    "studentsIdArray": [
+    "studentsInGradebook": [
       "58c039938060197ca0b52d4d",
       "58c039ee8060197ca0b52d4e",
       "58c03a428060197ca0b52d4f"
@@ -220,7 +220,7 @@
         "gradeWeight0to1": "0.25"
       }
     ],
-    "studentsIdArray": [
+    "studentsInGradebook": [
       "58c05f928060197ca0b52d59",
       "58c05fd08060197ca0b52d5a",
       "58c060558060197ca0b52d5b",
@@ -241,7 +241,7 @@
         "gradeWeight0to1": "1.0"
       }
     ],
-    "studentsIdArray": [
+    "studentsInGradebook": [
       "58c039938060197ca0b52d4d",
       "58c039ee8060197ca0b52d4e",
       "58c03a428060197ca0b52d4f",
