@@ -25,6 +25,11 @@ const getGradebooksFailure = error => ({
   error: error
 })
 
+export const selectGradebookForEditing = (gradebook) => ({
+  type: ActionTypes.SELECT_GRADEBOOK_FOR_EDITING,
+  payload: gradebook
+})
+
 // SAVE GRADEBOOK
 export const saveGradebook = (gradebook) => {
   return dispatch => {
@@ -49,7 +54,7 @@ const saveGradebookFailure = error => ({
   type: ActionTypes.ADD_DB_GRADEBOOK_FAILURE,
   error: error.response.data
 })
-
+// REMOVE GRADEBOOK
 export const removeGradebook = (id) => {
   return {
     type: ActionTypes.REMOVE_GRADEBOOK,

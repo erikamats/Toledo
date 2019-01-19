@@ -3,6 +3,7 @@ import * as ActionTypes from './types'
 
 export {
   getGradebooks,
+  selectGradebookForEditing,
   saveGradebook, removeGradebook,
   updateGradebook
 } from './gradebookActions';
