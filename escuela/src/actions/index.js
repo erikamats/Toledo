@@ -53,7 +53,7 @@ export const addFlashMessage = message => {
 
 export const deleteMessage = id => {
   return {
-    type: ActionTypes.DELETE_MESSAGE,
+    type: ActionTypes.DELETE_FLASH_MESSAGE,
     id,
   };
 };
