@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 
 import {
   getGradebooks,
+  selectGradebookForEditing,
   saveGradebook,
   removeGradebook,
   updateGradebook,
@@ -28,12 +29,14 @@ function mapStateToProps(state) {
     assignments: state.assignments,
     students: state.students,
     courses: state.courses,
+    currentlyEditingGradebook: state.currentlyEditingGradebook
   };
 }
 const GradebookContainer = connect(
   mapStateToProps,
   {
     getGradebooks,
+    selectGradebookForEditing,
     saveGradebook,
     removeGradebook,
     updateGradebook,
