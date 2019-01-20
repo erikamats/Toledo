@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import GradeTable from "./components/GradeTable";
 import GradebookButtonsList from "./components/GradebookButtonsList";
-import OpenGradebook from "./components/OpenGradebook";
+import TeacherEditingGradebook from "./components/TeacherEditingGradebook";
 // import StudentsList from "./components/StudentsList";
 // import CourseList from "./components/CourseList";
 
@@ -29,10 +29,13 @@ export default class Gradebook extends Component {
 
   render() {
     const { gradebooks, students, assignments, selectGradebookForEditing, currentlyEditingGradebook } = this.props
-    if (this.state.isEditingGradebook) { return <OpenGradebook gradebook={currentlyEditingGradebook} toggleViewEditGradebook={this.toggleViewEditGradebook} /> }
+
+    // CONDITIONALLY RENDER EDITABLE GRADEBOOK
+    if (this.state.isEditingGradebook) { return <TeacherEditingGradebook gradebook={currentlyEditingGradebook} toggleViewEditGradebook={this.toggleViewEditGradebook} /> }
+
+    // OTHERWISE RENDER SELECTABLE GRADEBOOKS
     return (
       <div>
-
         <h2>Your Gradebooks</h2>
         <GradebookButtonsList toggleViewEditGradebook={this.toggleViewEditGradebook} selectGradebookForEditing={selectGradebookForEditing} gradebooks={gradebooks} />
       </div>
