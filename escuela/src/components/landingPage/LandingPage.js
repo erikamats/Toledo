@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 
 // import SliderForm from "./SliderForm";
-import EnrollBox from "./Enroll";
-import CarouselSlider from "./CarouselSlider";
-import AboutUs from "./AboutUs";
-import ElemHigh from "./ElemHigh";
-import Events from "./Events";
+import EnrollBox from "./components/Enroll";
+// import CarouselSlider from "./CarouselSlider";
+import TopHeader from "./components/Header";
+import AboutUs from "./components/AboutUs";
+import ElemHigh from "./components/ElemHigh";
+import Events from "./components/Events";
 import "../footer/footerCSS.css";
 import NavMain from "../nav/Nav";
 
@@ -15,7 +16,8 @@ class LandingPage extends Component {
   render() {
     return (
       <div>
-        <CarouselSlider />
+        {/* <CarouselSlider /> */}
+        <TopHeader/>
         <NavMain />
         <EnrollBox />
         {/* <SliderForm /> */}

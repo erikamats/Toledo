@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./TeacherDashboard.css";
-import DashNav from "./components/DashNav";
-import DashLanding from "./components/DashLanding";
+import DashNav from "./components/dashNav";
+import DashLanding from "./components/dashLanding";
 import Attendance from "./Attendance";
 import GradebookContainer from "../gradebook/GradebookContainer";
 import Assignment from "../assignments/Assignment";

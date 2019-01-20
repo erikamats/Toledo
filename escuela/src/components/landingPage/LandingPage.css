@@ -1,0 +1,22 @@
+.top-header{
+    background-image: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2209&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+.top-header-container{
+    background: #F4DD63;
+    width: 50%;
+    height: 40%;
+    margin-top: 10%;
+    text-align: center;
+    
+}
+.top-header-container h1{
+    color: red;
+}
+.top-header-container p{
+    color: #0A314A;
+
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import {  Container } from "reactstrap";
 // import CardImg from "../common/CardImg";
-import LandingCard from "../common/LandingCard";
+import LandingCard from "../../common/LandingCard";
 
 export const Events = () => {
   return (

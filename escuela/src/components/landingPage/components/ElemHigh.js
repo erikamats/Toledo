@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "reactstrap";
-import CardImg from "../common/CardImg";
-import LandingCard from "../common/LandingCard";
+import CardImg from "../../common/CardImg";
+import LandingCard from "../../common/LandingCard";
 
 
 export const ElemHigh = () => {
