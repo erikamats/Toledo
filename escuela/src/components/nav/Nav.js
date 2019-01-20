@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, NavItem, NavLink } from "reactstrap";
+import {Nav, NavItem, NavLink } from "reactstrap";
 export const NavMain = () =>{
     return(
         <Nav className="justify-content-center mainNav">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
+import { Jumbotron, Container, Button } from 'reactstrap';
 import "../LandingPage.css";
 
 
@@ -10,6 +10,7 @@ const TopHeader = (props) => {
           <Container fluid className="top-header-container">
             <h1 className="display-3">Latest Events</h1>
             <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <Button color="danger" className="header-button">View Calendar</Button>
           </Container>
         </Jumbotron>
       </div>

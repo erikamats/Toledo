@@ -5,7 +5,7 @@ export default class Header extends Component {
     return (
       <div className="header-section">
         <Nav className="header-top">
-          <NavItem>
+          {/* <NavItem>
             <NavLink href="/dashboard">Dashboard</NavLink>
           </NavItem>
           <NavItem>
@@ -15,7 +15,7 @@ export default class Header extends Component {
             <NavLink href="/signup" className="nav-link">
               Register
             </NavLink>
-          </NavItem>
+          </NavItem> */}
         </Nav>
         <Col>
           <Row className="header-main">

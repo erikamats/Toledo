@@ -3,14 +3,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
+    height: auto;
 }
 .top-header-container{
-    background: #F4DD63;
+    background: rgba(244, 220, 99, 0.639);
     width: 50%;
-    height: 40%;
-    margin-top: 10%;
+    height:auto;
+    margin: 10% auto;
     text-align: center;
+    padding:20px
+
+
     
 }
 .top-header-container h1{
@@ -18,5 +21,8 @@
 }
 .top-header-container p{
     color: #0A314A;
+}
+.header-button{
+    transition: all 300ms
 
 }

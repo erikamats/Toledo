@@ -58,21 +58,24 @@
   margin: 0 20px;
 }
 .fa *{
-  color:var(--grey)
+  color:var(--grey);
 }
 .fa-facebook-square:hover{
   color: #4867aa;
-  transform:scale(1.2)
+  transform:scale(1.2);
+  transition: all 300ms
 }
 
 .fa-twitter:hover{
   color: #1ea0f1;
-  transform:scale(1.2)
+  transform:scale(1.2);
+  transition: all 300ms
 }
 
 .fa-google-plus-square:hover{
   color: #db4437;
-  transform:scale(1.2)
+  transform:scale(1.2);
+  transition: all 300ms
 }
 
 
@@ -92,10 +95,14 @@
 .nav-link {
   color: var(--navy);
 }
+.mainNav{
+  margin-bottom: 15px;
+}
 .mainNav > .nav-item > .nav-link:hover{
   background-color: var(--yellow);
+  transition: all 300ms;
   transform: scale(1.1);
-  font-weight: 600
+  font-weight: 600;
 }
 
 .carousel-caption {
