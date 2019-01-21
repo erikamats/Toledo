@@ -28,8 +28,8 @@ exports.notFound = (req, res, next) => {
 */
 
 exports.developmentErrors = (error, req, res, next) => {
-  console.log("Development Error")
   const stack = error.stack || '';
+  console.log(stack);
   const errorDetails = {
     message: error.message,
     status: error.status || 500,
