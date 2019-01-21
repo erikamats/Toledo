@@ -41,7 +41,7 @@ exports.getGradebooks = async (req, res) => {
     populate({ path: 'studentsInGradebook', select: 'lastName firstName' }).
     populate({ path: 'associatedCourseId', select: '-_id' }).
     populate({ path: 'assignmentsInGradebook.assignmentId', select: 'assignmentName description' }).
-    populate({ path: 'assignmentsInGradebook.gradesAndFeedback.studentId', select: 'lastName firstName -_id' });
+    populate({ path: 'assignmentsInGradebook.gradesAndFeedback.studentId', select: 'lastName firstName' });
   res.send(gradebooks);
 }
 
