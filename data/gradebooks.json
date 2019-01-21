@@ -66,11 +66,6 @@
         ]
       },
       {
-        "assignmentId": "58c08780bbb1a51e0d43a050",
-        "gradePortionType": "Tests",
-        "gradesAndFeedback": []
-      },
-      {
         "assignmentId": "58c08796bbb1a51e0d43a051",
         "gradePortionType": "Tests",
         "gradesAndFeedback": [
@@ -92,7 +87,7 @@
         ]
       },
       {
-        "assignmentId": "58c08796bbb1a51e0d43a051",
+        "assignmentId": "58c08780bbb1a51e0d43a050",
         "gradePortionType": "Tests",
         "gradesAndFeedback": [
           {

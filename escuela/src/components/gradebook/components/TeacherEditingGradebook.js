@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 
 export default ({ gradebook, toggleViewEditGradebook }) => {
-  const { _id, gradebookName, gradePortions, associatedCourseId, studentsInGradebook, assignmentsInGradebook } = gradebook
+  const { gradebookName, gradePortions, associatedCourseId, studentsInGradebook, assignmentsInGradebook } = gradebook
   return (
     <Container>
       <div>
@@ -48,13 +48,33 @@ export default ({ gradebook, toggleViewEditGradebook }) => {
         <h2>Students</h2>
         {studentsInGradebook.map(student => {
           return (
-            <Card body outline color="info">
+            <Card key={student._id} body outline color="info">
               <CardTitle>{`${student.firstName} ${student.lastName}`}</CardTitle>
-              <CardText>Show some stuff!</CardText>
               <Row>
-                <Col xs="6" sm="4" className="text-info">.col-6 .col-sm-4</Col>
-                <Col xs="6" sm="4" className="text-primary">.col-6 .col-sm-4</Col>
-                <Col sm="4" className="text-danger">.col-sm-4</Col>
+                {gradebook.assignmentsInGradebook.
+                  filter(assignment => (
+                    assignment.gradesAndFeedback.some(item => (
+                      item.studentId._id === student._id
+                    ))
+                  ))
+                  .map(assignment => {
+                    return (
+                      <Col key={assignment.assignmentId.assignmentName} xs="6" sm="4" className="text-primary" className="border border-primary">
+                        <h6>{assignment.assignmentId.assignmentName}</h6>
+                        {assignment.gradesAndFeedback.
+                          filter(gradeAndFeedback => (
+                            gradeAndFeedback.studentId._id === student._id
+                          )).
+                          map(gradeAndFeedback => {
+                            return (
+                              <CardText className="text-muted">Score: {gradeAndFeedback.grade}</CardText>
+                            )
+                          })
+                        }
+                      </Col>
+                    )
+                  })
+                }
               </Row>
               <Button color="secondary">Button</Button>
             </Card>
